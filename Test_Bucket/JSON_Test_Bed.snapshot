@@ -1749,7 +1749,7 @@
             "filtered" : "select *\nfrom flowfile\nwhere transport_protocol <> 6\nor (flag_s or flag_a or flag_f)",
             "record-writer" : "defaa5e5-2ba7-3978-a21a-67625dd31f8c",
             "record-reader" : "af97f4fc-a8b6-3b18-96e2-a421a2961da9",
-            "include-zero-record-flowfiles" : "true",
+            "include-zero-record-flowfiles" : "false",
             "dbf-default-scale" : "0"
           },
           "propertyDescriptors" : {

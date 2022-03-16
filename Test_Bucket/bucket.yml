@@ -2,8 +2,8 @@ flows:
   90566440-561a-47e9-9db8-04a1432fe688: {ver: 3, file: Test_Kafka_Flow.snapshot, comments: With
       approval processor, author: anonymous, created: 1644504946006, flowName: Test
       Kafka Flow, flowDesc: ''}
-  9ea9a5ba-f6aa-4988-b59e-252a57bdee03: {ver: 6, file: JSON_Test_Bed.snapshot, comments: Added
-      ECS enriched schema and Jolt transform., author: anonymous, created: 1647448649828,
-    flowName: JSON Test Bed, flowDesc: Working on some JSON manipulations}
+  9ea9a5ba-f6aa-4988-b59e-252a57bdee03: {ver: 7, file: JSON_Test_Bed.snapshot, comments: Progressing
+      enrichment, author: anonymous, created: 1647470168126, flowName: JSON Test Bed,
+    flowDesc: Working on some JSON manipulations}
 layoutVer: 1
 bucketId: fc13bd9a-40e0-4f2f-a6c1-66c235ad8742

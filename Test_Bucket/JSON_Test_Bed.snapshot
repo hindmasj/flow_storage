@@ -16,6 +16,126 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+            "id" : "4b21c7f5-ea9b-3f9d-a5c8-28117d9a5492",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "8e229e15-e018-3e22-8ed2-b8e696515cfe",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+            "id" : "53d863ed-7e51-3096-91fb-7da04fbdc2dc",
+            "name" : "PublishKafka_2_6",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+            "id" : "9e186b86-ad39-3581-af83-2211a64cbefc",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "190e6838-e0d2-3534-80c5-fb543a96d7a7",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+            "id" : "e4b153ed-ac0e-3a51-8fa4-c12ed25c3f1d",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "2eec5505-c1fc-39fa-ae1a-b1905f9d5c8a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+            "id" : "5503fea3-f8ab-3279-b443-c56317967e2b",
+            "name" : "ConvertRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "841c5db7-e568-3325-8af4-523330ce2373",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+            "id" : "a949ccb1-b091-3f0a-bce2-2ed143c3455e",
+            "name" : "QueryRecord - FilterFlags",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
             "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
             "name" : "LogMessage",
             "type" : "PROCESSOR"
@@ -46,13 +166,13 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "4b21c7f5-ea9b-3f9d-a5c8-28117d9a5492",
-            "name" : "LogMessage",
+            "id" : "a949ccb1-b091-3f0a-bce2-2ed143c3455e",
+            "name" : "QueryRecord - FilterFlags",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "8e229e15-e018-3e22-8ed2-b8e696515cfe",
+          "identifier" : "2c842377-b500-31b1-8efe-8ae957cdda48",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -63,8 +183,8 @@
           "source" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "53d863ed-7e51-3096-91fb-7da04fbdc2dc",
-            "name" : "PublishKafka_2_6",
+            "id" : "9e186b86-ad39-3581-af83-2211a64cbefc",
+            "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -106,25 +226,25 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "a949ccb1-b091-3f0a-bce2-2ed143c3455e",
-            "name" : "QueryRecord - FilterFlags",
+            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
+            "name" : "LogMessage",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "190e6838-e0d2-3534-80c5-fb543a96d7a7",
+          "identifier" : "23d84bb8-b93e-357b-b91e-edda8bb2507c",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
+          "selectedRelationships" : [ "failure" ],
           "source" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "e4b153ed-ac0e-3a51-8fa4-c12ed25c3f1d",
-            "name" : "UpdateRecord",
+            "id" : "9e186b86-ad39-3581-af83-2211a64cbefc",
+            "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -196,36 +316,6 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "2eec5505-c1fc-39fa-ae1a-b1905f9d5c8a",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "5503fea3-f8ab-3279-b443-c56317967e2b",
-            "name" : "ConvertRecord",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
             "id" : "c8ae0a46-883d-3cd6-87e7-1afbac1f75a4",
             "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
@@ -278,36 +368,6 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "841c5db7-e568-3325-8af4-523330ce2373",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "a949ccb1-b091-3f0a-bce2-2ed143c3455e",
-            "name" : "QueryRecord - FilterFlags",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
         } ],
         "controllerServices" : [ {
           "bundle" : {
@@ -330,15 +390,22 @@
           "name" : "AvroSchemaRegistry",
           "properties" : {
             "SimpleTraffic" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"SimpleTraffic\",\n  \"fields\":[\n    {\"name\":\"src_address\",\"type\":\"string\"},\n    {\"name\":\"src_port\",\"type\":\"int\"},\n    {\"name\":\"dst_address\",\"type\":\"string\"},\n    {\"name\":\"dst_port\",\"type\":\"int\"},\n    {\"name\":\"ip_version\",\"type\":\"int\"},\n    {\"name\":\"transport_protocol\",\"type\":\"int\"},\n    {\"name\":\"flag_s\",\"type\":[\"int\",\"boolean\"]},\n    {\"name\":\"flag_a\",\"type\":[\"int\",\"boolean\"]},\n    {\"name\":\"flag_f\",\"type\":[\"int\",\"boolean\"]}\n  ]\n}\n",
+            "ecs-enriched-traffic" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"ECSEnrichedTraffic\",\n  \"fields\":[\n    {\"name\":\"source\",\"type\":{\n      \"type\":\"record\",\n      \"name\":\"source_schema\",\n      \"fields\":[\n        {\"name\":\"address\",\"type\":\"string\"},\n        {\"name\":\"ip\",\"type\":\"string\"},\n        {\"name\":\"service\",\"type\":\"string\"},\n        {\"name\":\"port\",\"type\":\"long\"}\n      ]}\n    },\n    {\"name\":\"destination\",\"type\":{\n      \"type\":\"record\",\n      \"name\":\"destination_schema\",\n      \"fields\":[\n        {\"name\":\"address\",\"type\":\"string\"},\n        {\"name\":\"ip\",\"type\":\"string\"},\n        {\"name\":\"service\",\"type\":\"string\"},\n        {\"name\":\"port\",\"type\":\"long\"}\n      ]}\n    },\n    {\"name\":\"network\",\"type\":{\n      \"type\":\"record\",\n      \"name\":\"network_schema\",\n      \"fields\":[\n        {\"name\":\"application\",\"type\":\"string\"},\n        {\"name\":\"protocol\",\"type\":\"string\"},\n        {\"name\":\"type\",\"type\":{\"type\":\"enum\",\"name\":\"ip_version\",\"symbols\":[\"ipv4\",\"ipv6\"]}},\n        {\"name\":\"Type_id\",\"type\":\"long\"},\n        {\"name\":\"iana_number\",\"type\":\"long\"},\n        {\"name\":\"transport\",\"type\":\"long\"},\n        {\"name\":\"Flags\",\"type\":{\n          \"type\":\"record\",\n          \"name\":\"Flags_schema\",\n          \"fields\":[\n            {\"name\":\"SYN\",\"type\":\"boolean\"},\n            {\"name\":\"ACK\",\"type\":\"boolean\"},\n            {\"name\":\"FIN\",\"type\":\"boolean\"}\n            ]}\n          }\n        ]\n      }\n    }\n  ]\n}\n",
             "avro-reg-validated-field-names" : "true",
             "enriched-traffic" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"RawTraffic\",\n  \"fields\":[\n    {\"name\":\"src_address\",\"type\":\"string\"},\n    {\"name\":\"src_port\",\"type\":\"int\"},\n    {\"name\":\"dst_address\",\"type\":\"string\"},\n    {\"name\":\"dst_port\",\"type\":\"int\"},\n    {\"name\":\"ip_version\",\"type\":\"int\"},\n    {\"name\":\"transport_protocol\",\"type\":\"int\"},\n    {\"name\":\"flag_s\",\"type\":\"boolean\"},\n    {\"name\":\"flag_a\",\"type\":\"boolean\"},\n    {\"name\":\"flag_f\",\"type\":\"boolean\"}\n  ]\n}\n",
-            "raw-traffic" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"RawTraffic\",\n  \"fields\":[\n    {\"name\":\"src_address\",\"type\":\"string\"},\n    {\"name\":\"src_port\",\"type\":\"int\"},\n    {\"name\":\"dst_address\",\"type\":\"string\"},\n    {\"name\":\"dst_port\",\"type\":\"int\"},\n    {\"name\":\"ip_version\",\"type\":\"int\"},\n    {\"name\":\"transport_protocol\",\"type\":\"int\"},\n    {\"name\":\"flag_s\",\"type\":\"int\"},\n    {\"name\":\"flag_a\",\"type\":\"int\"},\n    {\"name\":\"flag_f\",\"type\":\"int\"}\n  ]\n}\n"
+            "raw-traffic" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"RawTraffic\",\n  \"fields\":[\n    {\"name\":\"src_address\",\"type\":\"string\"},\n    {\"name\":\"src_port\",\"type\":\"int\"},\n    {\"name\":\"dst_address\",\"type\":\"string\"},\n    {\"name\":\"dst_port\",\"type\":\"int\"},\n    {\"name\":\"ip_version\",\"type\":\"int\"},\n    {\"name\":\"transport_protocol\",\"type\":\"int\"},\n    {\"name\":\"flag_s\",\"type\":[\"int\",\"boolean\"]},\n    {\"name\":\"flag_a\",\"type\":[\"int\",\"boolean\"]},\n    {\"name\":\"flag_f\",\"type\":[\"int\",\"boolean\"]}\n  ]\n}\n"
           },
           "propertyDescriptors" : {
             "SimpleTraffic" : {
               "displayName" : "SimpleTraffic",
               "identifiesControllerService" : false,
               "name" : "SimpleTraffic",
+              "sensitive" : false
+            },
+            "ecs-enriched-traffic" : {
+              "displayName" : "ecs-enriched-traffic",
+              "identifiesControllerService" : false,
+              "name" : "ecs-enriched-traffic",
               "sensitive" : false
             },
             "avro-reg-validated-field-names" : {
@@ -1224,8 +1291,8 @@
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 504.0,
-            "y" : 1056.0
+            "x" : 512.0,
+            "y" : 1320.0
           },
           "properties" : {
             "log-level" : "info",
@@ -1333,7 +1400,7 @@
           "properties" : {
             "Store State" : "Do not store state",
             "canonical-value-lookup-cache-size" : "100",
-            "schema.enriched" : "enriched-traffic",
+            "schema.enriched" : "ecs-enriched-traffic",
             "schema.raw" : "raw-traffic"
           },
           "propertyDescriptors" : {
@@ -1449,12 +1516,12 @@
           "name" : "UpdateRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -168.0,
+            "x" : -160.0,
             "y" : 616.0
           },
           "properties" : {
             "/flag_f" : "${field.value:equals(1)}",
-            "record-writer" : "defaa5e5-2ba7-3978-a21a-67625dd31f8c",
+            "record-writer" : "b2ef37a9-6860-3724-a7a9-3bc87edb317d",
             "record-reader" : "a41a3088-5561-3885-b26c-6b6c8b791dd9",
             "replacement-value-strategy" : "literal-value",
             "/flag_s" : "${field.value:equals(1)}",
@@ -1522,8 +1589,8 @@
           "name" : "PublishKafka_2_6",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -184.0,
-            "y" : 1056.0
+            "x" : -176.0,
+            "y" : 1320.0
           },
           "properties" : {
             "compression.type" : "none",
@@ -1724,6 +1791,81 @@
           "type" : "org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_6",
           "yieldDuration" : "1 sec"
         }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.15.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "9e186b86-ad39-3581-af83-2211a64cbefc",
+          "name" : "JoltTransformJSON",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -160.0,
+            "y" : 856.0
+          },
+          "properties" : {
+            "jolt-spec" : "[{\n\t\"operation\": \"shift\",\n\t\"spec\": {\n\t\t\"*\": {\n\t\t\t\"src_address\": [\"[&(1)].source.ip\",\"[&(1)].source.address\"],\n\t\t\t\"src_port\": \"[&(1)].source.port\",\n\t\t\t\"dst_address\": [\"[&(1)].destination.ip\",\"[&(1)].destination.address\"],\n\t\t\t\"dst_port\": \"[&(1)].destination.port\",\n\t\t\t\"ip_version\": \"[&(1)].network.Type_id\",\n\t\t\t\"transport_protocol\": \"[&(1)].network.iana_number\",\n          \t\"flag_s\": \"[&(1)].network.Flags.SYN\",\n          \t\"flag_a\": \"[&(1)].network.Flags.ACK\",\n          \t\"flag_f\": \"[&(1)].network.Flags.FIN\"\n\t\t}\n\t}\n},\n {\n   \"operation\":\"modify-overwrite-beta\",\n   \"spec\": {\n     \"*\": {\n       \"network\": {\n         \"type\": \"=concat('ipv',@(1,Type_id))\"\n       }\n     }\n   }\n }]",
+            "jolt-transform" : "jolt-transform-chain",
+            "pretty_print" : "false",
+            "Transform Cache Size" : "1"
+          },
+          "propertyDescriptors" : {
+            "jolt-spec" : {
+              "displayName" : "Jolt Specification",
+              "identifiesControllerService" : false,
+              "name" : "jolt-spec",
+              "sensitive" : false
+            },
+            "jolt-transform" : {
+              "displayName" : "Jolt Transformation DSL",
+              "identifiesControllerService" : false,
+              "name" : "jolt-transform",
+              "sensitive" : false
+            },
+            "jolt-custom-class" : {
+              "displayName" : "Custom Transformation Class Name",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-class",
+              "sensitive" : false
+            },
+            "jolt-custom-modules" : {
+              "displayName" : "Custom Module Directory",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-modules",
+              "resourceDefinition" : {
+                "cardinality" : "MULTIPLE",
+                "resourceTypes" : [ "DIRECTORY", "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "pretty_print" : {
+              "displayName" : "Pretty Print",
+              "identifiesControllerService" : false,
+              "name" : "pretty_print",
+              "sensitive" : false
+            },
+            "Transform Cache Size" : {
+              "displayName" : "Transform Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "Transform Cache Size",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.JoltTransformJSON",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "original" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -1740,13 +1882,13 @@
           "name" : "QueryRecord - FilterFlags",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -168.0,
-            "y" : 824.0
+            "x" : -160.0,
+            "y" : 1088.0
           },
           "properties" : {
             "cache-schema" : "true",
             "dbf-default-precision" : "10",
-            "filtered" : "select *\nfrom flowfile\nwhere transport_protocol <> 6\nor (flag_s or flag_a or flag_f)",
+            "filtered" : "select *\nfrom flowfile\nwhere rpath(network,'/iana_number') <> 6\nor cast(rpath(network,'/Flags/SYN') as boolean)\nor cast(rpath(network,'/Flags/ACK') as boolean)\nor cast(rpath(network,'/Flags/FIN') as boolean)",
             "record-writer" : "defaa5e5-2ba7-3978-a21a-67625dd31f8c",
             "record-reader" : "af97f4fc-a8b6-3b18-96e2-a421a2961da9",
             "include-zero-record-flowfiles" : "false",

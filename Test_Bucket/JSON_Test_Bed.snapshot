@@ -105,38 +105,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "cd993e9c-c558-3790-aa12-fce0815a7167",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "" ],
-          "source" : {
-            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "221678d3-4df7-31c1-9dfe-cab7e7c3ad13",
-            "name" : "ErrorHandlingIn",
-            "type" : "INPUT_PORT"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
+            "id" : "b9f242ca-d26e-3ace-83cd-dddc15134b63",
+            "name" : "ErrorHandlingOut2",
+            "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
@@ -164,9 +135,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
+            "id" : "b9f242ca-d26e-3ace-83cd-dddc15134b63",
+            "name" : "ErrorHandlingOut2",
+            "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
@@ -194,9 +165,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
+            "id" : "b9f242ca-d26e-3ace-83cd-dddc15134b63",
+            "name" : "ErrorHandlingOut2",
+            "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
@@ -284,9 +255,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
+            "id" : "b9f242ca-d26e-3ace-83cd-dddc15134b63",
+            "name" : "ErrorHandlingOut2",
+            "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
@@ -374,9 +345,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
+            "id" : "b9f242ca-d26e-3ace-83cd-dddc15134b63",
+            "name" : "ErrorHandlingOut2",
+            "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
@@ -404,9 +375,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-            "id" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-            "name" : "LogMessage",
-            "type" : "PROCESSOR"
+            "id" : "b9f242ca-d26e-3ace-83cd-dddc15134b63",
+            "name" : "ErrorHandlingOut2",
+            "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
@@ -1679,23 +1650,24 @@
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
         "identifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-        "inputPorts" : [ {
-          "allowRemoteAccess" : false,
-          "componentType" : "INPUT_PORT",
-          "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "221678d3-4df7-31c1-9dfe-cab7e7c3ad13",
-          "name" : "ErrorHandlingIn",
-          "position" : {
-            "x" : -1464.0,
-            "y" : 856.0
-          },
-          "scheduledState" : "ENABLED",
-          "type" : "INPUT_PORT"
-        } ],
+        "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "JSON Test Bed",
         "outputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "comments" : "",
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "b9f242ca-d26e-3ace-83cd-dddc15134b63",
+          "name" : "ErrorHandlingOut2",
+          "position" : {
+            "x" : -1024.0,
+            "y" : 904.0
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "OUTPUT_PORT"
+        }, {
           "allowRemoteAccess" : false,
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
@@ -1703,15 +1675,15 @@
           "identifier" : "6762931f-fd43-35db-9a1c-051bed01fc3d",
           "name" : "ErrorHandlingOut",
           "position" : {
-            "x" : 669.8978387712991,
-            "y" : 1016.360165558199
+            "x" : 696.0,
+            "y" : 992.0
           },
           "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
         } ],
         "position" : {
-          "x" : 690.0,
-          "y" : 338.0
+          "x" : 584.0,
+          "y" : 344.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -2010,6 +1982,116 @@
           "type" : "org.apache.nifi.processors.standard.LookupRecord",
           "yieldDuration" : "1 sec"
         }, {
+          "autoTerminatedRelationships" : [ "success" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.15.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "4b21c7f5-ea9b-3f9d-a5c8-28117d9a5492",
+          "name" : "LogMessage",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 512.0,
+            "y" : 1624.0
+          },
+          "properties" : {
+            "log-level" : "info",
+            "log-prefix" : "Published kafka message: "
+          },
+          "propertyDescriptors" : {
+            "log-message" : {
+              "displayName" : "Log message",
+              "identifiesControllerService" : false,
+              "name" : "log-message",
+              "sensitive" : false
+            },
+            "log-level" : {
+              "displayName" : "Log Level",
+              "identifiesControllerService" : false,
+              "name" : "log-level",
+              "sensitive" : false
+            },
+            "log-prefix" : {
+              "displayName" : "Log prefix",
+              "identifiesControllerService" : false,
+              "name" : "log-prefix",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.LogMessage",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.15.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "50375670-b056-3c1d-89be-0077cc03ca61",
+          "name" : "UpdateRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 512.0,
+            "y" : 1312.0
+          },
+          "properties" : {
+            "/network/transport" : "replaceRegex(\nunescapeJson(/network/transport),\n'\\{name=([^,]+),.*\\}',\n'$1')",
+            "record-writer" : "a79c53c8-e1af-3d77-9cd2-d44fd4ca98b6",
+            "record-reader" : "153ff056-cb52-3e1b-a7c7-5913fdd0b810",
+            "replacement-value-strategy" : "record-path-value"
+          },
+          "propertyDescriptors" : {
+            "/network/transport" : {
+              "displayName" : "/network/transport",
+              "identifiesControllerService" : false,
+              "name" : "/network/transport",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "replacement-value-strategy" : {
+              "displayName" : "Replacement Value Strategy",
+              "identifiesControllerService" : false,
+              "name" : "replacement-value-strategy",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -2060,6 +2142,150 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.ConvertRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.15.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "c8ae0a46-883d-3cd6-87e7-1afbac1f75a4",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -168.0,
+            "y" : 168.0
+          },
+          "properties" : {
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100",
+            "schema.enriched" : "ecs-enriched-traffic",
+            "schema.raw" : "raw-traffic"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "schema.enriched" : {
+              "displayName" : "schema.enriched",
+              "identifiesControllerService" : false,
+              "name" : "schema.enriched",
+              "sensitive" : false
+            },
+            "schema.raw" : {
+              "displayName" : "schema.raw",
+              "identifiesControllerService" : false,
+              "name" : "schema.raw",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.15.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
+          "identifier" : "e4b153ed-ac0e-3a51-8fa4-c12ed25c3f1d",
+          "name" : "UpdateRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -160.0,
+            "y" : 616.0
+          },
+          "properties" : {
+            "/flag_f" : "${field.value:equals(1)}",
+            "record-writer" : "b2ef37a9-6860-3724-a7a9-3bc87edb317d",
+            "record-reader" : "a41a3088-5561-3885-b26c-6b6c8b791dd9",
+            "replacement-value-strategy" : "literal-value",
+            "/flag_s" : "${field.value:equals(1)}",
+            "/flag_a" : "${field.value:equals(1)}"
+          },
+          "propertyDescriptors" : {
+            "/flag_f" : {
+              "displayName" : "/flag_f",
+              "identifiesControllerService" : false,
+              "name" : "/flag_f",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "replacement-value-strategy" : {
+              "displayName" : "Replacement Value Strategy",
+              "identifiesControllerService" : false,
+              "name" : "replacement-value-strategy",
+              "sensitive" : false
+            },
+            "/flag_s" : {
+              "displayName" : "/flag_s",
+              "identifiesControllerService" : false,
+              "name" : "/flag_s",
+              "sensitive" : false
+            },
+            "/flag_a" : {
+              "displayName" : "/flag_a",
+              "identifiesControllerService" : false,
+              "name" : "/flag_a",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
@@ -2433,398 +2659,6 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.QueryRecord",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ "success" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "4b21c7f5-ea9b-3f9d-a5c8-28117d9a5492",
-          "name" : "LogMessage",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 512.0,
-            "y" : 1624.0
-          },
-          "properties" : {
-            "log-level" : "info",
-            "log-prefix" : "Published kafka message: "
-          },
-          "propertyDescriptors" : {
-            "log-message" : {
-              "displayName" : "Log message",
-              "identifiesControllerService" : false,
-              "name" : "log-message",
-              "sensitive" : false
-            },
-            "log-level" : {
-              "displayName" : "Log Level",
-              "identifiesControllerService" : false,
-              "name" : "log-level",
-              "sensitive" : false
-            },
-            "log-prefix" : {
-              "displayName" : "Log prefix",
-              "identifiesControllerService" : false,
-              "name" : "log-prefix",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.LogMessage",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "50375670-b056-3c1d-89be-0077cc03ca61",
-          "name" : "UpdateRecord",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 512.0,
-            "y" : 1312.0
-          },
-          "properties" : {
-            "/network/transport" : "replaceRegex(\nunescapeJson(/network/transport),\n'\\{name=([^,]+),.*\\}',\n'$1')",
-            "record-writer" : "a79c53c8-e1af-3d77-9cd2-d44fd4ca98b6",
-            "record-reader" : "153ff056-cb52-3e1b-a7c7-5913fdd0b810",
-            "replacement-value-strategy" : "record-path-value"
-          },
-          "propertyDescriptors" : {
-            "/network/transport" : {
-              "displayName" : "/network/transport",
-              "identifiesControllerService" : false,
-              "name" : "/network/transport",
-              "sensitive" : false
-            },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
-              "sensitive" : false
-            },
-            "replacement-value-strategy" : {
-              "displayName" : "Replacement Value Strategy",
-              "identifiesControllerService" : false,
-              "name" : "replacement-value-strategy",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "d09f1114-edf5-32e1-996e-450f5e4e8ae1",
-          "name" : "LookupRecord - transport",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1072.0,
-            "y" : 1384.0
-          },
-          "properties" : {
-            "result-contents" : "record-fields",
-            "routing-strategy" : "route-to-success",
-            "result-record-path" : "/network/transport_enriched",
-            "record-writer" : "a79c53c8-e1af-3d77-9cd2-d44fd4ca98b6",
-            "record-reader" : "153ff056-cb52-3e1b-a7c7-5913fdd0b810",
-            "lookup-service" : "c5d8ceb6-c1aa-3f97-9585-22de90c50c77",
-            "record-update-strategy" : "use-property",
-            "key" : "concat('protocol.',/network/iana_number)"
-          },
-          "propertyDescriptors" : {
-            "result-contents" : {
-              "displayName" : "Record Result Contents",
-              "identifiesControllerService" : false,
-              "name" : "result-contents",
-              "sensitive" : false
-            },
-            "routing-strategy" : {
-              "displayName" : "Routing Strategy",
-              "identifiesControllerService" : false,
-              "name" : "routing-strategy",
-              "sensitive" : false
-            },
-            "result-record-path" : {
-              "displayName" : "Result RecordPath",
-              "identifiesControllerService" : false,
-              "name" : "result-record-path",
-              "sensitive" : false
-            },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
-              "sensitive" : false
-            },
-            "lookup-service" : {
-              "displayName" : "Lookup Service",
-              "identifiesControllerService" : true,
-              "name" : "lookup-service",
-              "sensitive" : false
-            },
-            "record-update-strategy" : {
-              "displayName" : "Record Update Strategy",
-              "identifiesControllerService" : false,
-              "name" : "record-update-strategy",
-              "sensitive" : false
-            },
-            "key" : {
-              "displayName" : "key",
-              "identifiesControllerService" : false,
-              "name" : "key",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.LookupRecord",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-update-attribute-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "c8ae0a46-883d-3cd6-87e7-1afbac1f75a4",
-          "name" : "UpdateAttribute",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : -168.0,
-            "y" : 168.0
-          },
-          "properties" : {
-            "Store State" : "Do not store state",
-            "canonical-value-lookup-cache-size" : "100",
-            "schema.enriched" : "ecs-enriched-traffic",
-            "schema.raw" : "raw-traffic"
-          },
-          "propertyDescriptors" : {
-            "Delete Attributes Expression" : {
-              "displayName" : "Delete Attributes Expression",
-              "identifiesControllerService" : false,
-              "name" : "Delete Attributes Expression",
-              "sensitive" : false
-            },
-            "Store State" : {
-              "displayName" : "Store State",
-              "identifiesControllerService" : false,
-              "name" : "Store State",
-              "sensitive" : false
-            },
-            "canonical-value-lookup-cache-size" : {
-              "displayName" : "Cache Value Lookup Cache Size",
-              "identifiesControllerService" : false,
-              "name" : "canonical-value-lookup-cache-size",
-              "sensitive" : false
-            },
-            "schema.enriched" : {
-              "displayName" : "schema.enriched",
-              "identifiesControllerService" : false,
-              "name" : "schema.enriched",
-              "sensitive" : false
-            },
-            "schema.raw" : {
-              "displayName" : "schema.raw",
-              "identifiesControllerService" : false,
-              "name" : "schema.raw",
-              "sensitive" : false
-            },
-            "Stateful Variables Initial Value" : {
-              "displayName" : "Stateful Variables Initial Value",
-              "identifiesControllerService" : false,
-              "name" : "Stateful Variables Initial Value",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ "success" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "fb8514b6-d372-3300-b366-fb3d353a0787",
-          "name" : "LogMessage",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : -912.0,
-            "y" : 816.0
-          },
-          "properties" : {
-            "log-level" : "warn",
-            "log-prefix" : "Failed to process kafka message: "
-          },
-          "propertyDescriptors" : {
-            "log-message" : {
-              "displayName" : "Log message",
-              "identifiesControllerService" : false,
-              "name" : "log-message",
-              "sensitive" : false
-            },
-            "log-level" : {
-              "displayName" : "Log Level",
-              "identifiesControllerService" : false,
-              "name" : "log-level",
-              "sensitive" : false
-            },
-            "log-prefix" : {
-              "displayName" : "Log prefix",
-              "identifiesControllerService" : false,
-              "name" : "log-prefix",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.LogMessage",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "2118ea18-944f-3e18-85e9-43e8084ff9ec",
-          "identifier" : "e4b153ed-ac0e-3a51-8fa4-c12ed25c3f1d",
-          "name" : "UpdateRecord",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : -160.0,
-            "y" : 616.0
-          },
-          "properties" : {
-            "/flag_f" : "${field.value:equals(1)}",
-            "record-writer" : "b2ef37a9-6860-3724-a7a9-3bc87edb317d",
-            "record-reader" : "a41a3088-5561-3885-b26c-6b6c8b791dd9",
-            "replacement-value-strategy" : "literal-value",
-            "/flag_s" : "${field.value:equals(1)}",
-            "/flag_a" : "${field.value:equals(1)}"
-          },
-          "propertyDescriptors" : {
-            "/flag_f" : {
-              "displayName" : "/flag_f",
-              "identifiesControllerService" : false,
-              "name" : "/flag_f",
-              "sensitive" : false
-            },
-            "record-writer" : {
-              "displayName" : "Record Writer",
-              "identifiesControllerService" : true,
-              "name" : "record-writer",
-              "sensitive" : false
-            },
-            "record-reader" : {
-              "displayName" : "Record Reader",
-              "identifiesControllerService" : true,
-              "name" : "record-reader",
-              "sensitive" : false
-            },
-            "replacement-value-strategy" : {
-              "displayName" : "Replacement Value Strategy",
-              "identifiesControllerService" : false,
-              "name" : "replacement-value-strategy",
-              "sensitive" : false
-            },
-            "/flag_s" : {
-              "displayName" : "/flag_s",
-              "identifiesControllerService" : false,
-              "name" : "/flag_s",
-              "sensitive" : false
-            },
-            "/flag_a" : {
-              "displayName" : "/flag_a",
-              "identifiesControllerService" : false,
-              "name" : "/flag_a",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],

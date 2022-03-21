@@ -15,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
-            "id" : "c923a00a-940a-3a47-9465-26b6a38691e2",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+            "id" : "d6f109b1-3d61-39a7-bed1-0723bdff9078",
             "name" : "QueryRecord",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "d6062756-8b4c-316a-a4cc-b5a9de10db7d",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -32,7 +32,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "14023066-1df7-33eb-a266-168c9465ea78",
             "name" : "Set No Union",
             "type" : "PROCESSOR"
@@ -45,13 +45,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "c923a00a-940a-3a47-9465-26b6a38691e2",
             "name" : "QueryRecord",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "f050ae21-4350-327e-8087-22334988cb48",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -62,7 +62,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "22ea38c2-db7d-38c0-aa72-f63a5c477fad",
             "name" : "Set With Union",
             "type" : "PROCESSOR"
@@ -75,13 +75,43 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+            "id" : "2386691c-61fc-3108-93c1-51a637f338e6",
+            "name" : "PutFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+          "identifier" : "95dbfe28-b96f-3bf2-b8b5-aaace0147b70",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "filtered" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+            "id" : "d6f109b1-3d61-39a7-bed1-0723bdff9078",
+            "name" : "QueryRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "22ea38c2-db7d-38c0-aa72-f63a5c477fad",
             "name" : "Set With Union",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "e7b86337-aed5-3d98-8e1b-f5468cc3bc1c",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -92,7 +122,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "a8779ea3-b472-336a-86cd-9a711fe3a003",
             "name" : "ConsumeKafka_2_6",
             "type" : "PROCESSOR"
@@ -105,13 +135,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "3d17bd05-c4c3-353d-b0c5-487dffb1d631",
             "name" : "PutFile Failed",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "54010119-c8c3-3c34-bf2a-92f03924c8c7",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -122,7 +152,7 @@
           "selectedRelationships" : [ "failure" ],
           "source" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "c923a00a-940a-3a47-9465-26b6a38691e2",
             "name" : "QueryRecord",
             "type" : "PROCESSOR"
@@ -135,13 +165,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "2386691c-61fc-3108-93c1-51a637f338e6",
             "name" : "PutFile",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "32c79fc6-d9b8-3bda-91d5-70d6642cddbd",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -152,7 +182,7 @@
           "selectedRelationships" : [ "filtered" ],
           "source" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "c923a00a-940a-3a47-9465-26b6a38691e2",
             "name" : "QueryRecord",
             "type" : "PROCESSOR"
@@ -165,13 +195,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "14023066-1df7-33eb-a266-168c9465ea78",
             "name" : "Set No Union",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "1b28d21f-6528-349d-be85-34c4cce79708",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -182,14 +212,89 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
             "id" : "a8779ea3-b472-336a-86cd-9a711fe3a003",
             "name" : "ConsumeKafka_2_6",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+            "id" : "3d17bd05-c4c3-353d-b0c5-487dffb1d631",
+            "name" : "PutFile Failed",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+          "identifier" : "d8460177-0193-3232-99f8-9f6e8ec21cb1",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+            "id" : "d6f109b1-3d61-39a7-bed1-0723bdff9078",
+            "name" : "QueryRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ {
+          "bundle" : {
+            "artifact" : "nifi-registry-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.15.3"
+          },
+          "comments" : "",
+          "componentType" : "CONTROLLER_SERVICE",
+          "controllerServiceApis" : [ {
+            "bundle" : {
+              "artifact" : "nifi-standard-services-api-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.15.3"
+            },
+            "type" : "org.apache.nifi.schemaregistry.services.SchemaRegistry"
+          } ],
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+          "identifier" : "fbe22194-4501-3dd8-bede-04d9dc9b8c8d",
+          "name" : "AvroSchemaRegistry",
+          "properties" : {
+            "traffic-no-union" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"RawTrafficNoUnion\",\n  \"fields\":[\n    {\"name\":\"src_address\",\"type\":\"string\"},\n    {\"name\":\"src_port\",\"type\":\"long\"},\n    {\"name\":\"dst_address\",\"type\":\"string\"},\n    {\"name\":\"dst_port\",\"type\":\"long\"},\n    {\"name\":\"ip_version\",\"type\":\"long\"},\n    {\"name\":\"transport_protocol\",\"type\":\"long\"},\n    {\"name\":\"flag_s\",\"type\":\"long\"},\n    {\"name\":\"flag_a\",\"type\":\"long\"},\n    {\"name\":\"flag_f\",\"type\":\"long\"}\n  ]\n}\n",
+            "avro-reg-validated-field-names" : "true",
+            "traffic-with-union" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"RawTrafficNoUnion\",\n  \"fields\":[\n    {\"name\":\"src_address\",\"type\":\"string\"},\n    {\"name\":\"src_port\",\"type\":\"long\"},\n    {\"name\":\"dst_address\",\"type\":\"string\"},\n    {\"name\":\"dst_port\",\"type\":\"long\"},\n    {\"name\":\"ip_version\",\"type\":\"long\"},\n    {\"name\":\"transport_protocol\",\"type\":\"long\"},\n    {\"name\":\"flag_s\",\"type\":[\"long\",\"boolean\"]},\n    {\"name\":\"flag_a\",\"type\":[\"long\",\"boolean\"]},\n    {\"name\":\"flag_f\",\"type\":[\"long\",\"boolean\"]}\n  ]\n}\n"
+          },
+          "propertyDescriptors" : {
+            "traffic-no-union" : {
+              "displayName" : "traffic-no-union",
+              "identifiesControllerService" : false,
+              "name" : "traffic-no-union",
+              "sensitive" : false
+            },
+            "avro-reg-validated-field-names" : {
+              "displayName" : "Validate Field Names",
+              "identifiesControllerService" : false,
+              "name" : "avro-reg-validated-field-names",
+              "sensitive" : false
+            },
+            "traffic-with-union" : {
+              "displayName" : "traffic-with-union",
+              "identifiesControllerService" : false,
+              "name" : "traffic-with-union",
+              "sensitive" : false
+            }
+          },
+          "type" : "org.apache.nifi.schemaregistry.services.AvroSchemaRegistry"
+        }, {
           "bundle" : {
             "artifact" : "nifi-record-serialization-services-nar",
             "group" : "org.apache.nifi",
@@ -205,7 +310,7 @@
             },
             "type" : "org.apache.nifi.serialization.RecordReaderFactory"
           } ],
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "6fa6d821-02b5-35e0-a357-e75e106d8c14",
           "name" : "CSVReader",
           "properties" : {
@@ -362,51 +467,6 @@
           "type" : "org.apache.nifi.csv.CSVReader"
         }, {
           "bundle" : {
-            "artifact" : "nifi-registry-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.15.3"
-          },
-          "comments" : "",
-          "componentType" : "CONTROLLER_SERVICE",
-          "controllerServiceApis" : [ {
-            "bundle" : {
-              "artifact" : "nifi-standard-services-api-nar",
-              "group" : "org.apache.nifi",
-              "version" : "1.15.3"
-            },
-            "type" : "org.apache.nifi.schemaregistry.services.SchemaRegistry"
-          } ],
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
-          "identifier" : "fbe22194-4501-3dd8-bede-04d9dc9b8c8d",
-          "name" : "AvroSchemaRegistry",
-          "properties" : {
-            "traffic-no-union" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"RawTrafficNoUnion\",\n  \"fields\":[\n    {\"name\":\"src_address\",\"type\":\"string\"},\n    {\"name\":\"src_port\",\"type\":\"long\"},\n    {\"name\":\"dst_address\",\"type\":\"string\"},\n    {\"name\":\"dst_port\",\"type\":\"long\"},\n    {\"name\":\"ip_version\",\"type\":\"long\"},\n    {\"name\":\"transport_protocol\",\"type\":\"long\"},\n    {\"name\":\"flag_s\",\"type\":\"long\"},\n    {\"name\":\"flag_a\",\"type\":\"long\"},\n    {\"name\":\"flag_f\",\"type\":\"long\"}\n  ]\n}\n",
-            "avro-reg-validated-field-names" : "true",
-            "traffic-with-union" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"RawTrafficNoUnion\",\n  \"fields\":[\n    {\"name\":\"src_address\",\"type\":\"string\"},\n    {\"name\":\"src_port\",\"type\":\"long\"},\n    {\"name\":\"dst_address\",\"type\":\"string\"},\n    {\"name\":\"dst_port\",\"type\":\"long\"},\n    {\"name\":\"ip_version\",\"type\":\"long\"},\n    {\"name\":\"transport_protocol\",\"type\":\"long\"},\n    {\"name\":\"flag_s\",\"type\":[\"long\",\"boolean\"]},\n    {\"name\":\"flag_a\",\"type\":[\"long\",\"boolean\"]},\n    {\"name\":\"flag_f\",\"type\":[\"long\",\"boolean\"]}\n  ]\n}\n"
-          },
-          "propertyDescriptors" : {
-            "traffic-no-union" : {
-              "displayName" : "traffic-no-union",
-              "identifiesControllerService" : false,
-              "name" : "traffic-no-union",
-              "sensitive" : false
-            },
-            "avro-reg-validated-field-names" : {
-              "displayName" : "Validate Field Names",
-              "identifiesControllerService" : false,
-              "name" : "avro-reg-validated-field-names",
-              "sensitive" : false
-            },
-            "traffic-with-union" : {
-              "displayName" : "traffic-with-union",
-              "identifiesControllerService" : false,
-              "name" : "traffic-with-union",
-              "sensitive" : false
-            }
-          },
-          "type" : "org.apache.nifi.schemaregistry.services.AvroSchemaRegistry"
-        }, {
-          "bundle" : {
             "artifact" : "nifi-record-serialization-services-nar",
             "group" : "org.apache.nifi",
             "version" : "1.15.3"
@@ -421,7 +481,7 @@
             },
             "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
           } ],
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "a10d4d50-af99-3e89-a048-c3d1189777ee",
           "name" : "JsonRecordSetWriter",
           "properties" : {
@@ -549,14 +609,14 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+        "identifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "CSV Test Bed",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 776.0,
-          "y" : 664.0
+          "x" : 607.0,
+          "y" : 298.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -571,13 +631,13 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "3d17bd05-c4c3-353d-b0c5-487dffb1d631",
           "name" : "PutFile Failed",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 320.0,
-            "y" : 1096.0
+            "x" : -8.0,
+            "y" : 1048.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
@@ -653,7 +713,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "22ea38c2-db7d-38c0-aa72-f63a5c477fad",
           "name" : "Set With Union",
           "penaltyDuration" : "30 sec",
@@ -717,12 +777,92 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "c923a00a-940a-3a47-9465-26b6a38691e2",
           "name" : "QueryRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 712.0,
+            "x" : 984.0,
+            "y" : 744.0
+          },
+          "properties" : {
+            "cache-schema" : "true",
+            "dbf-default-precision" : "10",
+            "filtered" : "select * from flowfile\nwhere cast(flag_s as int) = 1",
+            "record-writer" : "a10d4d50-af99-3e89-a048-c3d1189777ee",
+            "record-reader" : "6fa6d821-02b5-35e0-a357-e75e106d8c14",
+            "include-zero-record-flowfiles" : "false",
+            "dbf-default-scale" : "0"
+          },
+          "propertyDescriptors" : {
+            "cache-schema" : {
+              "displayName" : "Cache Schema",
+              "identifiesControllerService" : false,
+              "name" : "cache-schema",
+              "sensitive" : false
+            },
+            "dbf-default-precision" : {
+              "displayName" : "Default Decimal Precision",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-precision",
+              "sensitive" : false
+            },
+            "filtered" : {
+              "displayName" : "filtered",
+              "identifiesControllerService" : false,
+              "name" : "filtered",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "include-zero-record-flowfiles" : {
+              "displayName" : "Include Zero Record FlowFiles",
+              "identifiesControllerService" : false,
+              "name" : "include-zero-record-flowfiles",
+              "sensitive" : false
+            },
+            "dbf-default-scale" : {
+              "displayName" : "Default Decimal Scale",
+              "identifiesControllerService" : false,
+              "name" : "dbf-default-scale",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.QueryRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "original" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.15.3"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
+          "identifier" : "d6f109b1-3d61-39a7-bed1-0723bdff9078",
+          "name" : "QueryRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 232.0,
             "y" : 728.0
           },
           "properties" : {
@@ -797,7 +937,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "14023066-1df7-33eb-a266-168c9465ea78",
           "name" : "Set No Union",
           "penaltyDuration" : "30 sec",
@@ -861,7 +1001,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "a8779ea3-b472-336a-86cd-9a711fe3a003",
           "name" : "ConsumeKafka_2_6",
           "penaltyDuration" : "30 sec",
@@ -1069,13 +1209,13 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "30daf602-d56a-3dae-9547-da0f46b405d9",
+          "groupIdentifier" : "0cf00c35-5afd-39be-badf-eaa50d26ddd5",
           "identifier" : "2386691c-61fc-3108-93c1-51a637f338e6",
           "name" : "PutFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 952.0,
-            "y" : 1096.0
+            "x" : 1384.0,
+            "y" : 1080.0
           },
           "properties" : {
             "Create Missing Directories" : "true",

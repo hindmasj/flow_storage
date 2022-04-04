@@ -1303,14 +1303,14 @@
               "group" : "org.apache.nifi",
               "version" : "1.15.3"
             },
-            "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
+            "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
           }, {
             "bundle" : {
               "artifact" : "nifi-standard-services-api-nar",
               "group" : "org.apache.nifi",
               "version" : "1.15.3"
             },
-            "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
+            "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
           } ],
           "groupIdentifier" : "2675d96d-8710-3666-9db7-dea23a9a3a29",
           "identifier" : "0eed8a6c-bfb2-3bcc-a77c-b36c8a82c36d",
@@ -2440,7 +2440,7 @@
             "y" : 712.0
           },
           "properties" : {
-            "jolt-spec" : "[{\n  \"operation\": \"shift\",\n  \"spec\": {\n    \"*\": {\n      \"src_address\": [\"[&(1)].source.ip\",\"[&(1)].source.address\"],\n      \"src_port\": \"[&(1)].source.port\",\n      \"dst_address\": [\"[&(1)].destination.ip\",\"[&(1)].destination.address\"],\n      \"dst_port\": \"[&(1)].destination.port\",\n      \"ip_version\": [\"[&(1)].network.type\",\"[&(1)].Network.type_id\"],\n      \"transport_protocol\": \"[&(1)].network.iana_number\",\n      \"flag_s\": \"[&(1)].Network.flags.syn\",\n      \"flag_a\": \"[&(1)].Network.flags.ack\",\n      \"flag_f\": \"[&(1)].Network.flags.fin\"\n    }\n  }\n}, {\n   \"operation\":\"modify-overwrite-beta\",\n   \"spec\": {\n     \"*\": {\n       \"network\": {\n         \"type\": \"=concat('ipv',@(0))\"\n       },\n       \"Network\": {\n         \"flags\": {\n           \"*\": \"=elementAt(@(0),false,true)\"\n         }\n       },\n       \"Enrichment\": {\n         \"Network\": {\n           \"Transport\": null\n         }\n       }\n     }\n   }\n }]",
+            "jolt-spec" : "[{\n  \"operation\": \"shift\",\n  \"spec\": {\n    \"*\": {\n      \"src_address\": [\"[&(1)].source.ip\",\"[&(1)].source.address\"],\n      \"src_port\": \"[&(1)].source.port\",\n      \"dst_address\": [\"[&(1)].destination.ip\",\"[&(1)].destination.address\"],\n      \"dst_port\": \"[&(1)].destination.port\",\n      \"ip_version\": [\"[&(1)].network.type\",\"[&(1)].Network.type_id\"],\n      \"transport_protocol\": \"[&(1)].network.iana_number\",\n      \"flag_s\": \"[&(1)].Network.flags.syn\",\n      \"flag_a\": \"[&(1)].Network.flags.ack\",\n      \"flag_f\": \"[&(1)].Network.flags.fin\"\n    }\n  }\n}, {\n   \"operation\":\"modify-overwrite-beta\",\n   \"spec\": {\n     \"*\": {\n       \"network\": {\n         \"type\": \"=concat('ipv',@(0))\"\n       },\n       \"Network\": {\n         \"flags\": {\n           \"*\": \"=elementAt(@(0),false,true)\"\n         }\n       },\n       \"Enrichment\": {\n         \"Network\": {\n           \"Transport\": null\n         },\n         \"Source\": {\n           \"Service\": null\n         },\n         \"Destination\": {\n           \"Service\": null\n         }\n       }\n     }\n   }\n }]",
             "jolt-transform" : "jolt-transform-chain",
             "pretty_print" : "false",
             "Transform Cache Size" : "1"

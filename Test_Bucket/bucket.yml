@@ -4,8 +4,8 @@ flows:
       Test Bed, flowDesc: ''}
   229dea12-86d0-45f2-8e63-6864a36810c5: {ver: 1, file: ErrorHandling.snapshot, comments: '',
     author: anonymous, created: 1647550445297, flowName: ErrorHandling, flowDesc: ''}
-  41075583-ebaf-448e-b9f3-8faa659deb92: {ver: 2, file: Redis_Enrichment_Test_Bed.snapshot,
-    comments: Uneeded processors and service removed, author: anonymous, created: 1649507050823,
+  41075583-ebaf-448e-b9f3-8faa659deb92: {ver: 3, file: Redis_Enrichment_Test_Bed.snapshot,
+    comments: Progressing flow development, author: anonymous, created: 1649535062167,
     flowName: Redis Enrichment Test Bed, flowDesc: ''}
   30bee577-7956-42a6-9896-9a9c23533cf1: {ver: 2, file: Write_To_Redis.snapshot, comments: Flow
       writes JSON array data to Redis, author: anonymous, created: 1649505485082,

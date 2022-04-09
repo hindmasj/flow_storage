@@ -4,6 +4,8 @@ flows:
       Test Bed, flowDesc: ''}
   229dea12-86d0-45f2-8e63-6864a36810c5: {ver: 1, file: ErrorHandling.snapshot, comments: '',
     author: anonymous, created: 1647550445297, flowName: ErrorHandling, flowDesc: ''}
+  30bee577-7956-42a6-9896-9a9c23533cf1: {ver: 1, file: Write_To_Redis.snapshot, comments: '',
+    author: anonymous, created: 1649504061453, flowName: Write To Redis, flowDesc: ''}
   90566440-561a-47e9-9db8-04a1432fe688: {ver: 3, file: Test_Kafka_Flow.snapshot, comments: With
       approval processor, author: anonymous, created: 1644504946006, flowName: Test
       Kafka Flow, flowDesc: ''}

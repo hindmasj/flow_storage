@@ -738,13 +738,13 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 272.0,
-            "y" : 408.0
+            "y" : 407.0
           },
           "properties" : {
             "Destination" : "flowfile-attribute",
-            "index-prefix" : "/enrichment-type",
+            "index-prefix" : "enrichment-type",
             "Return Type" : "auto-detect",
-            "index-key" : "/enrichment-key",
+            "index-key" : "enrichment-key",
             "Null Value Representation" : "empty string",
             "Path Not Found Behavior" : "warn"
           },
@@ -811,7 +811,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 272.0,
-            "y" : 200.0
+            "y" : 199.0
           },
           "properties" : {
             "Record Writer" : "3d94a1ef-3fdf-34fd-b459-763259287666",
@@ -947,7 +947,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 272.0,
-            "y" : 8.0
+            "y" : 7.0
           },
           "properties" : {
             "Commit Offsets" : "true",
@@ -958,7 +958,7 @@
             "sasl.mechanism" : "GSSAPI",
             "honor-transactions" : "true",
             "message-header-encoding" : "UTF-8",
-            "message-demarcator" : ",",
+            "message-demarcator" : "",
             "max.poll.records" : "10000",
             "security.protocol" : "PLAINTEXT",
             "sasl.token.auth" : "false",

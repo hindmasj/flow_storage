@@ -115,6 +115,105 @@
           "destination" : {
             "comments" : "",
             "groupId" : "f897139e-5688-3313-96a1-215a8ed3253e",
+            "id" : "eaf513fb-d74d-362e-b2c2-0f5b44afa96f",
+            "instanceIdentifier" : "c044324c-c7fc-168a-ae5e-141c8229ba2c",
+            "name" : "LogMessage - matched",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f897139e-5688-3313-96a1-215a8ed3253e",
+          "identifier" : "053cd28d-4eee-3f78-bc15-7c8899c62a62",
+          "instanceIdentifier" : "18792bca-0180-1000-ffff-ffffb7226162",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "f897139e-5688-3313-96a1-215a8ed3253e",
+            "id" : "a7f285be-aa54-3588-8b88-fb9f9a22fca6",
+            "instanceIdentifier" : "0af437fb-54bc-17f7-a801-9ecca562ce9f",
+            "name" : "LookupRecord - mood",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "f897139e-5688-3313-96a1-215a8ed3253e",
+            "id" : "a7f285be-aa54-3588-8b88-fb9f9a22fca6",
+            "instanceIdentifier" : "0af437fb-54bc-17f7-a801-9ecca562ce9f",
+            "name" : "LookupRecord - mood",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f897139e-5688-3313-96a1-215a8ed3253e",
+          "identifier" : "fb55d986-3912-3495-a9ba-bf4bbcb093b9",
+          "instanceIdentifier" : "18786430-0180-1000-0000-0000160f7cac",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "f897139e-5688-3313-96a1-215a8ed3253e",
+            "id" : "83a3166d-6f3e-311f-97ff-587969fd8ac8",
+            "instanceIdentifier" : "e3c28e16-a240-35b2-a172-8f6985088364",
+            "name" : "ConsumeKafka_2_6",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "f897139e-5688-3313-96a1-215a8ed3253e",
+            "id" : "0a635317-3987-3ca6-8bdf-52aabc2b3479",
+            "instanceIdentifier" : "c4e94521-e346-3e3a-9c31-42a3ded3fa89",
+            "name" : "ErrorHandlingOut",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f897139e-5688-3313-96a1-215a8ed3253e",
+          "identifier" : "50fcf44a-f8ba-3107-a1a4-c5bdeb7d6592",
+          "instanceIdentifier" : "18798afa-0180-1000-0000-000014c88aff",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "f897139e-5688-3313-96a1-215a8ed3253e",
+            "id" : "a7f285be-aa54-3588-8b88-fb9f9a22fca6",
+            "instanceIdentifier" : "0af437fb-54bc-17f7-a801-9ecca562ce9f",
+            "name" : "LookupRecord - mood",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "f897139e-5688-3313-96a1-215a8ed3253e",
             "id" : "261bea86-fd68-3101-9108-a52e85c7ee5f",
             "instanceIdentifier" : "9b063d8a-aaf8-1b69-b16e-1e7bedd8186a",
             "name" : "LogMessage - matched",
@@ -636,7 +735,7 @@
         "inputPorts" : [ ],
         "instanceIdentifier" : "184ce1b0-0180-1000-0000-000020309936",
         "labels" : [ ],
-        "name" : "Redis Enrichment Test Bed",
+        "name" : "Lookup Behaviour Testing",
         "outputPorts" : [ {
           "allowRemoteAccess" : false,
           "comments" : "",
@@ -647,8 +746,8 @@
           "instanceIdentifier" : "c4e94521-e346-3e3a-9c31-42a3ded3fa89",
           "name" : "ErrorHandlingOut",
           "position" : {
-            "x" : -1024.0,
-            "y" : 904.0
+            "x" : -1768.0,
+            "y" : 896.0
           },
           "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
@@ -659,6 +758,154 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
+          "autoTerminatedRelationships" : [ "success" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "f897139e-5688-3313-96a1-215a8ed3253e",
+          "identifier" : "eaf513fb-d74d-362e-b2c2-0f5b44afa96f",
+          "instanceIdentifier" : "c044324c-c7fc-168a-ae5e-141c8229ba2c",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "LogMessage - matched",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -2528.0,
+            "y" : 1152.0
+          },
+          "properties" : {
+            "log-level" : "info",
+            "log-prefix" : "Message lookup success: "
+          },
+          "propertyDescriptors" : {
+            "log-message" : {
+              "displayName" : "Log message",
+              "identifiesControllerService" : false,
+              "name" : "log-message",
+              "sensitive" : false
+            },
+            "log-level" : {
+              "displayName" : "Log Level",
+              "identifiesControllerService" : false,
+              "name" : "log-level",
+              "sensitive" : false
+            },
+            "log-prefix" : {
+              "displayName" : "Log prefix",
+              "identifiesControllerService" : false,
+              "name" : "log-prefix",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.LogMessage",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "f897139e-5688-3313-96a1-215a8ed3253e",
+          "identifier" : "a7f285be-aa54-3588-8b88-fb9f9a22fca6",
+          "instanceIdentifier" : "0af437fb-54bc-17f7-a801-9ecca562ce9f",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "LookupRecord - mood",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -2456.0,
+            "y" : 864.0
+          },
+          "properties" : {
+            "result-contents" : "insert-entire-record",
+            "routing-strategy" : "route-to-success",
+            "result-record-path" : "/mood",
+            "record-writer" : "a1e29d20-cd61-3335-be16-b97dabeee89f",
+            "record-reader" : "be4dda26-751f-3aad-bbc2-3116afd0f889",
+            "lookup-service" : "e15765de-622a-38d5-934d-4eecc424482b",
+            "record-update-strategy" : "use-property",
+            "key" : "concat('mood/',/name)"
+          },
+          "propertyDescriptors" : {
+            "result-contents" : {
+              "displayName" : "Record Result Contents",
+              "identifiesControllerService" : false,
+              "name" : "result-contents",
+              "sensitive" : false
+            },
+            "routing-strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "routing-strategy",
+              "sensitive" : false
+            },
+            "result-record-path" : {
+              "displayName" : "Result RecordPath",
+              "identifiesControllerService" : false,
+              "name" : "result-record-path",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "lookup-service" : {
+              "displayName" : "Lookup Service",
+              "identifiesControllerService" : true,
+              "name" : "lookup-service",
+              "sensitive" : false
+            },
+            "record-update-strategy" : {
+              "displayName" : "Record Update Strategy",
+              "identifiesControllerService" : false,
+              "name" : "record-update-strategy",
+              "sensitive" : false
+            },
+            "key" : {
+              "displayName" : "key",
+              "identifiesControllerService" : false,
+              "name" : "key",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.LookupRecord",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "success" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -790,8 +1037,8 @@
           "name" : "LookupRecord - mood",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -1768.0,
-            "y" : 864.0
+            "x" : -1144.0,
+            "y" : 848.0
           },
           "properties" : {
             "result-contents" : "insert-entire-record",

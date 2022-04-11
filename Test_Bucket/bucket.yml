@@ -10,6 +10,9 @@ flows:
   30bee577-7956-42a6-9896-9a9c23533cf1: {ver: 2, file: Write_To_Redis.snapshot, comments: Flow
       writes JSON array data to Redis, author: anonymous, created: 1649505485082,
     flowName: Write To Redis, flowDesc: ''}
+  f51a483e-6019-4dd1-ad33-aedf759b7bbf: {ver: 1, file: Test_Lookup_Behaviour.snapshot,
+    comments: '', author: anonymous, created: 1649677920344, flowName: Test Lookup
+      Behaviour, flowDesc: ''}
   90566440-561a-47e9-9db8-04a1432fe688: {ver: 3, file: Test_Kafka_Flow.snapshot, comments: With
       approval processor, author: anonymous, created: 1644504946006, flowName: Test
       Kafka Flow, flowDesc: ''}

@@ -460,7 +460,8 @@
             "Pool - Time Between Eviction Runs" : "30 seconds",
             "Communication Timeout" : "10 seconds",
             "Pool - Max Wait Time" : "10 seconds",
-            "Database Index" : "0"
+            "Database Index" : "0",
+            "Password" : "#{RedisPassword}"
           },
           "propertyDescriptors" : {
             "Pool - Min Evictable Idle Time" : {
@@ -752,6 +753,7 @@
           "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
         } ],
+        "parameterContextName" : "RedisConfig",
         "position" : {
           "x" : 416.0,
           "y" : -208.0
@@ -1327,7 +1329,18 @@
         "variables" : { }
       },
       "flowEncodingVersion" : "1.0",
-      "parameterContexts" : { }
+      "parameterContexts" : {
+        "RedisConfig" : {
+          "componentType" : "PARAMETER_CONTEXT",
+          "inheritedParameterContexts" : [ ],
+          "name" : "RedisConfig",
+          "parameters" : [ {
+            "description" : "",
+            "name" : "RedisPassword",
+            "sensitive" : true
+          } ]
+        }
+      }
     }
   }
 }

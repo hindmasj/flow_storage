@@ -597,11 +597,9 @@
           },
           "properties" : {
             "record-writer" : "fc27633e-2758-3344-b16e-624be5981893",
+            "/uuid" : "concat('','${UUID()}')",
             "record-reader" : "99185db5-7e8b-3ea5-8fa8-deae6f01ebe5",
-            "/to" : "replace(replace(/to,'<',''),'>','')",
-            "replacement-value-strategy" : "record-path-value",
-            "/tag" : "replaceRegex(/tag,'([^-].*)','Path: $1')",
-            "/from" : "replace(replace(/from,'<',''),'>','')"
+            "replacement-value-strategy" : "record-path-value"
           },
           "propertyDescriptors" : {
             "record-writer" : {
@@ -610,34 +608,22 @@
               "name" : "record-writer",
               "sensitive" : false
             },
+            "/uuid" : {
+              "displayName" : "/uuid",
+              "identifiesControllerService" : false,
+              "name" : "/uuid",
+              "sensitive" : false
+            },
             "record-reader" : {
               "displayName" : "Record Reader",
               "identifiesControllerService" : true,
               "name" : "record-reader",
               "sensitive" : false
             },
-            "/to" : {
-              "displayName" : "/to",
-              "identifiesControllerService" : false,
-              "name" : "/to",
-              "sensitive" : false
-            },
             "replacement-value-strategy" : {
               "displayName" : "Replacement Value Strategy",
               "identifiesControllerService" : false,
               "name" : "replacement-value-strategy",
-              "sensitive" : false
-            },
-            "/tag" : {
-              "displayName" : "/tag",
-              "identifiesControllerService" : false,
-              "name" : "/tag",
-              "sensitive" : false
-            },
-            "/from" : {
-              "displayName" : "/from",
-              "identifiesControllerService" : false,
-              "name" : "/from",
               "sensitive" : false
             }
           },
@@ -1076,7 +1062,7 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "[\n{\n  \"from\":\"Fred Bloggs <fred@notanaddress.com>\",\n  \"to\":\"Bob Bobbins <bob@notanaddress.com>\",\"tag\":\"-\"\n},{\n  \"from\":\"Mary MQ Contrary <mary@notanaddress.com>\",\n  \"to\":\"LB Peep <bo@notanaddress.com>\",\"tag\":\"10.0.0.1\"\n},{\n  \"from\":\"Charlie Smith <charlie@notanaddress.com>\",\n  \"to\":\"Bill Green <bill@notanaddress.com>\",\"tag\":\"10.0.0.1,192.168.0.1\"\n}\n]",
+            "generate-ff-custom-text" : "[\n{\"name\":\"fred\"},\n{\"name\":\"fred\"},\n{\"name\":\"fred\"}\n]",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
             "topic" : "netflow",

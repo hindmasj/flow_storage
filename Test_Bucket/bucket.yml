@@ -19,8 +19,8 @@ flows:
   a7a4d1f3-1c0d-4aea-b1cb-70a4f156c0a6: {ver: 6, file: Single_Transform_Test_Bed.snapshot,
     comments: Changed lookup routing strategies, author: anonymous, created: 1651239655160,
     flowName: Single Transform Test Bed, flowDesc: ''}
-  9ea9a5ba-f6aa-4988-b59e-252a57bdee03: {ver: 13, file: JSON_Test_Bed.snapshot, comments: Removed
-      secondary output port, author: anonymous, created: 1649756730152, flowName: JSON
+  9ea9a5ba-f6aa-4988-b59e-252a57bdee03: {ver: 14, file: JSON_Test_Bed.snapshot, comments: Rule
+      policy changed to use original, author: anonymous, created: 1651262919422, flowName: JSON
       Test Bed, flowDesc: Working on some JSON manipulations}
 layoutVer: 1
 bucketId: fc13bd9a-40e0-4f2f-a6c1-66c235ad8742

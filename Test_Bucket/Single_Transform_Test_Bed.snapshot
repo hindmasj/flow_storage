@@ -163,7 +163,7 @@
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "matched" ],
+          "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
             "groupId" : "7f1a5dc5-be0c-3da5-bf1e-1cea2d429c9f",
@@ -361,7 +361,7 @@
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "unmatched" ],
+          "selectedRelationships" : [ "failure" ],
           "source" : {
             "comments" : "",
             "groupId" : "7f1a5dc5-be0c-3da5-bf1e-1cea2d429c9f",
@@ -916,7 +916,7 @@
         "inputPorts" : [ ],
         "instanceIdentifier" : "4becec3c-0180-1000-ffff-ffffa6f8a6d5",
         "labels" : [ ],
-        "name" : "Some Jolt Tests",
+        "name" : "Some Transform Tests",
         "outputPorts" : [ ],
         "position" : {
           "x" : 288.0,
@@ -1459,7 +1459,7 @@
           },
           "properties" : {
             "result-contents" : "record-fields",
-            "routing-strategy" : "route-to-matched-unmatched",
+            "routing-strategy" : "route-to-success",
             "result-record-path" : "/name",
             "record-writer" : "fc27633e-2758-3344-b16e-624be5981893",
             "record-reader" : "99185db5-7e8b-3ea5-8fa8-deae6f01ebe5",

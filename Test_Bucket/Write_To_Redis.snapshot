@@ -15,14 +15,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "8884ee9e-bdda-39eb-952c-9f86e57fac07",
+            "instanceIdentifier" : "f79f0619-6677-3d0c-bd06-04e82f2eb6e6",
             "name" : "PutDistributedMapCache",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "a04a7b48-35fc-3b9e-9ca7-d13243dedc0a",
+          "instanceIdentifier" : "7cee56d9-e5b9-360c-ab60-b5a30a01960b",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -32,8 +34,9 @@
           "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "eeb86019-f3f3-3aea-bf2f-33d7dec93f1e",
+            "instanceIdentifier" : "96ce420a-cfe0-3e21-8ffe-6972a42a3c57",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
@@ -44,14 +47,16 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "1dc9aba9-ecac-3ca7-994b-943b57aa6a4f",
+            "instanceIdentifier" : "43312c89-bc8f-3346-8840-95890877e7dc",
             "name" : "ErrorHandlingOut",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "1cd716b7-de43-3114-a029-daca1364a3d6",
+          "instanceIdentifier" : "bddf4548-05e2-34c7-b9e0-3a5ca21fec2b",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -61,8 +66,9 @@
           "selectedRelationships" : [ "failure" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "a66353be-c175-3677-85f9-b64a9defe1c5",
+            "instanceIdentifier" : "cb26e1cf-c444-3b8b-9baf-19b0b9107fbc",
             "name" : "SplitRecord",
             "type" : "PROCESSOR"
           },
@@ -73,14 +79,16 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "1dc9aba9-ecac-3ca7-994b-943b57aa6a4f",
+            "instanceIdentifier" : "43312c89-bc8f-3346-8840-95890877e7dc",
             "name" : "ErrorHandlingOut",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "8906d411-67d4-3489-91ad-5dd8008a8610",
+          "instanceIdentifier" : "caef491f-3328-3ecd-a6a8-c0b7f8f650dc",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -90,8 +98,9 @@
           "selectedRelationships" : [ "failure", "unmatched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "eeb86019-f3f3-3aea-bf2f-33d7dec93f1e",
+            "instanceIdentifier" : "96ce420a-cfe0-3e21-8ffe-6972a42a3c57",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
@@ -103,14 +112,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "eeb86019-f3f3-3aea-bf2f-33d7dec93f1e",
+            "instanceIdentifier" : "96ce420a-cfe0-3e21-8ffe-6972a42a3c57",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "6376ba48-7223-3ec1-bfd3-3323ced7e6ed",
+          "instanceIdentifier" : "5efec60f-35ed-33c7-8406-c6669685a93d",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -120,8 +131,9 @@
           "selectedRelationships" : [ "splits" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "a66353be-c175-3677-85f9-b64a9defe1c5",
+            "instanceIdentifier" : "cb26e1cf-c444-3b8b-9baf-19b0b9107fbc",
             "name" : "SplitRecord",
             "type" : "PROCESSOR"
           },
@@ -132,14 +144,16 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "1dc9aba9-ecac-3ca7-994b-943b57aa6a4f",
+            "instanceIdentifier" : "43312c89-bc8f-3346-8840-95890877e7dc",
             "name" : "ErrorHandlingOut",
             "type" : "OUTPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "5b0fb8de-203b-3772-b9f0-a09ca9384a5b",
+          "instanceIdentifier" : "0a9bdcf6-fef7-36ad-8880-ac223e45c882",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -149,8 +163,9 @@
           "selectedRelationships" : [ "failure" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "8884ee9e-bdda-39eb-952c-9f86e57fac07",
+            "instanceIdentifier" : "f79f0619-6677-3d0c-bd06-04e82f2eb6e6",
             "name" : "PutDistributedMapCache",
             "type" : "PROCESSOR"
           },
@@ -162,14 +177,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "a66353be-c175-3677-85f9-b64a9defe1c5",
+            "instanceIdentifier" : "cb26e1cf-c444-3b8b-9baf-19b0b9107fbc",
             "name" : "SplitRecord",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "8d872512-c9a6-37db-a4c2-5394fc4241e8",
+          "instanceIdentifier" : "2b19537a-8782-3be5-ae28-d9e7747dfa70",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -179,8 +196,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "8e8b75ab-704f-3dad-ad79-63fbd0f882ef",
+            "instanceIdentifier" : "606fe44f-dd4e-34a9-b2fc-1ae998378a8c",
             "name" : "ConsumeKafka_2_6",
             "type" : "PROCESSOR"
           },
@@ -192,14 +210,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "0857c9f0-2ec5-3c97-9cdb-1a7140c45ae4",
+            "instanceIdentifier" : "b0091a0a-3a4c-3aec-92b6-9c23d8276f1f",
             "name" : "LogAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "8c7dcb2f-5abd-3c9a-bc33-f4f1a413f77b",
+          "instanceIdentifier" : "3d69a8ae-1447-31ba-b743-0454725022af",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -209,8 +229,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+            "groupId" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
             "id" : "8884ee9e-bdda-39eb-952c-9f86e57fac07",
+            "instanceIdentifier" : "f79f0619-6677-3d0c-bd06-04e82f2eb6e6",
             "name" : "PutDistributedMapCache",
             "type" : "PROCESSOR"
           },
@@ -220,7 +241,7 @@
           "bundle" : {
             "artifact" : "nifi-record-serialization-services-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "CONTROLLER_SERVICE",
@@ -228,15 +249,17 @@
             "bundle" : {
               "artifact" : "nifi-standard-services-api-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.15.3"
+              "version" : "1.16.1"
             },
             "type" : "org.apache.nifi.serialization.RecordReaderFactory"
           } ],
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "7de7430c-4c57-30fe-8bec-a8924f62f40d",
+          "instanceIdentifier" : "27832256-6483-32e0-bfd0-2642a087045f",
           "name" : "InferJsonTreeReader",
           "properties" : {
             "schema-name" : "${schema.name}",
+            "starting-field-strategy" : "ROOT_NODE",
             "schema-access-strategy" : "infer-schema",
             "schema-text" : "${avro.schema}"
           },
@@ -271,10 +294,22 @@
               "name" : "schema-name",
               "sensitive" : false
             },
+            "starting-field-strategy" : {
+              "displayName" : "Starting Field Strategy",
+              "identifiesControllerService" : false,
+              "name" : "starting-field-strategy",
+              "sensitive" : false
+            },
             "schema-registry" : {
               "displayName" : "Schema Registry",
               "identifiesControllerService" : true,
               "name" : "schema-registry",
+              "sensitive" : false
+            },
+            "starting-field-name" : {
+              "displayName" : "Starting Field Name",
+              "identifiesControllerService" : false,
+              "name" : "starting-field-name",
               "sensitive" : false
             },
             "Time Format" : {
@@ -302,12 +337,13 @@
               "sensitive" : false
             }
           },
+          "scheduledState" : "DISABLED",
           "type" : "org.apache.nifi.json.JsonTreeReader"
         }, {
           "bundle" : {
             "artifact" : "nifi-lookup-services-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "CONTROLLER_SERVICE",
@@ -315,19 +351,20 @@
             "bundle" : {
               "artifact" : "nifi-standard-services-api-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.15.3"
+              "version" : "1.16.1"
             },
             "type" : "org.apache.nifi.lookup.LookupService"
           }, {
             "bundle" : {
               "artifact" : "nifi-standard-services-api-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.15.3"
+              "version" : "1.16.1"
             },
             "type" : "org.apache.nifi.lookup.StringLookupService"
           } ],
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "179a3e04-14fa-3e3f-a648-bdb5f7c3f1c9",
+          "instanceIdentifier" : "19ceaf34-7664-3290-86d1-f28859ab92fe",
           "name" : "DistributedMapCacheLookupService",
           "properties" : {
             "character-encoding" : "UTF-8",
@@ -347,12 +384,13 @@
               "sensitive" : false
             }
           },
+          "scheduledState" : "DISABLED",
           "type" : "org.apache.nifi.lookup.DistributedMapCacheLookupService"
         }, {
           "bundle" : {
             "artifact" : "nifi-record-serialization-services-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "CONTROLLER_SERVICE",
@@ -360,12 +398,13 @@
             "bundle" : {
               "artifact" : "nifi-standard-services-api-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.15.3"
+              "version" : "1.16.1"
             },
             "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
           } ],
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "3d94a1ef-3fdf-34fd-b459-763259287666",
+          "instanceIdentifier" : "be0c6ad9-5594-3317-8cd7-554afcfd0095",
           "name" : "InheritJsonRecordSetWriter",
           "properties" : {
             "compression-level" : "1",
@@ -483,12 +522,13 @@
               "sensitive" : false
             }
           },
+          "scheduledState" : "DISABLED",
           "type" : "org.apache.nifi.json.JsonRecordSetWriter"
         }, {
           "bundle" : {
             "artifact" : "nifi-redis-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "CONTROLLER_SERVICE",
@@ -496,12 +536,13 @@
             "bundle" : {
               "artifact" : "nifi-redis-service-api-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.15.3"
+              "version" : "1.16.1"
             },
             "type" : "org.apache.nifi.redis.RedisConnectionPool"
           } ],
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "9132c935-cbde-33d2-a1f9-3c7ad7f8efa4",
+          "instanceIdentifier" : "88a542e8-8bb1-3e05-b622-2afbd723914e",
           "name" : "RedisConnectionPoolService",
           "properties" : {
             "Pool - Min Evictable Idle Time" : "60 seconds",
@@ -520,7 +561,8 @@
             "Pool - Time Between Eviction Runs" : "30 seconds",
             "Communication Timeout" : "10 seconds",
             "Pool - Max Wait Time" : "10 seconds",
-            "Database Index" : "0"
+            "Database Index" : "0",
+            "Password" : "#{RedisPassword}"
           },
           "propertyDescriptors" : {
             "Pool - Min Evictable Idle Time" : {
@@ -644,12 +686,13 @@
               "sensitive" : true
             }
           },
+          "scheduledState" : "DISABLED",
           "type" : "org.apache.nifi.redis.service.RedisConnectionPoolService"
         }, {
           "bundle" : {
             "artifact" : "nifi-redis-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "CONTROLLER_SERVICE",
@@ -657,19 +700,20 @@
             "bundle" : {
               "artifact" : "nifi-standard-services-api-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.15.3"
+              "version" : "1.16.1"
             },
             "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
           }, {
             "bundle" : {
               "artifact" : "nifi-standard-services-api-nar",
               "group" : "org.apache.nifi",
-              "version" : "1.15.3"
+              "version" : "1.16.1"
             },
             "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
           } ],
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "ef3593e7-aeab-3b4b-b729-063246556e85",
+          "instanceIdentifier" : "37036cf6-23bd-3175-9775-ad8931c10645",
           "name" : "RedisDistributedMapCacheClientService",
           "properties" : {
             "redis-connection-pool" : "9132c935-cbde-33d2-a1f9-3c7ad7f8efa4",
@@ -689,6 +733,7 @@
               "sensitive" : false
             }
           },
+          "scheduledState" : "DISABLED",
           "type" : "org.apache.nifi.redis.service.RedisDistributedMapCacheClientService"
         } ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
@@ -697,16 +742,18 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+        "identifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
         "inputPorts" : [ ],
+        "instanceIdentifier" : "8a0ecf57-0180-1000-ffff-ffff9c153581",
         "labels" : [ ],
         "name" : "Write To Redis",
         "outputPorts" : [ {
           "allowRemoteAccess" : false,
           "componentType" : "OUTPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "1dc9aba9-ecac-3ca7-994b-943b57aa6a4f",
+          "instanceIdentifier" : "43312c89-bc8f-3346-8840-95890877e7dc",
           "name" : "ErrorHandlingOut",
           "position" : {
             "x" : 1024.0,
@@ -715,25 +762,29 @@
           "scheduledState" : "ENABLED",
           "type" : "OUTPUT_PORT"
         } ],
+        "parameterContextName" : "RedisConfig",
         "position" : {
-          "x" : 455.0,
-          "y" : 578.0
+          "x" : 488.0,
+          "y" : -64.0
         },
         "processGroups" : [ ],
         "processors" : [ {
           "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "eeb86019-f3f3-3aea-bf2f-33d7dec93f1e",
+          "instanceIdentifier" : "96ce420a-cfe0-3e21-8ffe-6972a42a3c57",
+          "maxBackoffPeriod" : "10 mins",
           "name" : "EvaluateJsonPath",
           "penaltyDuration" : "30 sec",
           "position" : {
@@ -786,6 +837,8 @@
               "sensitive" : false
             }
           },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
           "schedulingPeriod" : "0 sec",
@@ -795,18 +848,21 @@
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "original" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "a66353be-c175-3677-85f9-b64a9defe1c5",
+          "instanceIdentifier" : "cb26e1cf-c444-3b8b-9baf-19b0b9107fbc",
+          "maxBackoffPeriod" : "10 mins",
           "name" : "SplitRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
@@ -838,6 +894,8 @@
               "sensitive" : false
             }
           },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
           "schedulingPeriod" : "0 sec",
@@ -847,18 +905,21 @@
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "success" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "0857c9f0-2ec5-3c97-9cdb-1a7140c45ae4",
+          "instanceIdentifier" : "b0091a0a-3a4c-3aec-92b6-9c23d8276f1f",
+          "maxBackoffPeriod" : "10 mins",
           "name" : "LogAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
@@ -868,8 +929,10 @@
           "properties" : {
             "Log prefix" : "Enrichment data written to Redis",
             "character-set" : "UTF-8",
+            "Log FlowFile Properties" : "true",
             "Log Level" : "info",
             "attributes-to-log-regex" : "index-.*",
+            "Output Format" : "Line per Attribute",
             "Log Payload" : "false"
           },
           "propertyDescriptors" : {
@@ -883,6 +946,12 @@
               "displayName" : "Character Set",
               "identifiesControllerService" : false,
               "name" : "character-set",
+              "sensitive" : false
+            },
+            "Log FlowFile Properties" : {
+              "displayName" : "Log FlowFile Properties",
+              "identifiesControllerService" : false,
+              "name" : "Log FlowFile Properties",
               "sensitive" : false
             },
             "Log Level" : {
@@ -915,6 +984,12 @@
               "name" : "attributes-to-log-regex",
               "sensitive" : false
             },
+            "Output Format" : {
+              "displayName" : "Output Format",
+              "identifiesControllerService" : false,
+              "name" : "Output Format",
+              "sensitive" : false
+            },
             "Log Payload" : {
               "displayName" : "Log Payload",
               "identifiesControllerService" : false,
@@ -922,6 +997,8 @@
               "sensitive" : false
             }
           },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
           "schedulingPeriod" : "0 sec",
@@ -931,18 +1008,21 @@
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-kafka-2-6-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "8e8b75ab-704f-3dad-ad79-63fbd0f882ef",
+          "instanceIdentifier" : "606fe44f-dd4e-34a9-b2fc-1ae998378a8c",
+          "maxBackoffPeriod" : "10 mins",
           "name" : "ConsumeKafka_2_6",
           "penaltyDuration" : "30 sec",
           "position" : {
@@ -1130,6 +1210,8 @@
               "sensitive" : false
             }
           },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
           "schedulingPeriod" : "0 sec",
@@ -1139,18 +1221,21 @@
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
-            "version" : "1.15.3"
+            "version" : "1.16.1"
           },
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "f9d77878-0c82-304c-acda-d0590582e1b9",
+          "groupIdentifier" : "e75a3f2b-1d72-3060-9a32-35a9f047807c",
           "identifier" : "8884ee9e-bdda-39eb-952c-9f86e57fac07",
+          "instanceIdentifier" : "f79f0619-6677-3d0c-bd06-04e82f2eb6e6",
+          "maxBackoffPeriod" : "10 mins",
           "name" : "PutDistributedMapCache",
           "penaltyDuration" : "30 sec",
           "position" : {
@@ -1189,6 +1274,8 @@
               "sensitive" : false
             }
           },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
           "schedulingPeriod" : "0 sec",
@@ -1201,7 +1288,23 @@
         "variables" : { }
       },
       "flowEncodingVersion" : "1.0",
-      "parameterContexts" : { }
+      "parameterContexts" : {
+        "RedisConfig" : {
+          "componentType" : "PARAMETER_CONTEXT",
+          "inheritedParameterContexts" : [ ],
+          "name" : "RedisConfig",
+          "parameters" : [ {
+            "description" : "",
+            "name" : "RedisPassword",
+            "sensitive" : true
+          }, {
+            "description" : "",
+            "name" : "RedisConnectionString",
+            "sensitive" : false,
+            "value" : "redis:6379"
+          } ]
+        }
+      }
     }
   }
 }

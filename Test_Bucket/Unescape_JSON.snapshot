@@ -575,7 +575,7 @@
             "avro-reg-validated-field-names" : "true",
             "enrich_input" : "{\n  \"type\": \"record\",\n  \"name\": \"enrichment\",\n  \"fields\": [\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\"name\":\"results\", \"type\": {\"type\": \"array\", \"items\": \"string\"}},\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"},\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
             "person_output" : "{\n  \"type\": \"record\",\n  \"name\": \"events\",\n  \"fields\": [{\n    \"name\": \"person\",\n    \"type\": [\n      { \"name\": \"name\", \"type\": \"string\" },\n      { \"name\": \"age\", \"type\": \"int\" }\n    ]\n  }]\n}\n",
-            "results_input" : "{\n  \"type\": \"record\",\n  \"name\": \"lookup_results_input\",\n  \"fields\": [\n    {\n      \"name\": \"Lookups\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Lookups_type\",\n        \"fields\": [\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"}\n        ]\n      }\n    },\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\"name\":\"results\", \"type\": {\"type\": \"array\", \"items\": \"string\", \"default\": []}},\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
+            "results_input" : "{\n  \"type\": \"record\",\n  \"name\": \"lookup_results_input\",\n  \"fields\": [\n    {\n      \"name\": \"Lookups\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Lookups_type\",\n        \"fields\": [\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"}\n        ]\n      }\n    },\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
             "person_input" : "{\n  \"type\": \"record\",\n  \"name\": \"events\",\n  \"fields\": [{\n    \"name\": \"person\",\n    \"type\": [\n      { \"name\": \"name\", \"type\": \"string\" },\n      { \"name\": \"age\", \"type\": \"int\" }\n    ]\n  },{\n    \"name\":\"json_str\", \"type\":\"string\"\n  }]\n}\n"
           },
           "propertyDescriptors" : {
@@ -993,7 +993,7 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "[\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"John\\\",\\\"age\\\":30}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"admin\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    },\n    \"Enrichment\": {}\n  },\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"Fred\\\",\\\"age\\\":18}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    }\n  },\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"Bill\\\",\\\"age\\\":99}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"r\\\"}}\"\n    }\n  }\n]\n",
+            "generate-ff-custom-text" : "[\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"John\\\",\\\"age\\\":30}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"admin\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    }\n  },\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"Fred\\\",\\\"age\\\":18}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    }\n  },\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"Bill\\\",\\\"age\\\":99}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"r\\\"}}\"\n    }\n  }\n]\n",
             "Batch Size" : "1",
             "input.schema" : "results_input",
             "Unique FlowFiles" : "false",
@@ -1089,22 +1089,22 @@
             "y" : 376.0
           },
           "properties" : {
+            "/Enrichment" : "unescapeJson(/Lookups/role_str)",
             "record-writer" : "bc73c317-295f-3459-b0b3-10efac44c12c",
-            "/Enrichment/role" : "unescapeJson(/Lookups/role_str)",
-            "record-reader" : "2e515452-ec80-390e-97ff-5038ae0f2603",
+            "record-reader" : "25d919f2-bb83-3f84-a1c4-2bc81d24d56b",
             "replacement-value-strategy" : "record-path-value"
           },
           "propertyDescriptors" : {
+            "/Enrichment" : {
+              "displayName" : "/Enrichment",
+              "identifiesControllerService" : false,
+              "name" : "/Enrichment",
+              "sensitive" : false
+            },
             "record-writer" : {
               "displayName" : "Record Writer",
               "identifiesControllerService" : true,
               "name" : "record-writer",
-              "sensitive" : false
-            },
-            "/Enrichment/role" : {
-              "displayName" : "/Enrichment/role",
-              "identifiesControllerService" : false,
-              "name" : "/Enrichment/role",
               "sensitive" : false
             },
             "record-reader" : {
@@ -1208,19 +1208,12 @@
             "y" : 128.0
           },
           "properties" : {
-            "/Enrichment/results" : "unescapeJson(/Lookups/person_str)",
             "/Enrichment" : "unescapeJson(/Lookups/person_str)",
             "record-writer" : "bc73c317-295f-3459-b0b3-10efac44c12c",
             "record-reader" : "25d919f2-bb83-3f84-a1c4-2bc81d24d56b",
             "replacement-value-strategy" : "record-path-value"
           },
           "propertyDescriptors" : {
-            "/Enrichment/results" : {
-              "displayName" : "/Enrichment/results",
-              "identifiesControllerService" : false,
-              "name" : "/Enrichment/results",
-              "sensitive" : false
-            },
             "/Enrichment" : {
               "displayName" : "/Enrichment",
               "identifiesControllerService" : false,

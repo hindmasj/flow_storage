@@ -70,7 +70,7 @@
             "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
             "id" : "4aacc81f-d940-31c0-aec3-74c7874aa734",
             "instanceIdentifier" : "043a3b3f-f90e-13a8-98e3-29ba0b6ca0a9",
-            "name" : "GenerateFlowFile",
+            "name" : "GenerateFlowFile - Maps",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -103,7 +103,7 @@
             "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
             "id" : "35b7265e-a7d5-35d2-8807-7fa852a17c4f",
             "instanceIdentifier" : "bd3358d1-5869-1088-ffff-ffff9dffaf92",
-            "name" : "GenerateFlowFile",
+            "name" : "GenerateFlowFile - Records",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -439,9 +439,9 @@
           "instanceIdentifier" : "bd336173-5869-1088-ffff-ffffdce03f0b",
           "name" : "AvroSchemaRegistry",
           "properties" : {
-            "enrich_output" : "{\n  \"type\": \"record\",\n  \"name\": \"enrichment\",\n  \"fields\": [\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
+            "enrich_output" : "{\n  \"type\": \"record\",\n  \"name\": \"enrichment\",\n  \"fields\": [\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
             "avro-reg-validated-field-names" : "true",
-            "enrich_input" : "{\n  \"type\": \"record\",\n  \"name\": \"enrichment\",\n  \"fields\": [\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\"name\":\"role_str\", \"type\":\"string\"}\n        ]\n      }\n    }\n  ]\n}\n",
+            "enrich_input" : "{\n  \"type\": \"record\",\n  \"name\": \"enrichment\",\n  \"fields\": [\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"},\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
             "person_output" : "{\n  \"type\": \"record\",\n  \"name\": \"events\",\n  \"fields\": [{\n    \"name\": \"person\",\n    \"type\": [\n      { \"name\": \"name\", \"type\": \"string\" },\n      { \"name\": \"age\", \"type\": \"int\" }\n    ]\n  }]\n}\n",
             "person_input" : "{\n  \"type\": \"record\",\n  \"name\": \"events\",\n  \"fields\": [{\n    \"name\": \"person\",\n    \"type\": [\n      { \"name\": \"name\", \"type\": \"string\" },\n      { \"name\": \"age\", \"type\": \"int\" }\n    ]\n  },{\n    \"name\":\"json_str\", \"type\":\"string\"\n  }]\n}\n"
           },
@@ -726,17 +726,17 @@
             "y" : 120.0
           },
           "properties" : {
-            "/Enrichment" : "unescapeJson(/Enrichment/person_str)",
+            "/Enrichment/person" : "unescapeJson(/Enrichment/person_str)",
             "record-writer" : "bfc875d0-37d6-368f-828e-e0d5c785e3d4",
             "/Enrichment/role" : "unescapeJson(/Enrichment/role_str)",
             "record-reader" : "25d919f2-bb83-3f84-a1c4-2bc81d24d56b",
             "replacement-value-strategy" : "record-path-value"
           },
           "propertyDescriptors" : {
-            "/Enrichment" : {
-              "displayName" : "/Enrichment",
+            "/Enrichment/person" : {
+              "displayName" : "/Enrichment/person",
               "identifiesControllerService" : false,
-              "name" : "/Enrichment",
+              "name" : "/Enrichment/person",
               "sensitive" : false
             },
             "record-writer" : {
@@ -845,7 +845,7 @@
           "identifier" : "35b7265e-a7d5-35d2-8807-7fa852a17c4f",
           "instanceIdentifier" : "bd3358d1-5869-1088-ffff-ffff9dffaf92",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "GenerateFlowFile",
+          "name" : "GenerateFlowFile - Records",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 464.0,
@@ -998,7 +998,7 @@
           "identifier" : "4aacc81f-d940-31c0-aec3-74c7874aa734",
           "instanceIdentifier" : "043a3b3f-f90e-13a8-98e3-29ba0b6ca0a9",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "GenerateFlowFile",
+          "name" : "GenerateFlowFile - Maps",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 992.0,
@@ -1007,12 +1007,12 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "{\n  \"json_str\": \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30}\"\n}",
+            "generate-ff-custom-text" : "[\n  {\"Enrichment\":\n    {\n      \"person_str\": \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30}}\",\n      \"role_str\": \"{\\\"name\\\":\\\"admin\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    }\n  },\n  {\"Enrichment\":\n    {\n      \"person_str\": \"{\\\"name\\\":\\\"Fred\\\",\\\"age\\\":18}}\",\n      \"role_str\": \"{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    }\n  },\n  {\"Enrichment\":\n    {\n      \"person_str\": \"{\\\"name\\\":\\\"Bill\\\",\\\"age\\\":99}}\",\n      \"role_str\": \"{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"r\\\"}}\"\n    }\n  }\n]\n",
             "Batch Size" : "1",
-            "input.schema" : "person_input",
+            "input.schema" : "enrich_input",
             "Unique FlowFiles" : "false",
             "Data Format" : "Text",
-            "output.schema" : "person_input"
+            "output.schema" : "enrich_output"
           },
           "propertyDescriptors" : {
             "character-set" : {

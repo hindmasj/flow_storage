@@ -16,6 +16,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+            "id" : "0f0b6ca9-ad7a-31c0-a2f3-43dcce7e309f",
+            "instanceIdentifier" : "c1713bf6-e0c2-15b6-a300-f37f5a4cd2c7",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+          "identifier" : "8fa12481-3bb4-39ac-9d7b-acb0184137d9",
+          "instanceIdentifier" : "48533823-78e5-117f-0000-000021082fa1",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+            "id" : "dcfa171c-9b5a-36a5-b95b-deb48d755b7c",
+            "instanceIdentifier" : "48533813-78e5-117f-b20d-3612255323d6",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
             "id" : "8545f1a4-baf0-392d-a239-24ee2a260d25",
             "instanceIdentifier" : "bd33592a-5869-1088-ffff-ffffe895c97f",
             "name" : "LogMessage",
@@ -82,8 +115,8 @@
           "destination" : {
             "comments" : "",
             "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
-            "id" : "9f0ac4f8-99d5-3350-84c3-8f39d0c2821a",
-            "instanceIdentifier" : "bd3358e6-5869-1088-0000-00004e2195fc",
+            "id" : "dcfa171c-9b5a-36a5-b95b-deb48d755b7c",
+            "instanceIdentifier" : "48533813-78e5-117f-b20d-3612255323d6",
             "name" : "UpdateRecord",
             "type" : "PROCESSOR"
           },
@@ -104,6 +137,72 @@
             "id" : "35b7265e-a7d5-35d2-8807-7fa852a17c4f",
             "instanceIdentifier" : "bd3358d1-5869-1088-ffff-ffff9dffaf92",
             "name" : "GenerateFlowFile - Records",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+            "id" : "8545f1a4-baf0-392d-a239-24ee2a260d25",
+            "instanceIdentifier" : "bd33592a-5869-1088-ffff-ffffe895c97f",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+          "identifier" : "e889cf0d-cf1b-345e-be0a-15ebb727bfcc",
+          "instanceIdentifier" : "c1713c06-e0c2-15b6-ffff-ffffeda8baf2",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+            "id" : "0f0b6ca9-ad7a-31c0-a2f3-43dcce7e309f",
+            "instanceIdentifier" : "c1713bf6-e0c2-15b6-a300-f37f5a4cd2c7",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+            "id" : "f4d15c5e-98bc-398d-81db-c3ac4e0f6f6f",
+            "instanceIdentifier" : "bd335920-5869-1088-0000-00005fa63867",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+          "identifier" : "2e423975-1fda-30ca-a64e-ad5294798b9a",
+          "instanceIdentifier" : "c1713c0a-e0c2-15b6-ffff-ffff8e929fc9",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+            "id" : "0f0b6ca9-ad7a-31c0-a2f3-43dcce7e309f",
+            "instanceIdentifier" : "c1713bf6-e0c2-15b6-a300-f37f5a4cd2c7",
+            "name" : "UpdateRecord",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -136,6 +235,39 @@
             "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
             "id" : "9f0ac4f8-99d5-3350-84c3-8f39d0c2821a",
             "instanceIdentifier" : "bd3358e6-5869-1088-0000-00004e2195fc",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+            "id" : "8545f1a4-baf0-392d-a239-24ee2a260d25",
+            "instanceIdentifier" : "bd33592a-5869-1088-ffff-ffffe895c97f",
+            "name" : "LogMessage",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+          "identifier" : "8cf4843c-cf5e-34cf-bf79-4ddea27d7032",
+          "instanceIdentifier" : "4853382b-78e5-117f-ffff-ffffbde5c766",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+            "id" : "dcfa171c-9b5a-36a5-b95b-deb48d755b7c",
+            "instanceIdentifier" : "48533813-78e5-117f-b20d-3612255323d6",
             "name" : "UpdateRecord",
             "type" : "PROCESSOR"
           },
@@ -441,8 +573,9 @@
           "properties" : {
             "enrich_output" : "{\n  \"type\": \"record\",\n  \"name\": \"enrichment\",\n  \"fields\": [\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
             "avro-reg-validated-field-names" : "true",
-            "enrich_input" : "{\n  \"type\": \"record\",\n  \"name\": \"enrichment\",\n  \"fields\": [\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"},\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
+            "enrich_input" : "{\n  \"type\": \"record\",\n  \"name\": \"enrichment\",\n  \"fields\": [\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\"name\":\"results\", \"type\": {\"type\": \"array\", \"items\": \"string\"}},\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"},\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
             "person_output" : "{\n  \"type\": \"record\",\n  \"name\": \"events\",\n  \"fields\": [{\n    \"name\": \"person\",\n    \"type\": [\n      { \"name\": \"name\", \"type\": \"string\" },\n      { \"name\": \"age\", \"type\": \"int\" }\n    ]\n  }]\n}\n",
+            "results_input" : "{\n  \"type\": \"record\",\n  \"name\": \"lookup_results_input\",\n  \"fields\": [\n    {\n      \"name\": \"Lookups\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Lookups_type\",\n        \"fields\": [\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"}\n        ]\n      }\n    },\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\"name\":\"results\", \"type\": {\"type\": \"array\", \"items\": \"string\", \"default\": []}},\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
             "person_input" : "{\n  \"type\": \"record\",\n  \"name\": \"events\",\n  \"fields\": [{\n    \"name\": \"person\",\n    \"type\": [\n      { \"name\": \"name\", \"type\": \"string\" },\n      { \"name\": \"age\", \"type\": \"int\" }\n    ]\n  },{\n    \"name\":\"json_str\", \"type\":\"string\"\n  }]\n}\n"
           },
           "propertyDescriptors" : {
@@ -468,6 +601,12 @@
               "displayName" : "person_output",
               "identifiesControllerService" : false,
               "name" : "person_output",
+              "sensitive" : false
+            },
+            "results_input" : {
+              "displayName" : "results_input",
+              "identifiesControllerService" : false,
+              "name" : "results_input",
               "sensitive" : false
             },
             "person_input" : {
@@ -722,8 +861,8 @@
           "name" : "UpdateRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 464.0,
-            "y" : 120.0
+            "x" : 1608.0,
+            "y" : 144.0
           },
           "properties" : {
             "/Enrichment/person" : "unescapeJson(/Enrichment/person_str)",
@@ -793,8 +932,8 @@
           "name" : "LogMessage",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 464.0,
-            "y" : 328.0
+            "x" : 1000.0,
+            "y" : 376.0
           },
           "properties" : {
             "log-level" : "info"
@@ -848,15 +987,15 @@
           "name" : "GenerateFlowFile - Records",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 464.0,
+            "x" : 352.0,
             "y" : -96.0
           },
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "[\n  {\"Enrichment\": \n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"John\\\",\\\"age\\\":30}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"admin\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    }\n  },\n  {\"Enrichment\": \n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"Fred\\\",\\\"age\\\":18}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    }\n  },\n  {\"Enrichment\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"Bill\\\",\\\"age\\\":99}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"r\\\"}}\"\n    }\n  }\n]\n",
+            "generate-ff-custom-text" : "[\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"John\\\",\\\"age\\\":30}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"admin\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    },\n    \"Enrichment\": {}\n  },\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"Fred\\\",\\\"age\\\":18}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"rw\\\"}}\"\n    }\n  },\n  {\n    \"Lookups\":\n    {\n      \"person_str\": \"{\\\"person\\\":{\\\"name\\\":\\\"Bill\\\",\\\"age\\\":99}}\",\n      \"role_str\": \"{\\\"role\\\":{\\\"name\\\":\\\"user\\\",\\\"privs\\\":\\\"r\\\"}}\"\n    }\n  }\n]\n",
             "Batch Size" : "1",
-            "input.schema" : "enrich_input",
+            "input.schema" : "results_input",
             "Unique FlowFiles" : "false",
             "Data Format" : "Text",
             "output.schema" : "enrich_output"
@@ -927,6 +1066,70 @@
           "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
           "yieldDuration" : "1 sec"
         }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+          "identifier" : "0f0b6ca9-ad7a-31c0-a2f3-43dcce7e309f",
+          "instanceIdentifier" : "c1713bf6-e0c2-15b6-a300-f37f5a4cd2c7",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 344.0,
+            "y" : 376.0
+          },
+          "properties" : {
+            "record-writer" : "bc73c317-295f-3459-b0b3-10efac44c12c",
+            "/Enrichment/role" : "unescapeJson(/Lookups/role_str)",
+            "record-reader" : "2e515452-ec80-390e-97ff-5038ae0f2603",
+            "replacement-value-strategy" : "record-path-value"
+          },
+          "propertyDescriptors" : {
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "/Enrichment/role" : {
+              "displayName" : "/Enrichment/role",
+              "identifiesControllerService" : false,
+              "name" : "/Enrichment/role",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "replacement-value-strategy" : {
+              "displayName" : "Replacement Value Strategy",
+              "identifiesControllerService" : false,
+              "name" : "replacement-value-strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "success" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -947,7 +1150,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 992.0,
-            "y" : 328.0
+            "y" : 136.0
           },
           "properties" : {
             "log-level" : "info"
@@ -995,14 +1198,85 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
+          "identifier" : "dcfa171c-9b5a-36a5-b95b-deb48d755b7c",
+          "instanceIdentifier" : "48533813-78e5-117f-b20d-3612255323d6",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 344.0,
+            "y" : 128.0
+          },
+          "properties" : {
+            "/Enrichment/results" : "unescapeJson(/Lookups/person_str)",
+            "/Enrichment" : "unescapeJson(/Lookups/person_str)",
+            "record-writer" : "bc73c317-295f-3459-b0b3-10efac44c12c",
+            "record-reader" : "25d919f2-bb83-3f84-a1c4-2bc81d24d56b",
+            "replacement-value-strategy" : "record-path-value"
+          },
+          "propertyDescriptors" : {
+            "/Enrichment/results" : {
+              "displayName" : "/Enrichment/results",
+              "identifiesControllerService" : false,
+              "name" : "/Enrichment/results",
+              "sensitive" : false
+            },
+            "/Enrichment" : {
+              "displayName" : "/Enrichment",
+              "identifiesControllerService" : false,
+              "name" : "/Enrichment",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "replacement-value-strategy" : {
+              "displayName" : "Replacement Value Strategy",
+              "identifiesControllerService" : false,
+              "name" : "replacement-value-strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "5347d7cf-ea4d-353b-9d82-d8beeef97f45",
           "identifier" : "4aacc81f-d940-31c0-aec3-74c7874aa734",
           "instanceIdentifier" : "043a3b3f-f90e-13a8-98e3-29ba0b6ca0a9",
           "maxBackoffPeriod" : "10 mins",
           "name" : "GenerateFlowFile - Maps",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 992.0,
-            "y" : -96.0
+            "x" : 1616.0,
+            "y" : -80.0
           },
           "properties" : {
             "character-set" : "UTF-8",

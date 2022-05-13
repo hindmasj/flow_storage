@@ -13,6 +13,9 @@ flows:
   30bee577-7956-42a6-9896-9a9c23533cf1: {ver: 3, file: Write_To_Redis.snapshot, comments: Added
       parameter context, author: anonymous, created: 1651585140239, flowName: Write
       To Redis, flowDesc: ''}
+  a3111ca0-c7c0-4f87-85dd-ddfaed667442: {ver: 1, file: Grok_Filtering.snapshot, comments: '',
+    author: anonymous, created: 1652441781075, flowName: Grok Filtering, flowDesc: First
+      Example Shown}
   f51a483e-6019-4dd1-ad33-aedf759b7bbf: {ver: 6, file: Test_Lookup_Behaviour.snapshot,
     comments: Added generators for both scenarios., author: anonymous, created: 1651566422676,
     flowName: Test Lookup Behaviour, flowDesc: ''}

@@ -332,7 +332,7 @@
           "instanceIdentifier" : "bd0d879f-0180-1000-0000-000024707752",
           "name" : "GrokReader",
           "properties" : {
-            "Grok Expression" : "^%{IP:src_addr},%{POSINT:src_port},%{IP:dst_addr},%{POSINT:dst_port},%{POSINT:score},%{DATA:message}$",
+            "Grok Expression" : "^%{IP:src_addr},%{POSINT:src_port},%{IP:dst_addr},%{POSINT:dst_port},%{POSINT:score}?,%{DATA:message}?$",
             "schema-name" : "${schema.name}",
             "no-match-behavior" : "raw-line",
             "schema-access-strategy" : "string-fields-from-grok-expression",
@@ -462,7 +462,7 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "192.168.0.1,80,192.168.0.2,12345,100,hello\n192.168.0.1,80,192.168.0.2,12346\n192.168.0.1,80,192.168.0.2,12347,100,world\n192.168.0.1,80,192.168.0.2,12348",
+            "generate-ff-custom-text" : "192.168.0.1,80,192.168.0.2,12345,100,hello\n192.168.0.1,80,192.168.0.2,12346\n192.168.0.1,80,192.168.0.2,12347,10,world\n192.168.0.1,80,192.168.0.2,12348,,\n192.168.0.1,80,192.168.0.2,12348,99,\n192.168.0.1,80,192.168.0.2,12348,49,this is a message",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
             "Data Format" : "Text"
@@ -546,7 +546,7 @@
           "properties" : {
             "record-writer" : "3d87758a-27ca-396f-94aa-a3e0003b9c84",
             "record-reader" : "1053b2e3-1cc7-3ac2-9321-188d17922cae",
-            "Is_Valid" : "not(isEmpty(/message))"
+            "Is_Valid" : "matchesRegex(/message,'.*')"
           },
           "propertyDescriptors" : {
             "record-writer" : {

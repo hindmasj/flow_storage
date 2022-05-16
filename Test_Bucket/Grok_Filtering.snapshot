@@ -16,39 +16,6 @@
           "destination" : {
             "comments" : "",
             "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
-            "id" : "0364086f-64a4-34a3-9f82-3ddf721d3156",
-            "instanceIdentifier" : "bd0cbb39-0180-1000-ffff-ffff9358ed40",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
-          "identifier" : "f4801f18-ef1b-364b-bf11-d3ae1fc5c4b8",
-          "instanceIdentifier" : "bd2b0f6f-0180-1000-ffff-ffffd9f356a0",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "valid" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
-            "id" : "56e8b198-5ae7-30d5-8369-d10c5766096c",
-            "instanceIdentifier" : "bd294ba9-0180-1000-0000-000039528e19",
-            "name" : "RouteOnAttribute",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
             "id" : "a3b8930b-b41f-317f-a98c-3d8ad2825991",
             "instanceIdentifier" : "bd19b61d-0180-1000-0000-000028181c5f",
             "name" : "PartitionRecord",
@@ -143,6 +110,147 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 700.0,
+            "y" : 764.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "0364086f-64a4-34a3-9f82-3ddf721d3156",
+            "instanceIdentifier" : "bd0cbb39-0180-1000-ffff-ffff9358ed40",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+          "identifier" : "0e11de10-f697-389a-bfd9-e1f02b184f2c",
+          "instanceIdentifier" : "bdd45c4c-0180-1000-ffff-ffffc1e86911",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "NoScore" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "56e8b198-5ae7-30d5-8369-d10c5766096c",
+            "instanceIdentifier" : "bd294ba9-0180-1000-0000-000039528e19",
+            "name" : "RouteOnAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 300.0,
+            "y" : 764.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "0364086f-64a4-34a3-9f82-3ddf721d3156",
+            "instanceIdentifier" : "bd0cbb39-0180-1000-ffff-ffff9358ed40",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+          "identifier" : "e9a2489a-701e-31d1-b3f9-a3fda168f129",
+          "instanceIdentifier" : "bdd44830-0180-1000-0000-00003cd0e209",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "Low" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "56e8b198-5ae7-30d5-8369-d10c5766096c",
+            "instanceIdentifier" : "bd294ba9-0180-1000-0000-000039528e19",
+            "name" : "RouteOnAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "0364086f-64a4-34a3-9f82-3ddf721d3156",
+            "instanceIdentifier" : "bd0cbb39-0180-1000-ffff-ffff9358ed40",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+          "identifier" : "331e618a-477d-3e36-939d-9266f813cef1",
+          "instanceIdentifier" : "bdc1eec2-0180-1000-0000-00000c6a5cd4",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "High" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "56e8b198-5ae7-30d5-8369-d10c5766096c",
+            "instanceIdentifier" : "bd294ba9-0180-1000-0000-000039528e19",
+            "name" : "RouteOnAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 24.0,
+            "y" : 760.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "0364086f-64a4-34a3-9f82-3ddf721d3156",
+            "instanceIdentifier" : "bd0cbb39-0180-1000-ffff-ffff9358ed40",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+          "identifier" : "850930bc-f638-3037-96a8-9b066884ff27",
+          "instanceIdentifier" : "cc9cf258-0180-1000-ffff-ffffb70554fc",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "Comment" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "56e8b198-5ae7-30d5-8369-d10c5766096c",
+            "instanceIdentifier" : "bd294ba9-0180-1000-0000-000039528e19",
+            "name" : "RouteOnAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -170,6 +278,42 @@
             "id" : "a3b8930b-b41f-317f-a98c-3d8ad2825991",
             "instanceIdentifier" : "bd19b61d-0180-1000-0000-000028181c5f",
             "name" : "PartitionRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 816.0,
+            "y" : 461.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "96745048-7175-3749-92d6-a9994dc52990",
+            "instanceIdentifier" : "bd1fd6a7-0180-1000-ffff-ffffcee1a573",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+          "identifier" : "bcf0597f-93a4-31c8-9045-efcee066b645",
+          "instanceIdentifier" : "bddd24dc-0180-1000-0000-00005096d6a7",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "Invalid" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "6bd41ae8-1eb8-3dbb-94ea-f95403123586",
+            "id" : "56e8b198-5ae7-30d5-8369-d10c5766096c",
+            "instanceIdentifier" : "bd294ba9-0180-1000-0000-000039528e19",
+            "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -332,7 +476,7 @@
           "instanceIdentifier" : "bd0d879f-0180-1000-0000-000024707752",
           "name" : "GrokReader",
           "properties" : {
-            "Grok Expression" : "^%{IP:src_addr},%{POSINT:src_port},%{IP:dst_addr},%{POSINT:dst_port},%{POSINT:score}?,%{DATA:message}?$",
+            "Grok Expression" : "^%{IP:src_addr},%{POSINT:src_port},%{IP:dst_addr},%{POSINT:dst_port},%{POSINT:score}?,%{DATA:message}?|\\#%{GREEDYDATA:comment}$",
             "schema-name" : "${schema.name}",
             "no-match-behavior" : "raw-line",
             "schema-access-strategy" : "string-fields-from-grok-expression",
@@ -462,7 +606,7 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "192.168.0.1,80,192.168.0.2,12345,100,hello\n192.168.0.1,80,192.168.0.2,12346\n192.168.0.1,80,192.168.0.2,12347,10,world\n192.168.0.1,80,192.168.0.2,12348,,\n192.168.0.1,80,192.168.0.2,12348,99,\n192.168.0.1,80,192.168.0.2,12348,49,this is a message",
+            "generate-ff-custom-text" : "192.168.0.1,80,192.168.0.2,12345,100,hello\n192.168.0.1,80,192.168.0.2,12346\n192.168.0.1,80,192.168.0.2,12347,10,world\n192.168.0.1,80,192.168.0.2,12348,,\n192.168.0.1,80,192.168.0.2,12348,99,\n192.168.0.1,80,192.168.0.2,12348,49,this is a message\n# This is a comment",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
             "Data Format" : "Text"
@@ -544,11 +688,39 @@
             "y" : 232.0
           },
           "properties" : {
+            "LowScore" : "not(isEmpty(/score[. <= 50]))",
+            "NoScore" : "isEmpty(/score)",
+            "Comment" : "not(isEmpty(/comment))",
+            "HighScore" : "not(isEmpty(/score[. > 50]))",
             "record-writer" : "3d87758a-27ca-396f-94aa-a3e0003b9c84",
             "record-reader" : "1053b2e3-1cc7-3ac2-9321-188d17922cae",
-            "Is_Valid" : "matchesRegex(/message,'.*')"
+            "IsValid" : "matchesRegex(/message,'.*')"
           },
           "propertyDescriptors" : {
+            "LowScore" : {
+              "displayName" : "LowScore",
+              "identifiesControllerService" : false,
+              "name" : "LowScore",
+              "sensitive" : false
+            },
+            "NoScore" : {
+              "displayName" : "NoScore",
+              "identifiesControllerService" : false,
+              "name" : "NoScore",
+              "sensitive" : false
+            },
+            "Comment" : {
+              "displayName" : "Comment",
+              "identifiesControllerService" : false,
+              "name" : "Comment",
+              "sensitive" : false
+            },
+            "HighScore" : {
+              "displayName" : "HighScore",
+              "identifiesControllerService" : false,
+              "name" : "HighScore",
+              "sensitive" : false
+            },
             "record-writer" : {
               "displayName" : "Record Writer",
               "identifiesControllerService" : true,
@@ -561,10 +733,10 @@
               "name" : "record-reader",
               "sensitive" : false
             },
-            "Is_Valid" : {
-              "displayName" : "Is_Valid",
+            "IsValid" : {
+              "displayName" : "IsValid",
               "identifiesControllerService" : false,
-              "name" : "Is_Valid",
+              "name" : "IsValid",
               "sensitive" : false
             }
           },
@@ -601,20 +773,48 @@
             "y" : 552.0
           },
           "properties" : {
-            "valid" : "${Is_Valid:equals(true)}",
-            "Routing Strategy" : "Route to Property name"
+            "High" : "${HighScore:equals(true)}",
+            "NoScore" : "${NoScore:equals(true):and(${IsValid:equals(true)})}",
+            "Comment" : "${Comment:equals(true)}",
+            "Routing Strategy" : "Route to Property name",
+            "Low" : "${LowScore:equals(true)}",
+            "Invalid" : "${IsValid:equals(false):and(${Comment:equals(false)})}"
           },
           "propertyDescriptors" : {
-            "valid" : {
-              "displayName" : "valid",
+            "High" : {
+              "displayName" : "High",
               "identifiesControllerService" : false,
-              "name" : "valid",
+              "name" : "High",
+              "sensitive" : false
+            },
+            "NoScore" : {
+              "displayName" : "NoScore",
+              "identifiesControllerService" : false,
+              "name" : "NoScore",
+              "sensitive" : false
+            },
+            "Comment" : {
+              "displayName" : "Comment",
+              "identifiesControllerService" : false,
+              "name" : "Comment",
               "sensitive" : false
             },
             "Routing Strategy" : {
               "displayName" : "Routing Strategy",
               "identifiesControllerService" : false,
               "name" : "Routing Strategy",
+              "sensitive" : false
+            },
+            "Low" : {
+              "displayName" : "Low",
+              "identifiesControllerService" : false,
+              "name" : "Low",
+              "sensitive" : false
+            },
+            "Invalid" : {
+              "displayName" : "Invalid",
+              "identifiesControllerService" : false,
+              "name" : "Invalid",
               "sensitive" : false
             }
           },

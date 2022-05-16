@@ -111,8 +111,8 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 700.0,
-            "y" : 764.0
+            "x" : 704.0,
+            "y" : 736.0
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -147,8 +147,8 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 300.0,
-            "y" : 764.0
+            "x" : 304.0,
+            "y" : 736.0
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -178,7 +178,7 @@
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
           },
-          "zIndex" : 0
+          "zIndex" : 1
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
@@ -216,8 +216,8 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 24.0,
-            "y" : 760.0
+            "x" : 112.0,
+            "y" : 784.0
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -285,8 +285,8 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 816.0,
-            "y" : 461.0
+            "x" : 896.0,
+            "y" : 456.0
           } ],
           "componentType" : "CONNECTION",
           "destination" : {

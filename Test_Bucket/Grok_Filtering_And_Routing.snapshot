@@ -828,6 +828,7 @@
             "y" : 16.0
           },
           "properties" : {
+            "jolt-spec" : "[{\n\t\"operation\": \"modify-overwrite-beta\",\n\t\"spec\": {\n\t\t\"*\": {\n\t\t\t\"kv_array_tmp\": \"=split('\\\" ',@(0))\"\n\t\t}\n\t}\n}, {\n\t\"operation\": \"modify-overwrite-beta\",\n\t\"spec\": {\n\t\t\"*\": {\n\t\t\t\"kv_array_tmp\": [\"=split('=\\\"',@(0))\"]\n\t\t}\n\t}\n}, {\n  \"operation\": \"shift\",\n  \"spec\": {\n    \"*\": {\n      \"kv_array_tmp\": {\n        \"*\": {\n          \"0\": \"[&(3)].kv_array_tmp.[&(0)]\",\n          \"1\": \"[&(3)].kv_array_tmp.[&(0)]\"\n        }\n      }\n    }\n  }\n}]",
             "jolt-transform" : "jolt-transform-chain",
             "pretty_print" : "false",
             "Transform Cache Size" : "1"

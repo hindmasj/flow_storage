@@ -28,6 +28,9 @@ flows:
   de1c1560-6ed2-4ffc-b159-0be9c73c7a8a: {ver: 7, file: Unescape_JSON.snapshot, comments: Used
       fork/merge to complete record enrichment., author: anonymous, created: 1651779409276,
     flowName: Unescape JSON, flowDesc: Trying the record path function unescapeJson}
+  bf3e4a9b-b65b-47db-a42f-8d2e49cfa92c: {ver: 1, file: Grok_Filtering_And_Routing.snapshot,
+    comments: '', author: anonymous, created: 1652905109741, flowName: Grok Filtering
+      And Routing, flowDesc: ''}
   9ea9a5ba-f6aa-4988-b59e-252a57bdee03: {ver: 14, file: JSON_Test_Bed.snapshot, comments: Rule
       policy changed to use original, author: anonymous, created: 1651262919422, flowName: JSON
       Test Bed, flowDesc: Working on some JSON manipulations}

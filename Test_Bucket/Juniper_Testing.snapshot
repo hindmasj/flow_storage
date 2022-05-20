@@ -49,28 +49,28 @@
           "destination" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-            "id" : "ee86eaad-8176-3167-8c6b-c62ce1e4f5c0",
-            "instanceIdentifier" : "a925069e-f060-35bf-91cb-4a0d72a7da77",
+            "id" : "91170ca0-98a0-3d0e-813c-03e6c0ebc5fa",
+            "instanceIdentifier" : "e1e854c7-0180-1000-ffff-ffffecc3b3eb",
             "name" : "Funnel",
             "type" : "FUNNEL"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-          "identifier" : "c7c45aa4-907c-3f23-b5ed-24150bac2874",
-          "instanceIdentifier" : "db5c334e-23c7-1808-0000-00005a22c29d",
+          "identifier" : "2dd102f1-e802-31e3-963b-9635f390f0ac",
+          "instanceIdentifier" : "e1e8965a-0180-1000-ffff-ffff81ca70a1",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "SimpleMessage",
+          "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "unmatched" ],
+          "selectedRelationships" : [ "isGeneralMessage" ],
           "source" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-            "id" : "a261ef9c-5a21-326b-8af7-2e77c25532f4",
-            "instanceIdentifier" : "db5c32f4-23c7-1808-a36e-95a554495348",
-            "name" : "RouteOnAttribute - Message Type",
+            "id" : "ef473ba6-a2f4-3c2e-81db-cbb8637aa6df",
+            "instanceIdentifier" : "e32a350b-23af-189b-9151-2418d9dd4a2c",
+            "name" : "RouteOnAttribute - Message Sub Type",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -82,28 +82,28 @@
           "destination" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-            "id" : "b5666310-a02f-3a7a-96f1-5ffef3e246b9",
-            "instanceIdentifier" : "8ec0a0ed-4d26-3133-89e9-c953e67bd9ff",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
+            "id" : "ea1a1b7c-0636-367a-9cb0-51e6f4340aea",
+            "instanceIdentifier" : "e1147d55-0180-1000-0000-00000b760574",
+            "name" : "UpdateRecord - Raw",
+            "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-          "identifier" : "6cd7ac98-28ed-3f6a-ad9e-39ab274f7ef0",
-          "instanceIdentifier" : "e11253e7-0180-1000-0000-000051121a5f",
+          "identifier" : "94f1c329-dd96-3447-8d86-8a38bc5fe2f5",
+          "instanceIdentifier" : "b17631ee-9e1e-1406-0000-0000706bc4d4",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "Unknown Events",
+          "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "unmatched" ],
+          "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-            "id" : "7bc3d090-e3e9-340f-a148-511ecd53f25e",
-            "instanceIdentifier" : "3c07f5a0-76b4-3869-8f4d-6fa67035c2c6",
-            "name" : "RouteOnAttribute - IsValid",
+            "id" : "38ecf3ed-a825-3d0d-88ac-de777d5a6803",
+            "instanceIdentifier" : "b17631e0-9e1e-1406-b2ba-14a973d8d0da",
+            "name" : "UpdateRecord - Literal",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -148,9 +148,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-            "id" : "ea1a1b7c-0636-367a-9cb0-51e6f4340aea",
-            "instanceIdentifier" : "e1147d55-0180-1000-0000-00000b760574",
-            "name" : "UpdateRecord - Raw",
+            "id" : "cca1f22c-0ab7-39de-8fad-f43bab1ef248",
+            "instanceIdentifier" : "db5c34b8-23c7-1808-ffff-fffff8d78d25",
+            "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -287,21 +287,120 @@
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-          "identifier" : "6566a406-94cd-3820-9209-f770a9d3f0af",
-          "instanceIdentifier" : "db5c3326-23c7-1808-ffff-ffffc0e01745",
+          "identifier" : "979ad572-9d36-381b-aa22-ad314c106922",
+          "instanceIdentifier" : "b1763249-9e1e-1406-ffff-ffffd8e019fd",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "IsValid" ],
+          "selectedRelationships" : [ "unmatched" ],
           "source" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
             "id" : "7bc3d090-e3e9-340f-a148-511ecd53f25e",
             "instanceIdentifier" : "3c07f5a0-76b4-3869-8f4d-6fa67035c2c6",
             "name" : "RouteOnAttribute - IsValid",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "b5666310-a02f-3a7a-96f1-5ffef3e246b9",
+            "instanceIdentifier" : "8ec0a0ed-4d26-3133-89e9-c953e67bd9ff",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "a72f1bd3-a53a-35a9-b052-582a3caabfbb",
+          "instanceIdentifier" : "b1763246-9e1e-1406-ffff-ffff92c82a56",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "matched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "7bc3d090-e3e9-340f-a148-511ecd53f25e",
+            "instanceIdentifier" : "3c07f5a0-76b4-3869-8f4d-6fa67035c2c6",
+            "name" : "RouteOnAttribute - IsValid",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "38ecf3ed-a825-3d0d-88ac-de777d5a6803",
+            "instanceIdentifier" : "b17631e0-9e1e-1406-b2ba-14a973d8d0da",
+            "name" : "UpdateRecord - Literal",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "5d2fee9a-6b41-3a79-89be-d9d62b2a959d",
+          "instanceIdentifier" : "db5c34c0-23c7-1808-ffff-ffff83f89d4d",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "cca1f22c-0ab7-39de-8fad-f43bab1ef248",
+            "instanceIdentifier" : "db5c34b8-23c7-1808-ffff-fffff8d78d25",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "ee86eaad-8176-3167-8c6b-c62ce1e4f5c0",
+            "instanceIdentifier" : "a925069e-f060-35bf-91cb-4a0d72a7da77",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "1719d4ec-9a33-399a-890e-cb9f3fa1b91f",
+          "instanceIdentifier" : "b176326b-9e1e-1406-0000-00001341c171",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "matched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "a261ef9c-5a21-326b-8af7-2e77c25532f4",
+            "instanceIdentifier" : "db5c32f4-23c7-1808-a36e-95a554495348",
+            "name" : "RouteOnAttribute - Message Type",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -320,15 +419,15 @@
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-          "identifier" : "4c2bb94f-48ba-3346-b23d-84c2f16c083e",
-          "instanceIdentifier" : "db5c3344-23c7-1808-ffff-ffffb624418f",
+          "identifier" : "fd3df35e-a69a-3997-b732-824d78e36684",
+          "instanceIdentifier" : "b176326e-9e1e-1406-ffff-ffff885a9036",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "GenMessage" ],
+          "selectedRelationships" : [ "unmatched" ],
           "source" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
@@ -346,10 +445,76 @@
           "destination" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-            "id" : "89e1be65-5acd-3759-80d1-6578c2e42769",
-            "instanceIdentifier" : "5097483b-b4aa-3585-b5c8-0588680dbda0",
+            "id" : "00c69a5a-233f-3d61-93ed-3b2bf6e90307",
+            "instanceIdentifier" : "e1e84c19-0180-1000-0000-00006293871f",
             "name" : "Funnel",
             "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "1f8a924f-359d-3479-bc04-5b6935fde747",
+          "instanceIdentifier" : "e1e88319-0180-1000-0000-000051e5314c",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "isSessionDeny" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "ef473ba6-a2f4-3c2e-81db-cbb8637aa6df",
+            "instanceIdentifier" : "e32a350b-23af-189b-9151-2418d9dd4a2c",
+            "name" : "RouteOnAttribute - Message Sub Type",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "e7082787-c04b-3649-a9ca-57e3d0c75a5c",
+            "instanceIdentifier" : "49883604-8479-35c7-9ff5-18111c25bcf8",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "6d0bd6b7-da32-3567-9474-537afe48a5a2",
+          "instanceIdentifier" : "b17631f3-9e1e-1406-0000-000041124f55",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "38ecf3ed-a825-3d0d-88ac-de777d5a6803",
+            "instanceIdentifier" : "b17631e0-9e1e-1406-b2ba-14a973d8d0da",
+            "name" : "UpdateRecord - Literal",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "ef473ba6-a2f4-3c2e-81db-cbb8637aa6df",
+            "instanceIdentifier" : "e32a350b-23af-189b-9151-2418d9dd4a2c",
+            "name" : "RouteOnAttribute - Message Sub Type",
+            "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
@@ -401,6 +566,72 @@
             "id" : "70028e38-7045-35e8-b34f-ff0c6e21cb5d",
             "instanceIdentifier" : "db5c3323-23c7-1808-ffff-fffff38ea367",
             "name" : "UpdateRecord - Fix Dates",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "9fd553dd-a047-3afc-98bf-b558f6ef40e6",
+            "instanceIdentifier" : "e1e8447f-0180-1000-0000-00001b0ad767",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "fbd23806-1d02-30b8-a2e4-7fa3352603a5",
+          "instanceIdentifier" : "e1e86a16-0180-1000-0000-00007a87f177",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "isAttackLog" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "ef473ba6-a2f4-3c2e-81db-cbb8637aa6df",
+            "instanceIdentifier" : "e32a350b-23af-189b-9151-2418d9dd4a2c",
+            "name" : "RouteOnAttribute - Message Sub Type",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "89e1be65-5acd-3759-80d1-6578c2e42769",
+            "instanceIdentifier" : "5097483b-b4aa-3585-b5c8-0588680dbda0",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "048e10ac-d640-31c4-93e8-3e8f0e91c466",
+          "instanceIdentifier" : "e1e83536-0180-1000-ffff-ffffdab5e011",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "unmatched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "ef473ba6-a2f4-3c2e-81db-cbb8637aa6df",
+            "instanceIdentifier" : "e32a350b-23af-189b-9151-2418d9dd4a2c",
+            "name" : "RouteOnAttribute - Message Sub Type",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -777,6 +1008,24 @@
         "funnels" : [ {
           "componentType" : "FUNNEL",
           "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "00c69a5a-233f-3d61-93ed-3b2bf6e90307",
+          "instanceIdentifier" : "e1e84c19-0180-1000-0000-00006293871f",
+          "position" : {
+            "x" : 400.0,
+            "y" : 1696.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "9fd553dd-a047-3afc-98bf-b558f6ef40e6",
+          "instanceIdentifier" : "e1e8447f-0180-1000-0000-00001b0ad767",
+          "position" : {
+            "x" : 24.0,
+            "y" : 1696.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
           "identifier" : "b5666310-a02f-3a7a-96f1-5ffef3e246b9",
           "instanceIdentifier" : "8ec0a0ed-4d26-3133-89e9-c953e67bd9ff",
           "position" : {
@@ -791,6 +1040,15 @@
           "position" : {
             "x" : 944.0,
             "y" : 840.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "91170ca0-98a0-3d0e-813c-03e6c0ebc5fa",
+          "instanceIdentifier" : "e1e854c7-0180-1000-ffff-ffffecc3b3eb",
+          "position" : {
+            "x" : 792.0,
+            "y" : 1696.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -816,8 +1074,8 @@
           "identifier" : "89e1be65-5acd-3759-80d1-6578c2e42769",
           "instanceIdentifier" : "5097483b-b4aa-3585-b5c8-0588680dbda0",
           "position" : {
-            "x" : 472.0,
-            "y" : 1560.0
+            "x" : 952.0,
+            "y" : 1448.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -825,8 +1083,8 @@
           "identifier" : "13e4fd35-280c-33e6-a9a7-90f6d26017c4",
           "instanceIdentifier" : "db5c3369-23c7-1808-ffff-fffff734f705",
           "position" : {
-            "x" : 976.0,
-            "y" : 1360.0
+            "x" : 952.0,
+            "y" : 1232.0
           }
         } ],
         "identifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
@@ -835,6 +1093,7 @@
         "labels" : [ ],
         "name" : "Juniper Testing",
         "outputPorts" : [ ],
+        "parameterContextName" : "Juniper Parsing",
         "position" : {
           "x" : 872.0,
           "y" : 392.0
@@ -946,7 +1205,7 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "<13>Oct  4 14:26:26 192.168.0.1  192.168.0.1 Oct  4 14:26:26 192.168.0.1 1 2022-10-04T14:26:05.456+01:00 X-DC1-ABCD-BD1 RT_IDP - IDP_ATTACK_LOG_EVENT [junos@2636.1.1.1.1.105 epoch-time=\"123456789\" foo=\"bar\" message=\"-\"]\n<38>Jun 28 16:07:07 Jun #000#000#000#034 #000#000#000#020:0#000#000#000#006:#000#000#000#014 192.168.0.1 <14>1 2022-06-28T16:07:07.429+01:000 X-DC1-ABCD-BD1 RT_FLOW - RT_FLOW_SESSION_DENY [junos@2636.1.1.1.1.105 foo=\"bar\" reason=\"policy deny\"]\n<38>Sep 14 12:59:59 192.168.0.1 <15>Sep 14 12:59:59.123 2022 X-ABC-WAN-XYZ X-ABC-WAN-XYZ: flow_foo_bar: pconn_client_connect: Failed to connect to the server after 8 retries",
+            "generate-ff-custom-text" : "<13>Oct  4 14:26:26 192.168.0.1  192.168.0.1 Oct  4 14:26:26 192.168.0.1 1 2022-10-04T14:26:05.456+01:00 X-DC1-ABCD-BD1 RT_IDP - IDP_ATTACK_LOG_EVENT [junos@2636.1.1.1.1.105 epoch-time=\"123456789\" foo=\"bar\" message=\"-\"]\n<38>Jun 28 16:07:07 Jun #000#000#000#034 #000#000#000#020:0#000#000#000#006:#000#000#000#014 192.168.0.1 <14>1 2022-06-28T16:07:07.429+01:000 X-DC1-ABCD-BD1 RT_FLOW - RT_FLOW_SESSION_DENY [junos@2636.1.1.1.1.105 foo=\"bar\" reason=\"policy deny\"]\n<38>Sep 14 12:59:59 192.168.0.1 <15>Sep 14 12:59:59.123 2022 X-ABC-WAN-XYZ X-ABC-WAN-XYZ: flow_foo_bar: pconn_client_connect: Failed to connect to the server after 8 retries\n<13>Oct  4 14:26:26 192.168.0.1  192.168.0.1 Oct  4 14:26:26 192.168.0.1 1 2022-10-04T14:26:05.456+01:00 X-DC1-ABCD-BD1 RT_IDP - RT_FLOW_SESSION_DENY [junos@2636.1.1.1.1.105 epoch-time=\"123456789\" foo=\"bar\" message=\"-\"]\n<13>Oct  4 14:26:26 192.168.0.1  192.168.0.1 Oct  4 14:26:26 192.168.0.1 1 2022-10-04T14:26:05.456+01:00 X-DC1-ABCD-BD1 RT_IDP - SOME_OTHER_EVENT [junos@2636.1.1.1.1.105 epoch-time=\"123456789\" foo=\"bar\" message=\"-\"]\n",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
             "Data Format" : "Text"
@@ -1028,12 +1287,20 @@
             "y" : 216.0
           },
           "properties" : {
+            "isAttackLog" : "/event_indicator_type[. = \"IDP_ATTACK_LOG_EVENT\"]",
             "record-writer" : "958ad37e-4f9a-3c13-a43b-e04d574b5516",
             "isValid" : "not(isEmpty(/event_facility_id))",
             "record-reader" : "d01b462a-ad08-3963-b857-0958a577caf3",
-            "isGenMessage" : "not(isEmpty(/key_value_pairs_tmp))"
+            "isGenMessage" : "not(isEmpty(/key_value_pairs_tmp))",
+            "isSessionDeny" : "/event_indicator_type[. = \"RT_FLOW_SESSION_DENY\"]"
           },
           "propertyDescriptors" : {
+            "isAttackLog" : {
+              "displayName" : "isAttackLog",
+              "identifiesControllerService" : false,
+              "name" : "isAttackLog",
+              "sensitive" : false
+            },
             "record-writer" : {
               "displayName" : "Record Writer",
               "identifiesControllerService" : true,
@@ -1057,6 +1324,12 @@
               "identifiesControllerService" : false,
               "name" : "isGenMessage",
               "sensitive" : false
+            },
+            "isSessionDeny" : {
+              "displayName" : "isSessionDeny",
+              "identifiesControllerService" : false,
+              "name" : "isSessionDeny",
+              "sensitive" : false
             }
           },
           "retriedRelationships" : [ ],
@@ -1067,6 +1340,69 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.PartitionRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "annotationData" : "<criteria>\n    <flowFilePolicy>USE_ORIGINAL</flowFilePolicy>\n    <rules>\n        <actions>\n            <attribute>event_name</attribute>\n            <id>5169b1b4-5ca5-4ad4-b455-7fb41c0972b9</id>\n            <value>Unknown Event</value>\n        </actions>\n        <conditions>\n            <expression>${isValid:equals(false)}</expression>\n            <id>fda1de3b-b568-4b46-aee7-b73b28a48da1</id>\n        </conditions>\n        <id>bfd9ae24-3a23-4067-92d1-7a85d13a5785</id>\n        <name>isUnknownEvent</name>\n    </rules>\n    <rules>\n        <actions>\n            <attribute>event_name</attribute>\n            <id>1fd1e592-c4ec-4e0e-86c5-28d52a95679b</id>\n            <value>Juniper message</value>\n        </actions>\n        <conditions>\n            <expression>${isValid:equals(true): and(${isGenMessage:equals(false)})}</expression>\n            <id>955e2506-3d11-4d25-92bb-8bf480199d9b</id>\n        </conditions>\n        <id>fdee0d19-045e-4f55-874d-d9fba7bedd05</id>\n        <name>isSimpleMessage</name>\n    </rules>\n    <rules>\n        <actions>\n            <attribute>event_name</attribute>\n            <id>bfc106c5-e61f-4542-88bd-c206043eaf1c</id>\n            <value>Junos General Parser</value>\n        </actions>\n        <conditions>\n            <expression>${isGenMessage:equals(true): and(${isAttackLog:isEmpty()}): and(${isSessionDeny:isEmpty()}) }</expression>\n            <id>8c8adecb-a87e-469a-923a-aec4ff988b30</id>\n        </conditions>\n        <id>17682f5c-9d5f-492f-b598-1e90884caedc</id>\n        <name>isGeneralMessage</name>\n    </rules>\n    <rules>\n        <actions>\n            <attribute>event_name</attribute>\n            <id>bfc106c5-e61f-4542-88bd-c206043eaf1c</id>\n            <value>Juniper RT Session Deny</value>\n        </actions>\n        <conditions>\n            <expression>${isSessionDeny:isEmpty():not()}</expression>\n            <id>8c8adecb-a87e-469a-923a-aec4ff988b30</id>\n        </conditions>\n        <id>6cff0107-4283-41ad-a604-5b4417d59383</id>\n        <name>isSessionDeny</name>\n    </rules>\n    <rules>\n        <actions>\n            <attribute>event_name</attribute>\n            <id>bfc106c5-e61f-4542-88bd-c206043eaf1c</id>\n            <value>Juniper Attack Log</value>\n        </actions>\n        <conditions>\n            <expression>${isAttackLog:isEmpty():not()}</expression>\n            <id>8c8adecb-a87e-469a-923a-aec4ff988b30</id>\n        </conditions>\n        <id>d71d5b2e-980c-4d91-942e-f8d29da0cfed</id>\n        <name>isAttackLog</name>\n    </rules>\n</criteria>",
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "cca1f22c-0ab7-39de-8fad-f43bab1ef248",
+          "instanceIdentifier" : "db5c34b8-23c7-1808-ffff-fffff8d78d25",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -504.0,
+            "y" : 128.0
+          },
+          "properties" : {
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
@@ -1092,8 +1428,8 @@
             "y" : 608.0
           },
           "properties" : {
-            "Routing Strategy" : "Route to Property name",
-            "IsValid" : "${isValid:equals(true)}"
+            "Routing Strategy" : "Route to 'match' if all match",
+            "isUnknown" : "${event_name:equals('Unknown Event')}"
           },
           "propertyDescriptors" : {
             "Routing Strategy" : {
@@ -1102,10 +1438,10 @@
               "name" : "Routing Strategy",
               "sensitive" : false
             },
-            "IsValid" : {
-              "displayName" : "IsValid",
+            "isUnknown" : {
+              "displayName" : "isUnknown",
               "identifiesControllerService" : false,
-              "name" : "IsValid",
+              "name" : "isUnknown",
               "sensitive" : false
             }
           },
@@ -1203,7 +1539,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 320.0,
-            "y" : 1304.0
+            "y" : 1192.0
           },
           "properties" : {
             "/key_value_pairs_tmp" : "replaceRegex(\n  replaceRegex(/key_value_pairs_tmp,'=\\\"',':'),\n  '\\\" ?','|')",
@@ -1334,8 +1670,8 @@
             "y" : 992.0
           },
           "properties" : {
-            "Routing Strategy" : "Route to Property name",
-            "GenMessage" : "${isGenMessage:equals(true)}"
+            "Routing Strategy" : "Route to 'match' if all match",
+            "isSimpleMessage" : "${event_name:equals('Juniper message')}"
           },
           "propertyDescriptors" : {
             "Routing Strategy" : {
@@ -1344,10 +1680,145 @@
               "name" : "Routing Strategy",
               "sensitive" : false
             },
-            "GenMessage" : {
-              "displayName" : "GenMessage",
+            "isSimpleMessage" : {
+              "displayName" : "isSimpleMessage",
               "identifiesControllerService" : false,
-              "name" : "GenMessage",
+              "name" : "isSimpleMessage",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "38ecf3ed-a825-3d0d-88ac-de777d5a6803",
+          "instanceIdentifier" : "b17631e0-9e1e-1406-b2ba-14a973d8d0da",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateRecord - Literal",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -368.0,
+            "y" : 320.0
+          },
+          "properties" : {
+            "/event_label" : "#{event_label}",
+            "record-writer" : "958ad37e-4f9a-3c13-a43b-e04d574b5516",
+            "/event_name" : "${event_name}",
+            "record-reader" : "1a0d32b4-0c5e-3e37-8adf-200f589d6770",
+            "replacement-value-strategy" : "literal-value"
+          },
+          "propertyDescriptors" : {
+            "/event_label" : {
+              "displayName" : "/event_label",
+              "identifiesControllerService" : false,
+              "name" : "/event_label",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "/event_name" : {
+              "displayName" : "/event_name",
+              "identifiesControllerService" : false,
+              "name" : "/event_name",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "replacement-value-strategy" : {
+              "displayName" : "Replacement Value Strategy",
+              "identifiesControllerService" : false,
+              "name" : "replacement-value-strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "ef473ba6-a2f4-3c2e-81db-cbb8637aa6df",
+          "instanceIdentifier" : "e32a350b-23af-189b-9151-2418d9dd4a2c",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "RouteOnAttribute - Message Sub Type",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 312.0,
+            "y" : 1416.0
+          },
+          "properties" : {
+            "Routing Strategy" : "Route to Property name",
+            "isAttackLog" : "${event_name:equals('Juniper Attack Log')}",
+            "isGeneralMessage" : "${event_name:equals('Junos General Parser')}",
+            "isSessionDeny" : "${event_name:equals('Juniper RT Session Deny')}"
+          },
+          "propertyDescriptors" : {
+            "Routing Strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Routing Strategy",
+              "sensitive" : false
+            },
+            "isAttackLog" : {
+              "displayName" : "isAttackLog",
+              "identifiesControllerService" : false,
+              "name" : "isAttackLog",
+              "sensitive" : false
+            },
+            "isGeneralMessage" : {
+              "displayName" : "isGeneralMessage",
+              "identifiesControllerService" : false,
+              "name" : "isGeneralMessage",
+              "sensitive" : false
+            },
+            "isSessionDeny" : {
+              "displayName" : "isSessionDeny",
+              "identifiesControllerService" : false,
+              "name" : "isSessionDeny",
               "sensitive" : false
             }
           },
@@ -1365,7 +1836,19 @@
         "variables" : { }
       },
       "flowEncodingVersion" : "1.0",
-      "parameterContexts" : { }
+      "parameterContexts" : {
+        "Juniper Parsing" : {
+          "componentType" : "PARAMETER_CONTEXT",
+          "inheritedParameterContexts" : [ ],
+          "name" : "Juniper Parsing",
+          "parameters" : [ {
+            "description" : "",
+            "name" : "event_label",
+            "sensitive" : false,
+            "value" : "Juniper_Intrusion"
+          } ]
+        }
+      }
     }
   }
 }

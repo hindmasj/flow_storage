@@ -115,6 +115,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "ef473ba6-a2f4-3c2e-81db-cbb8637aa6df",
+            "instanceIdentifier" : "e32a350b-23af-189b-9151-2418d9dd4a2c",
+            "name" : "RouteOnAttribute - Message Sub Type",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "db288c40-6f27-3898-b755-9af6f2a283fb",
+          "instanceIdentifier" : "65653c04-6fa8-13a7-0000-00001557438f",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "8f82caa8-6857-3b38-b1bd-ed0bb981551a",
+            "instanceIdentifier" : "65653bf9-6fa8-13a7-9348-0ae449673a60",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
             "id" : "b5666310-a02f-3a7a-96f1-5ffef3e246b9",
             "instanceIdentifier" : "8ec0a0ed-4d26-3133-89e9-c953e67bd9ff",
             "name" : "Funnel",
@@ -313,9 +346,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
-            "id" : "ef473ba6-a2f4-3c2e-81db-cbb8637aa6df",
-            "instanceIdentifier" : "e32a350b-23af-189b-9151-2418d9dd4a2c",
-            "name" : "RouteOnAttribute - Message Sub Type",
+            "id" : "8f82caa8-6857-3b38-b1bd-ed0bb981551a",
+            "instanceIdentifier" : "65653bf9-6fa8-13a7-9348-0ae449673a60",
+            "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -467,6 +500,39 @@
             "id" : "ea1a1b7c-0636-367a-9cb0-51e6f4340aea",
             "instanceIdentifier" : "e1147d55-0180-1000-0000-00000b760574",
             "name" : "UpdateRecord - Raw",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "13e4fd35-280c-33e6-a9a7-90f6d26017c4",
+            "instanceIdentifier" : "db5c3369-23c7-1808-ffff-fffff734f705",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "235d0502-b269-3eb8-81ce-c8c6d8491108",
+          "instanceIdentifier" : "65653c08-6fa8-13a7-ffff-ffffba4bae6e",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+            "id" : "8f82caa8-6857-3b38-b1bd-ed0bb981551a",
+            "instanceIdentifier" : "65653bf9-6fa8-13a7-9348-0ae449673a60",
+            "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -1176,8 +1242,8 @@
           "identifier" : "00c69a5a-233f-3d61-93ed-3b2bf6e90307",
           "instanceIdentifier" : "e1e84c19-0180-1000-0000-00006293871f",
           "position" : {
-            "x" : 400.0,
-            "y" : 1696.0
+            "x" : 416.0,
+            "y" : 1888.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -1185,8 +1251,8 @@
           "identifier" : "9fd553dd-a047-3afc-98bf-b558f6ef40e6",
           "instanceIdentifier" : "e1e8447f-0180-1000-0000-00001b0ad767",
           "position" : {
-            "x" : 24.0,
-            "y" : 1696.0
+            "x" : 40.0,
+            "y" : 1888.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -1230,8 +1296,8 @@
           "identifier" : "91170ca0-98a0-3d0e-813c-03e6c0ebc5fa",
           "instanceIdentifier" : "e1e854c7-0180-1000-ffff-ffffecc3b3eb",
           "position" : {
-            "x" : 792.0,
-            "y" : 1696.0
+            "x" : 808.0,
+            "y" : 1888.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -1257,8 +1323,8 @@
           "identifier" : "89e1be65-5acd-3759-80d1-6578c2e42769",
           "instanceIdentifier" : "5097483b-b4aa-3585-b5c8-0588680dbda0",
           "position" : {
-            "x" : 952.0,
-            "y" : 1448.0
+            "x" : 968.0,
+            "y" : 1640.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -1571,6 +1637,86 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
+          "identifier" : "8f82caa8-6857-3b38-b1bd-ed0bb981551a",
+          "instanceIdentifier" : "65653bf9-6fa8-13a7-9348-0ae449673a60",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "JoltTransformJSON",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 320.0,
+            "y" : 1384.0
+          },
+          "properties" : {
+            "jolt-spec" : "[{\n  \"operation\": \"modify-overwrite-beta\",\n  \"spec\": {\n    \"*\": {\n      \"key_value_pairs_tmp\": \"=split('\\\\|',@(0))\"\n    }\n  }\n}, {\n  \"operation\": \"modify-overwrite-beta\",\n  \"spec\": {\n    \"*\": {\n      \"key_value_pairs_tmp\": [\"=split(':',@(0))\"]\n    }\n  }\n}, {\n  \"operation\": \"shift\",\n  \"spec\": {\n    \"*\": {\n      \"key_value_pairs_tmp\": {\n        \"*\": {\n          \"0\": \"[&3].&2.keys\",\n          \"1\": \"[&3].&2.values\"\n        }\n      },\n      \"event_facility_id|event_ts_collection|device_gen_addr_ipv4|event_indicator_tag|event_indicator_type|event_name|event_label|event_raw\": \"[&1].&\"\n    }\n  }\n}, {\n  \"operation\": \"shift\",\n  \"spec\": {\n    \"*\": {\n      \"key_value_pairs_tmp\": {\n        \"values\": {\n          \"*\": {\n            \"@\": \"[&4].&3.@(3,keys[&1])\"\n          }\n        }\n      },\n      \"*\": \"[&(1)].&\"\n    }\n  }\n}]",
+            "jolt-transform" : "jolt-transform-chain",
+            "pretty_print" : "true",
+            "Transform Cache Size" : "1"
+          },
+          "propertyDescriptors" : {
+            "jolt-spec" : {
+              "displayName" : "Jolt Specification",
+              "identifiesControllerService" : false,
+              "name" : "jolt-spec",
+              "sensitive" : false
+            },
+            "jolt-transform" : {
+              "displayName" : "Jolt Transformation DSL",
+              "identifiesControllerService" : false,
+              "name" : "jolt-transform",
+              "sensitive" : false
+            },
+            "jolt-custom-class" : {
+              "displayName" : "Custom Transformation Class Name",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-class",
+              "sensitive" : false
+            },
+            "jolt-custom-modules" : {
+              "displayName" : "Custom Module Directory",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-modules",
+              "resourceDefinition" : {
+                "cardinality" : "MULTIPLE",
+                "resourceTypes" : [ "FILE", "DIRECTORY" ]
+              },
+              "sensitive" : false
+            },
+            "pretty_print" : {
+              "displayName" : "Pretty Print",
+              "identifiesControllerService" : false,
+              "name" : "pretty_print",
+              "sensitive" : false
+            },
+            "Transform Cache Size" : {
+              "displayName" : "Transform Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "Transform Cache Size",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.JoltTransformJSON",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "b0ffba89-1d45-3d0c-a62b-d7ad6aa0ae95",
           "identifier" : "a1f62e61-ff83-3b30-94a8-7a5c5ce00240",
           "instanceIdentifier" : "db5c335d-23c7-1808-ffff-ffffd1d6fbd4",
           "maxBackoffPeriod" : "10 mins",
@@ -1864,7 +2010,7 @@
             "y" : 1424.0
           },
           "properties" : {
-            "jolt-spec" : "[{\n\t\"operation\": \"modify-overwrite-beta\",\n\t\"spec\": {\n\t\t\"*\": {\n\t\t\t\"kv_array_tmp\": \"=split('\\\\|',@(0))\"\n\t\t}\n\t}\n}, {\n\t\"operation\": \"modify-overwrite-beta\",\n\t\"spec\": {\n\t\t\"*\": {\n\t\t\t\"kv_array_tmp\": [\"=split(':',@(0))\"]\n\t\t}\n\t}\n}]",
+            "jolt-spec" : "[{\n  \"operation\": \"modify-overwrite-beta\",\n  \"spec\": {\n    \"*\": {\n      \"kv_array_tmp\": \"=split('\\\\|',@(0))\"\n    }\n  }\n}, {\n  \"operation\": \"modify-overwrite-beta\",\n  \"spec\": {\n    \"*\": {\n      \"kv_array_tmp\": [\"=split(':',@(0))\"]\n    }\n  }\n}, {\n  \"operation\": \"shift\",\n  \"spec\": {\n    \"*\": {\n      \"kv_array_tmp\": {\n        \"*\": {\n          \"0\": \"[&3].&2.keys\",\n          \"1\": \"[&3].&2.values\"\n        }\n      }\n    }\n  }\n}, {\n  \"operation\": \"shift\",\n  \"spec\": {\n    \"*\": {\n      \"kv_array_tmp\": {\n        \"values\": {\n          \"*\": {\n            \"@\": \"[&4].&3.@(3,keys[&1])\"\n          }\n        }\n      }\n    }\n  }\n}]",
             "jolt-transform" : "jolt-transform-chain",
             "pretty_print" : "true",
             "Transform Cache Size" : "1"
@@ -2118,8 +2264,8 @@
           "name" : "RouteOnAttribute - Message Sub Type",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 312.0,
-            "y" : 1416.0
+            "x" : 328.0,
+            "y" : 1608.0
           },
           "properties" : {
             "Routing Strategy" : "Route to Property name",

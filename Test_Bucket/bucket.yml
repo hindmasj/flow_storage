@@ -31,8 +31,8 @@ flows:
   bf3e4a9b-b65b-47db-a42f-8d2e49cfa92c: {ver: 3, file: Grok_Filtering_And_Routing.snapshot,
     comments: More Jolt experiments, author: anonymous, created: 1653039972721, flowName: Grok
       Filtering And Routing, flowDesc: ''}
-  146f5378-15bc-47b7-bea8-49a266c27b42: {ver: 5, file: Juniper_Testing.snapshot, comments: Now
-      have jolt transform that parses KVP array, author: anonymous, created: 1653409020582,
+  146f5378-15bc-47b7-bea8-49a266c27b42: {ver: 6, file: Juniper_Testing.snapshot, comments: Changed
+      Grokking to capture device_gen_hostname, author: anonymous, created: 1653487647006,
     flowName: Juniper Testing, flowDesc: ''}
   9ea9a5ba-f6aa-4988-b59e-252a57bdee03: {ver: 14, file: JSON_Test_Bed.snapshot, comments: Rule
       policy changed to use original, author: anonymous, created: 1651262919422, flowName: JSON

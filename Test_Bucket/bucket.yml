@@ -34,9 +34,9 @@ flows:
   90566440-561a-47e9-9db8-04a1432fe688: {ver: 3, file: Test_Kafka_Flow.snapshot, comments: With
       approval processor, author: anonymous, created: 1644504946006, flowName: Test
       Kafka Flow, flowDesc: ''}
-  2653f1c7-162b-4035-bfeb-67953d6fd56f: {ver: 2, file: DNS_Testing.snapshot, comments: DNS
-      Body now parsed, author: anonymous, created: 1653582256605, flowName: DNS Testing,
-    flowDesc: ''}
+  2653f1c7-162b-4035-bfeb-67953d6fd56f: {ver: 3, file: DNS_Testing.snapshot, comments: Removed
+      not needed services, author: anonymous, created: 1653582535307, flowName: DNS
+      Testing, flowDesc: ''}
   9ea9a5ba-f6aa-4988-b59e-252a57bdee03: {ver: 14, file: JSON_Test_Bed.snapshot, comments: Rule
       policy changed to use original, author: anonymous, created: 1651262919422, flowName: JSON
       Test Bed, flowDesc: Working on some JSON manipulations}

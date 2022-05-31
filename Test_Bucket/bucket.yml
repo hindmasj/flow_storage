@@ -31,6 +31,9 @@ flows:
   a3111ca0-c7c0-4f87-85dd-ddfaed667442: {ver: 4, file: Grok_Filtering.snapshot, comments: Some
       prettyness, author: anonymous, created: 1652707236835, flowName: Grok Filtering,
     flowDesc: First Example Shown}
+  7bd3b6f8-3676-49b9-ae94-f4282f8133b6: {ver: 1, file: Windows_File_Path.snapshot,
+    comments: '', author: anonymous, created: 1653985761815, flowName: Windows File
+      Path, flowDesc: ''}
   90566440-561a-47e9-9db8-04a1432fe688: {ver: 3, file: Test_Kafka_Flow.snapshot, comments: With
       approval processor, author: anonymous, created: 1644504946006, flowName: Test
       Kafka Flow, flowDesc: ''}

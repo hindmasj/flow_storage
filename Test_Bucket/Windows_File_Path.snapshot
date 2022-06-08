@@ -15,16 +15,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+            "groupId" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
             "id" : "b5315cfa-53ad-3729-8a95-29f1b9941a28",
-            "instanceIdentifier" : "10cacbb8-0181-1000-0000-00002066c453",
+            "instanceIdentifier" : "d55c48da-5526-3577-8321-feebb1a6ecd0",
             "name" : "Funnel",
             "type" : "FUNNEL"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
           "identifier" : "e6547c01-129c-3526-94e1-ba29efb15905",
-          "instanceIdentifier" : "10cae2c1-0181-1000-ffff-ffffa577199e",
+          "instanceIdentifier" : "d2a2675b-e2c2-3487-9cc5-0c277e75d7af",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -34,9 +34,9 @@
           "selectedRelationships" : [ "failure" ],
           "source" : {
             "comments" : "",
-            "groupId" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+            "groupId" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
             "id" : "bc064221-f5a9-3987-9c3c-101d080bdedb",
-            "instanceIdentifier" : "10c80034-0181-1000-ffff-ffffa2cd841e",
+            "instanceIdentifier" : "c1881bdf-f9ef-38de-baf2-d024584b7c23",
             "name" : "UpdateRecord",
             "type" : "PROCESSOR"
           },
@@ -48,16 +48,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
-            "id" : "bc064221-f5a9-3987-9c3c-101d080bdedb",
-            "instanceIdentifier" : "10c80034-0181-1000-ffff-ffffa2cd841e",
-            "name" : "UpdateRecord",
-            "type" : "PROCESSOR"
+            "groupId" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
+            "id" : "0ec59bb7-678a-3030-81fd-6a7b15366352",
+            "instanceIdentifier" : "7230459a-8154-3dbc-83fc-d539e950634b",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
-          "identifier" : "463b7bb2-85f7-373a-bf68-6706c096ab5d",
-          "instanceIdentifier" : "10c8170a-0181-1000-ffff-ffffd80c9468",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
+          "identifier" : "5bf158aa-6c0c-3285-ad10-b0cf171f97b8",
+          "instanceIdentifier" : "44e417b9-0181-1000-0000-00000928e0cf",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -67,9 +67,42 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+            "groupId" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
+            "id" : "3ec6c5ff-4a83-3465-8697-f7d0f392a598",
+            "instanceIdentifier" : "44e3e2e2-0181-1000-ffff-ffffc559ac22",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
+            "id" : "bc064221-f5a9-3987-9c3c-101d080bdedb",
+            "instanceIdentifier" : "c1881bdf-f9ef-38de-baf2-d024584b7c23",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
+          "identifier" : "463b7bb2-85f7-373a-bf68-6706c096ab5d",
+          "instanceIdentifier" : "e2a86755-d4c8-3083-9281-cecb4c45e8cb",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
             "id" : "491cb304-5793-3852-bcdd-850d846f138d",
-            "instanceIdentifier" : "10c70ddd-0181-1000-0000-00006d792e2f",
+            "instanceIdentifier" : "4f321c41-766f-33c5-b6e4-c4638efce340",
             "name" : "GenerateFlowFile",
             "type" : "PROCESSOR"
           },
@@ -81,16 +114,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
-            "id" : "0ec59bb7-678a-3030-81fd-6a7b15366352",
-            "instanceIdentifier" : "10cab092-0181-1000-0000-00005009aa82",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
+            "groupId" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
+            "id" : "3ec6c5ff-4a83-3465-8697-f7d0f392a598",
+            "instanceIdentifier" : "44e3e2e2-0181-1000-ffff-ffffc559ac22",
+            "name" : "UpdateAttribute",
+            "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
           "identifier" : "d53d3f3c-5cf7-3509-8b95-e47c69cf2a06",
-          "instanceIdentifier" : "10cac012-0181-1000-0000-000018ddfd5a",
+          "instanceIdentifier" : "7c621e9e-bcca-37f0-8124-b93c3faf76ea",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -100,9 +133,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+            "groupId" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
             "id" : "bc064221-f5a9-3987-9c3c-101d080bdedb",
-            "instanceIdentifier" : "10c80034-0181-1000-ffff-ffffa2cd841e",
+            "instanceIdentifier" : "c1881bdf-f9ef-38de-baf2-d024584b7c23",
             "name" : "UpdateRecord",
             "type" : "PROCESSOR"
           },
@@ -123,9 +156,9 @@
             },
             "type" : "org.apache.nifi.serialization.RecordReaderFactory"
           } ],
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
           "identifier" : "1f1d1ca7-ce9f-32b6-bfcb-d35fa37329fc",
-          "instanceIdentifier" : "10ca44d1-0181-1000-0000-0000735da40d",
+          "instanceIdentifier" : "66d00158-7e4a-3f9f-a2a5-60fac1039166",
           "name" : "JsonTreeReader",
           "properties" : {
             "schema-name" : "${schema.name}",
@@ -225,9 +258,9 @@
             },
             "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
           } ],
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
           "identifier" : "cae7d794-f6eb-373e-a8b6-d5574798a758",
-          "instanceIdentifier" : "10ca5f77-0181-1000-0000-000075ced7bf",
+          "instanceIdentifier" : "df75f399-f351-3927-8194-dffbfe3c407c",
           "name" : "JsonRecordSetWriter",
           "properties" : {
             "compression-level" : "1",
@@ -355,35 +388,111 @@
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ {
           "componentType" : "FUNNEL",
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
           "identifier" : "0ec59bb7-678a-3030-81fd-6a7b15366352",
-          "instanceIdentifier" : "10cab092-0181-1000-0000-00005009aa82",
+          "instanceIdentifier" : "7230459a-8154-3dbc-83fc-d539e950634b",
           "position" : {
-            "x" : 971.5,
-            "y" : 471.5
+            "x" : 968.0,
+            "y" : 688.0
           }
         }, {
           "componentType" : "FUNNEL",
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
           "identifier" : "b5315cfa-53ad-3729-8a95-29f1b9941a28",
-          "instanceIdentifier" : "10cacbb8-0181-1000-0000-00002066c453",
+          "instanceIdentifier" : "d55c48da-5526-3577-8321-feebb1a6ecd0",
           "position" : {
             "x" : 1487.5,
             "y" : 270.5
           }
         } ],
-        "identifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+        "identifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "10c6d241-0181-1000-ffff-ffff8df6c5b5",
+        "instanceIdentifier" : "43d92504-0181-1000-0000-0000323f1b37",
         "labels" : [ ],
         "name" : "Windows File Path",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 1321.5,
-          "y" : 155.5
+          "x" : 454.0,
+          "y" : 210.0
         },
         "processGroups" : [ ],
         "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.16.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
+          "identifier" : "3ec6c5ff-4a83-3465-8697-f7d0f392a598",
+          "instanceIdentifier" : "44e3e2e2-0181-1000-ffff-ffffc559ac22",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 816.0,
+            "y" : 424.0
+          },
+          "properties" : {
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100",
+            "file_1" : "${input_path:replaceAll('(.*\\\\\\\\)','')}",
+            "file_2" : "${input_path:replaceAll('.*\\\\\\\\','')}"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "file_1" : {
+              "displayName" : "file_1",
+              "identifiesControllerService" : false,
+              "name" : "file_1",
+              "sensitive" : false
+            },
+            "file_2" : {
+              "displayName" : "file_2",
+              "identifiesControllerService" : false,
+              "name" : "file_2",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -396,9 +505,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
           "identifier" : "bc064221-f5a9-3987-9c3c-101d080bdedb",
-          "instanceIdentifier" : "10c80034-0181-1000-ffff-ffffa2cd841e",
+          "instanceIdentifier" : "c1881bdf-f9ef-38de-baf2-d024584b7c23",
           "maxBackoffPeriod" : "10 mins",
           "name" : "UpdateRecord",
           "penaltyDuration" : "30 sec",
@@ -410,11 +519,12 @@
             "/drive" : "replaceRegex(/fred, '^(.*:).*$', '$1')",
             "/extension2" : "substringAfterLast(replaceRegex(/fred[contains(.,'.')],'^.*\\\\([^\\\\]+)$','$1'),'.')",
             "/filename" : "replaceRegex(/fred,'^.*\\\\([^\\\\]+)$','$1')",
+            "/path2" : "replaceRegex(/fred,'^(.*\\\\)[^\\\\]*$','$1')",
             "record-writer" : "cae7d794-f6eb-373e-a8b6-d5574798a758",
             "/extension" : "replaceRegex(/fred[contains(.,'.')],'^.*\\.([^\\\\\\.]*)$','$1')",
             "record-reader" : "1f1d1ca7-ce9f-32b6-bfcb-d35fa37329fc",
             "replacement-value-strategy" : "record-path-value",
-            "/path" : "replaceRegex(/fred,'^.*:(.*\\\\)[^\\\\]*$','$1')"
+            "/path" : "replaceRegex(/fred,'^(.*:)?(.*\\\\)[^\\\\]*$','$2')"
           },
           "propertyDescriptors" : {
             "/drive" : {
@@ -433,6 +543,12 @@
               "displayName" : "/filename",
               "identifiesControllerService" : false,
               "name" : "/filename",
+              "sensitive" : false
+            },
+            "/path2" : {
+              "displayName" : "/path2",
+              "identifiesControllerService" : false,
+              "name" : "/path2",
               "sensitive" : false
             },
             "record-writer" : {
@@ -488,9 +604,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "5d6f86e4-8fdf-38a2-a604-3ca978183641",
+          "groupIdentifier" : "a0d969e0-cadb-311f-a3f2-2447cc73701b",
           "identifier" : "491cb304-5793-3852-bcdd-850d846f138d",
-          "instanceIdentifier" : "10c70ddd-0181-1000-0000-00006d792e2f",
+          "instanceIdentifier" : "4f321c41-766f-33c5-b6e4-c4638efce340",
           "maxBackoffPeriod" : "10 mins",
           "name" : "GenerateFlowFile",
           "penaltyDuration" : "30 sec",
@@ -501,10 +617,11 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "[\n{\"fred\":\"C:\\\\Program Files\\\\fred.exe\"},\n{\"fred\":\"C:\\\\Program Files\\\\My Dir\\\\not fred.\"},\n{\"fred\":\"C:\\\\Program Files\\\\My Dir\\\\not fred\"},\n{\"fred\":\"C:\\\\Program Files\\\\My.Dir\\\\not fred\"},\n{\"fred\":\"C:\\\\Program Files\\\\My.Dir\\\\not fred.exe\"}\n]",
+            "generate-ff-custom-text" : "[\n{\"fred\":\"C:\\\\Program Files\\\\fred.exe\"},\n{\"fred\":\"\\\\Program Files\\\\fred.exe\"},\n{\"fred\":\"C:\\\\Program Files\\\\My Dir\\\\not fred.\"},\n{\"fred\":\"C:\\\\Program Files\\\\My Dir\\\\not fred\"},\n{\"fred\":\"C:\\\\Program Files\\\\My.Dir\\\\not fred\"},\n{\"fred\":\"C:\\\\Program Files\\\\My.Dir\\\\not fred.exe\"}\n]",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
-            "Data Format" : "Text"
+            "Data Format" : "Text",
+            "input_path" : "C:\\\\Program Files\\\\fred.exe"
           },
           "propertyDescriptors" : {
             "character-set" : {
@@ -547,6 +664,12 @@
               "displayName" : "Data Format",
               "identifiesControllerService" : false,
               "name" : "Data Format",
+              "sensitive" : false
+            },
+            "input_path" : {
+              "displayName" : "input_path",
+              "identifiesControllerService" : false,
+              "name" : "input_path",
               "sensitive" : false
             }
           },

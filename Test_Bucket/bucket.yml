@@ -25,9 +25,9 @@ flows:
       Test Bed, flowDesc: ''}
   229dea12-86d0-45f2-8e63-6864a36810c5: {ver: 1, file: ErrorHandling.snapshot, comments: '',
     author: anonymous, created: 1647550445297, flowName: ErrorHandling, flowDesc: ''}
-  4555bfb5-cd28-49ff-a437-b711732a0662: {ver: 5, file: Yet_Another_Test_Bed.snapshot,
-    comments: Added enrichment by insertion strategy flow, author: anonymous, created: 1656078621351,
-    flowName: Yet Another Test Bed, flowDesc: ''}
+  4555bfb5-cd28-49ff-a437-b711732a0662: {ver: 6, file: Yet_Another_Test_Bed.snapshot,
+    comments: Added test scenario for showing merge schema bug., author: anonymous,
+    created: 1656088599984, flowName: Yet Another Test Bed, flowDesc: ''}
   30bee577-7956-42a6-9896-9a9c23533cf1: {ver: 3, file: Write_To_Redis.snapshot, comments: Added
       parameter context, author: anonymous, created: 1651585140239, flowName: Write
       To Redis, flowDesc: ''}

@@ -1728,7 +1728,8 @@
             "avro-reg-validated-field-names" : "true",
             "service_protocol" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"ServiceProtocolEnrichment\",\n  \"fields\": [\n    {\"name\":\"service_protocol\", \"type\":\n      {\"name\":\"ServiceProtocolRecord\",\"type\":\"record\",\n        \"fields\":[\n          {\"name\":\"name\",\"type\":\"string\"},\n          {\"name\":\"code\",\"type\":\"long\"},\n          {\"name\":\"protocol\",\"type\":\"string\"},\n          {\"name\":\"alias\",\"type\":\"string\"},\n          {\"name\":\"comment\",\"type\":\"string\"}\n        ]\n      }\n    }\n  ]\n}\n",
             "network_transport" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"NetworkTransportEnrichment\",\n  \"fields\": [\n    {\"name\":\"network_transport\", \"type\":\n      {\"name\":\"NetworkTransportRecord\",\"type\":\"record\",\n        \"fields\":[\n          {\"name\":\"name\",\"type\":\"string\"},\n          {\"name\":\"code\",\"type\":\"long\"},\n          {\"name\":\"alias\",\"type\":\"string\"},\n          {\"name\":\"comment\",\"type\":\"string\"}\n        ]\n      }\n    }\n  ]\n}\n",
-            "lookup_input" : "{\n  \"type\": \"record\",\n  \"name\": \"lookup_results_input\",\n  \"fields\": [\n    {\n      \"name\": \"Lookups\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Lookups_type\",\n        \"fields\": [\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"}\n        ]\n      }\n    },\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n"
+            "lookup_input" : "{\n  \"type\": \"record\",\n  \"name\": \"lookup_results_input\",\n  \"fields\": [\n    {\n      \"name\": \"Lookups\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Lookups_type\",\n        \"fields\": [\n          {\"name\":\"person_str\", \"type\":\"string\"},\n          {\"name\":\"role_str\", \"type\":\"string\"}\n        ]\n      }\n    },\n    {\n      \"name\": \"Enrichment\",\n      \"type\": {\n        \"type\": \"record\",\n        \"name\": \"Enrichment_type\",\n        \"fields\":[\n          {\n            \"type\": \"record\",\n            \"name\": \"person\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"person_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"age\", \"type\": \"int\" }\n              ]\n            }\n          },\n          {\n            \"type\": \"record\",\n            \"name\": \"role\",\n            \"type\": {\n              \"type\": \"record\",\n              \"name\": \"role_type\",\n              \"fields\":[\n                { \"name\": \"name\", \"type\": \"string\" },\n                { \"name\": \"privs\", \"type\": \"string\" }\n              ]\n            }\n          }\n        ]\n      }\n    }\n  ]\n}\n",
+            "example_test_record" : "{\n  \"type\":\"record\",\n  \"namespace\":\"io.github.hindmasj\",\n  \"name\":\"NetworkTransportTestExample\",\n  \"fields\": [\n    {\"name\":\"network_transport_id\",\"type\":\"long\"},\n    {\"name\":\"Enrichment\", \"type\":\n      {\"name\":\"EnrichmentType\",\"type\":\"record\",\n        \"fields\":[\n          {\"name\":\"network_transport\", \"type\":\n            {\"name\":\"NetworkTransportRecord\",\"type\":\"record\",\n              \"fields\":[\n                {\"name\":\"name\",\"type\":\"string\"},\n                {\"name\":\"code\",\"type\":\"long\"},\n                {\"name\":\"alias\",\"type\":\"string\"},\n                {\"name\":\"comment\",\"type\":\"string\"}\n              ]\n            }\n          }        \n        ]\n      }\n    }\n  ]\n}\n"
           },
           "propertyDescriptors" : {
             "avro-reg-validated-field-names" : {
@@ -1753,6 +1754,12 @@
               "displayName" : "lookup_input",
               "identifiesControllerService" : false,
               "name" : "lookup_input",
+              "sensitive" : false
+            },
+            "example_test_record" : {
+              "displayName" : "example_test_record",
+              "identifiesControllerService" : false,
+              "name" : "example_test_record",
               "sensitive" : false
             }
           },
@@ -4974,11 +4981,12 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "comments" : "",
               "groupId" : "aba04935-5085-3ea3-9bbb-407777f2e584",
-              "id" : "d5f59c63-7497-3f5a-9dae-2a4c44de46fa",
-              "instanceIdentifier" : "ef1639f2-d9a5-1855-b2a8-aa30ed7f248e",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
+              "id" : "7f708de2-cea7-32ce-b225-81cd8e765b5e",
+              "instanceIdentifier" : "96ca3a7c-0181-1000-0000-000004f417c1",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
@@ -5105,11 +5113,12 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "comments" : "",
               "groupId" : "aba04935-5085-3ea3-9bbb-407777f2e584",
-              "id" : "d5f59c63-7497-3f5a-9dae-2a4c44de46fa",
-              "instanceIdentifier" : "ef1639f2-d9a5-1855-b2a8-aa30ed7f248e",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
+              "id" : "7f708de2-cea7-32ce-b225-81cd8e765b5e",
+              "instanceIdentifier" : "96ca3a7c-0181-1000-0000-000004f417c1",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
@@ -5137,11 +5146,12 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "comments" : "",
               "groupId" : "aba04935-5085-3ea3-9bbb-407777f2e584",
-              "id" : "d5f59c63-7497-3f5a-9dae-2a4c44de46fa",
-              "instanceIdentifier" : "ef1639f2-d9a5-1855-b2a8-aa30ed7f248e",
-              "name" : "Failure",
-              "type" : "OUTPUT_PORT"
+              "id" : "7f708de2-cea7-32ce-b225-81cd8e765b5e",
+              "instanceIdentifier" : "96ca3a7c-0181-1000-0000-000004f417c1",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
@@ -5235,11 +5245,12 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "comments" : "",
               "groupId" : "aba04935-5085-3ea3-9bbb-407777f2e584",
-              "id" : "62a3afb6-04ac-3a49-b991-948d1f70481e",
-              "instanceIdentifier" : "717c3c16-0807-1806-b707-9f58fba2d24b",
-              "name" : "Success",
-              "type" : "OUTPUT_PORT"
+              "id" : "d3b97870-ceb0-3464-805d-8a4e334f94d6",
+              "instanceIdentifier" : "96c9957d-0181-1000-0000-00001b8387a5",
+              "name" : "Funnel",
+              "type" : "FUNNEL"
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
@@ -5268,42 +5279,32 @@
           "defaultFlowFileExpiration" : "0 sec",
           "flowFileConcurrency" : "UNBOUNDED",
           "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
-          "funnels" : [ ],
+          "funnels" : [ {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
+            "identifier" : "d3b97870-ceb0-3464-805d-8a4e334f94d6",
+            "instanceIdentifier" : "96c9957d-0181-1000-0000-00001b8387a5",
+            "position" : {
+              "x" : 5296.0,
+              "y" : 1816.0
+            }
+          }, {
+            "componentType" : "FUNNEL",
+            "groupIdentifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
+            "identifier" : "7f708de2-cea7-32ce-b225-81cd8e765b5e",
+            "instanceIdentifier" : "96ca3a7c-0181-1000-0000-000004f417c1",
+            "position" : {
+              "x" : 5904.0,
+              "y" : 1808.0
+            }
+          } ],
           "groupIdentifier" : "e6da3e3a-3ec1-387e-897b-b2ada62b264b",
           "identifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
           "inputPorts" : [ ],
           "instanceIdentifier" : "151a3133-c781-1e15-8bb7-0537bae67290",
           "labels" : [ ],
           "name" : "Enrich Network Protocol Test Example",
-          "outputPorts" : [ {
-            "allowRemoteAccess" : false,
-            "componentType" : "OUTPUT_PORT",
-            "concurrentlySchedulableTaskCount" : 1,
-            "groupIdentifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
-            "identifier" : "62a3afb6-04ac-3a49-b991-948d1f70481e",
-            "instanceIdentifier" : "717c3c16-0807-1806-b707-9f58fba2d24b",
-            "name" : "Success",
-            "position" : {
-              "x" : 4608.0,
-              "y" : 1520.0
-            },
-            "scheduledState" : "ENABLED",
-            "type" : "OUTPUT_PORT"
-          }, {
-            "allowRemoteAccess" : false,
-            "componentType" : "OUTPUT_PORT",
-            "concurrentlySchedulableTaskCount" : 1,
-            "groupIdentifier" : "aba04935-5085-3ea3-9bbb-407777f2e584",
-            "identifier" : "d5f59c63-7497-3f5a-9dae-2a4c44de46fa",
-            "instanceIdentifier" : "ef1639f2-d9a5-1855-b2a8-aa30ed7f248e",
-            "name" : "Failure",
-            "position" : {
-              "x" : 5640.0,
-              "y" : 1808.0
-            },
-            "scheduledState" : "ENABLED",
-            "type" : "OUTPUT_PORT"
-          } ],
+          "outputPorts" : [ ],
           "position" : {
             "x" : 5688.0,
             "y" : 384.0
@@ -5401,6 +5402,7 @@
               "File Size" : "0B",
               "generate-ff-custom-text" : "[\n{\"transport_protocol_id\":17,\"Enrichment\":{}},\n{\"transport_protocol_id\":6,\"Enrichment\":{}}\n]\n",
               "Batch Size" : "1",
+              "schema.name" : "example_test_record",
               "Unique FlowFiles" : "false",
               "Data Format" : "Text"
             },
@@ -5433,6 +5435,12 @@
                 "displayName" : "Batch Size",
                 "identifiesControllerService" : false,
                 "name" : "Batch Size",
+                "sensitive" : false
+              },
+              "schema.name" : {
+                "displayName" : "schema.name",
+                "identifiesControllerService" : false,
+                "name" : "schema.name",
                 "sensitive" : false
               },
               "Unique FlowFiles" : {
@@ -5588,8 +5596,8 @@
               "Join Strategy" : "Insert Enrichment Fields",
               "Insertion Record Path" : "/Enrichment",
               "Timeout" : "10 min",
-              "Original Record Reader" : "38f408f0-4beb-3d58-be37-45b494cf0cdb",
-              "Record Writer" : "1a614262-1dc3-35ab-9730-57474575dbf1",
+              "Original Record Reader" : "a2dd5c9e-6bbb-3b2f-bd9b-f7a966c74a0a",
+              "Record Writer" : "81fe2c65-2c2e-31c0-8401-e9dfea88a891",
               "Enrichment Record Reader" : "a2dd5c9e-6bbb-3b2f-bd9b-f7a966c74a0a",
               "dbf-default-scale" : "0",
               "Maximum number of Bins" : "10000",
@@ -5786,6 +5794,7 @@
               "File Size" : "0B",
               "generate-ff-custom-text" : "[\n{\"transport_protocol_id\":9999,\"Enrichment\":{}},\n{\"transport_protocol_id\":6,\"Enrichment\":{}}\n]\n",
               "Batch Size" : "1",
+              "schema.name" : "example_test_record",
               "Unique FlowFiles" : "false",
               "Data Format" : "Text"
             },
@@ -5818,6 +5827,12 @@
                 "displayName" : "Batch Size",
                 "identifiesControllerService" : false,
                 "name" : "Batch Size",
+                "sensitive" : false
+              },
+              "schema.name" : {
+                "displayName" : "schema.name",
+                "identifiesControllerService" : false,
+                "name" : "schema.name",
                 "sensitive" : false
               },
               "Unique FlowFiles" : {

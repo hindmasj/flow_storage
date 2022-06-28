@@ -23,9 +23,9 @@ flows:
   824a84d6-75eb-47e2-a078-6f5175117996: {ver: 2, file: CSV_Test_Bed.snapshot, comments: Separate
       queury for each leg., author: anonymous, created: 1647888379803, flowName: CSV
       Test Bed, flowDesc: ''}
-  229dea12-86d0-45f2-8e63-6864a36810c5: {ver: 2, file: ErrorHandling.snapshot, comments: Added
-      parameter dependant put file and terminate, author: anonymous, created: 1656414609315,
-    flowName: ErrorHandling, flowDesc: ''}
+  229dea12-86d0-45f2-8e63-6864a36810c5: {ver: 3, file: ErrorHandling.snapshot, comments: Changed
+      logging parameters, author: anonymous, created: 1656427741921, flowName: ErrorHandling,
+    flowDesc: ''}
   4555bfb5-cd28-49ff-a437-b711732a0662: {ver: 7, file: Yet_Another_Test_Bed.snapshot,
     comments: Added schema for test example, author: anonymous, created: 1656092299803,
     flowName: Yet Another Test Bed, flowDesc: ''}

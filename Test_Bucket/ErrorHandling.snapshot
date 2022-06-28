@@ -529,11 +529,11 @@
           },
           "properties" : {
             "character-set" : "UTF-8",
-            "Test Flow" : "true",
             "File Size" : "0B",
             "generate-ff-custom-text" : "This is some text",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
+            "event_name" : "an_event_name",
             "Data Format" : "Text"
           },
           "propertyDescriptors" : {
@@ -541,12 +541,6 @@
               "displayName" : "Character Set",
               "identifiesControllerService" : false,
               "name" : "character-set",
-              "sensitive" : false
-            },
-            "Test Flow" : {
-              "displayName" : "Test Flow",
-              "identifiesControllerService" : false,
-              "name" : "Test Flow",
               "sensitive" : false
             },
             "File Size" : {
@@ -577,6 +571,12 @@
               "displayName" : "Unique FlowFiles",
               "identifiesControllerService" : false,
               "name" : "Unique FlowFiles",
+              "sensitive" : false
+            },
+            "event_name" : {
+              "displayName" : "event_name",
+              "identifiesControllerService" : false,
+              "name" : "event_name",
               "sensitive" : false
             },
             "Data Format" : {
@@ -775,7 +775,7 @@
             "y" : 775.5
           },
           "properties" : {
-            "log-message" : "${uuid}",
+            "log-message" : "${event_name} ${uuid}",
             "log-level" : "warn",
             "log-prefix" : "Failed to process message: "
           },

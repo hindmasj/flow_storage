@@ -26,9 +26,9 @@ flows:
   229dea12-86d0-45f2-8e63-6864a36810c5: {ver: 3, file: ErrorHandling.snapshot, comments: Changed
       logging parameters, author: anonymous, created: 1656427741921, flowName: ErrorHandling,
     flowDesc: ''}
-  4555bfb5-cd28-49ff-a437-b711732a0662: {ver: 7, file: Yet_Another_Test_Bed.snapshot,
-    comments: Added schema for test example, author: anonymous, created: 1656092299803,
-    flowName: Yet Another Test Bed, flowDesc: ''}
+  4555bfb5-cd28-49ff-a437-b711732a0662: {ver: 8, file: Yet_Another_Test_Bed.snapshot,
+    comments: Added attribute conversion for syslog timestamp, author: anonymous,
+    created: 1658136590766, flowName: Yet Another Test Bed, flowDesc: ''}
   4e4acb26-7448-4c74-88ce-589a807dfc89: {ver: 1, file: Rewrite_Redis_Key_Set.snapshot,
     comments: '', author: anonymous, created: 1656437430874, flowName: Rewrite Redis
       Key Set, flowDesc: 'Demonstration of how to extract a redis key set, then write

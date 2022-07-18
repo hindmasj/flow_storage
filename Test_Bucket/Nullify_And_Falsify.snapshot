@@ -715,7 +715,7 @@
           "properties" : {
             "character-set" : "UTF-8",
             "File Size" : "0B",
-            "generate-ff-custom-text" : "[\n  {\"latitude\":\"1.0\",\"longitude\":\"-1.0\",\"user\":{\"name\":\"alice\",\"id\":\"12345671\",\"has_cover\":\"true\"},\"vehicle\":{\"id\":\"AB123DE\"}},\n  {\"latitude\":\"1.0\",\"longitude\":\"-1.0\",\"user\":{\"name\":\"bob\",\"id\":\"12345672\",\"has_cover\":\"false\"},\"vehicle\":{\"id\":\"AB123DE\"}},\n  {\"latitude\":\"\",\"longitude\":\"\",\"user\":{\"name\":\"chuck\",\"id\":\"\",\"has_cover\":\"\"},\"vehicle\":{\"id\":\"\"}}\n]",
+            "generate-ff-custom-text" : "[\n  {\"latitude\":\"1.0\",\"longitude\":\"-1.0\",\"user\":{\"name\":\"alice\",\"id\":\"12345671\",\"has_cover\":\"true\"},\"vehicle\":{\"id\":\"AB123DE\"}},\n  {\"latitude\":\"1.0\",\"longitude\":\"-1.0\",\"user\":{\"name\":\"bob\",\"id\":\"12345672\",\"has_cover\":\"false\"},\"vehicle\":{\"id\":\"AB123DE\"}},\n  {\"latitude\":\"\",\"longitude\":\"\",\"user\":{\"name\":\"chuck\",\"id\":\"\",\"has_cover\":\"flargh\"},\"vehicle\":{\"id\":\"\"}}\n]",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
             "Data Format" : "Text"
@@ -797,9 +797,9 @@
             "y" : 312.0
           },
           "properties" : {
-            "jolt-spec" : "[{\n\t\"operation\": \"modify-overwrite-beta\",\n\t\"spec\": {\n\t\t\"*\": {\n\t\t\t\"longitude|latitude\": \"=toDouble(@(0))\",\n\t\t\t\"user\": {\n\t\t\t\t\"id\": \"=toLong(@(0))\",\n\t\t\t\t\"has_cover\": \"=toBoolean(@(0))\"\n\t\t\t}\n\t\t}\n\t}\n}]",
+            "jolt-spec" : "[{\n\t\"operation\": \"modify-overwrite-beta\",\n\t\"spec\": {\n\t\t\"*\": {\n\t\t\t\"longitude|latitude\": [\"=toDouble(@(0))\",null],\n\t\t\t\"user\": {\n\t\t\t\t\"id\": [\"=toLong(@(0))\",null],\n\t\t\t\t\"has_cover\": [\"=toBoolean(@(0))\",false]\n\t\t\t}\n\t\t}\n\t}\n}]",
             "jolt-transform" : "jolt-transform-chain",
-            "pretty_print" : "false",
+            "pretty_print" : "true",
             "Transform Cache Size" : "1"
           },
           "propertyDescriptors" : {

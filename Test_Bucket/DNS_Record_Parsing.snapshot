@@ -16,10 +16,109 @@
           "destination" : {
             "comments" : "",
             "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
-            "id" : "b47127ad-e128-3992-9e4c-90d7cea442a7",
-            "instanceIdentifier" : "5743771c-0187-1000-ffff-ffffe3ffd355",
+            "id" : "aeee8650-3f00-3da5-8a8a-8b7dc8786855",
+            "instanceIdentifier" : "57415b68-0187-1000-ffff-ffff9228cec7",
             "name" : "Funnel",
             "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "09a358cb-58dd-3e7e-885f-68215f160a1f",
+          "instanceIdentifier" : "5e133b82-f868-1403-ffff-ffff898b257c",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "31f3a753-6c5f-35b3-abc9-d0a79d1aa7fa",
+            "instanceIdentifier" : "5e133b73-f868-1403-0000-0000062af7ee",
+            "name" : "MergeRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "31f3a753-6c5f-35b3-abc9-d0a79d1aa7fa",
+            "instanceIdentifier" : "5e133b73-f868-1403-0000-0000062af7ee",
+            "name" : "MergeRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "8d821afc-05f1-3ae2-aeb9-466dca69c9d9",
+          "instanceIdentifier" : "5b7059a8-0187-1000-ffff-ffffeb4f1fb5",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "e24d2647-0032-320a-b7ba-9b5cf82b1720",
+            "instanceIdentifier" : "5b6c2b2d-0187-1000-0000-00000fe347de",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "31f3a753-6c5f-35b3-abc9-d0a79d1aa7fa",
+            "instanceIdentifier" : "5e133b73-f868-1403-0000-0000062af7ee",
+            "name" : "MergeRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "c47e932f-48e9-34bf-9770-582d489542c3",
+          "instanceIdentifier" : "5e133b5b-f868-1403-ffff-ffffc1d2f30c",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "1664c77e-8e7f-381f-9292-bc6596732021",
+            "instanceIdentifier" : "5e133b53-f868-1403-a99a-34a349b4e7ec",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "e24d2647-0032-320a-b7ba-9b5cf82b1720",
+            "instanceIdentifier" : "5b6c2b2d-0187-1000-0000-00000fe347de",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
@@ -38,6 +137,39 @@
             "id" : "23ce727c-5e71-3cb8-a439-37ca29b4a021",
             "instanceIdentifier" : "5741c56b-0187-1000-0000-00002ed73bc3",
             "name" : "RouteOnAttribute",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "610abe49-d278-3b07-b291-3854a16a51c3",
+            "instanceIdentifier" : "57439bac-0187-1000-0000-00002132f601",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "ccbab9c5-3067-37a8-b7fe-aaae138a81d6",
+          "instanceIdentifier" : "5e133b7e-f868-1403-0000-0000301e3520",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "merged" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "31f3a753-6c5f-35b3-abc9-d0a79d1aa7fa",
+            "instanceIdentifier" : "5e133b73-f868-1403-0000-0000062af7ee",
+            "name" : "MergeRecord",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -82,6 +214,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "aeee8650-3f00-3da5-8a8a-8b7dc8786855",
+            "instanceIdentifier" : "57415b68-0187-1000-ffff-ffff9228cec7",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "3ccae5b7-cc78-3b85-b536-fa9155bd2566",
+          "instanceIdentifier" : "5e133b67-f868-1403-ffff-ffffe612c376",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "1664c77e-8e7f-381f-9292-bc6596732021",
+            "instanceIdentifier" : "5e133b53-f868-1403-a99a-34a349b4e7ec",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
             "id" : "1bf1f11d-3f9c-3fe3-b558-ba5c99186633",
             "instanceIdentifier" : "573d7095-0187-1000-ffff-ffffd77a75ce",
             "name" : "PartitionRecord",
@@ -115,10 +280,10 @@
           "destination" : {
             "comments" : "",
             "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
-            "id" : "610abe49-d278-3b07-b291-3854a16a51c3",
-            "instanceIdentifier" : "57439bac-0187-1000-0000-00002132f601",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
+            "id" : "1664c77e-8e7f-381f-9292-bc6596732021",
+            "instanceIdentifier" : "5e133b53-f868-1403-a99a-34a349b4e7ec",
+            "name" : "UpdateRecord",
+            "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
@@ -170,6 +335,39 @@
             "id" : "1bf1f11d-3f9c-3fe3-b558-ba5c99186633",
             "instanceIdentifier" : "573d7095-0187-1000-ffff-ffffd77a75ce",
             "name" : "PartitionRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "f244164a-3028-3271-9c1d-4f5d3e2818d0",
+            "instanceIdentifier" : "5b706ffd-0187-1000-ffff-ffffbdfdfda5",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "04ada026-37fd-39ff-9cf5-b140a9264b72",
+          "instanceIdentifier" : "5b708600-0187-1000-0000-00005a29b4ea",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "add49f91-f31b-3364-a05c-8e29f331669d",
+            "id" : "e24d2647-0032-320a-b7ba-9b5cf82b1720",
+            "instanceIdentifier" : "5b6c2b2d-0187-1000-0000-00000fe347de",
+            "name" : "UpdateRecord",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -430,11 +628,11 @@
         "funnels" : [ {
           "componentType" : "FUNNEL",
           "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
-          "identifier" : "b47127ad-e128-3992-9e4c-90d7cea442a7",
-          "instanceIdentifier" : "5743771c-0187-1000-ffff-ffffe3ffd355",
+          "identifier" : "f244164a-3028-3271-9c1d-4f5d3e2818d0",
+          "instanceIdentifier" : "5b706ffd-0187-1000-ffff-ffffbdfdfda5",
           "position" : {
-            "x" : -172.0,
-            "y" : 696.0
+            "x" : -760.0,
+            "y" : 648.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -442,8 +640,8 @@
           "identifier" : "aeee8650-3f00-3da5-8a8a-8b7dc8786855",
           "instanceIdentifier" : "57415b68-0187-1000-ffff-ffff9228cec7",
           "position" : {
-            "x" : 603.0,
-            "y" : 292.0
+            "x" : 680.0,
+            "y" : 656.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -451,8 +649,8 @@
           "identifier" : "610abe49-d278-3b07-b291-3854a16a51c3",
           "instanceIdentifier" : "57439bac-0187-1000-0000-00002132f601",
           "position" : {
-            "x" : 232.0,
-            "y" : 696.0
+            "x" : 0.0,
+            "y" : 1016.0
           }
         } ],
         "identifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
@@ -480,13 +678,123 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "31f3a753-6c5f-35b3-abc9-d0a79d1aa7fa",
+          "instanceIdentifier" : "5e133b73-f868-1403-0000-0000062af7ee",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "MergeRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -152.0,
+            "y" : 824.0
+          },
+          "properties" : {
+            "Attribute Strategy" : "Keep All Unique Attributes",
+            "min-records" : "1",
+            "record-writer" : "492f8108-2009-3f65-bd84-96aa18ae9fa9",
+            "merge-strategy" : "Defragment",
+            "record-reader" : "d62c8873-60ad-33aa-8efb-8b0510aa6272",
+            "max-records" : "1000",
+            "min-bin-size" : "0 B",
+            "max.bin.count" : "10"
+          },
+          "propertyDescriptors" : {
+            "max-bin-age" : {
+              "displayName" : "Max Bin Age",
+              "identifiesControllerService" : false,
+              "name" : "max-bin-age",
+              "sensitive" : false
+            },
+            "correlation-attribute-name" : {
+              "displayName" : "Correlation Attribute Name",
+              "identifiesControllerService" : false,
+              "name" : "correlation-attribute-name",
+              "sensitive" : false
+            },
+            "Attribute Strategy" : {
+              "displayName" : "Attribute Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Attribute Strategy",
+              "sensitive" : false
+            },
+            "min-records" : {
+              "displayName" : "Minimum Number of Records",
+              "identifiesControllerService" : false,
+              "name" : "min-records",
+              "sensitive" : false
+            },
+            "max-bin-size" : {
+              "displayName" : "Maximum Bin Size",
+              "identifiesControllerService" : false,
+              "name" : "max-bin-size",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "merge-strategy" : {
+              "displayName" : "Merge Strategy",
+              "identifiesControllerService" : false,
+              "name" : "merge-strategy",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "max-records" : {
+              "displayName" : "Maximum Number of Records",
+              "identifiesControllerService" : false,
+              "name" : "max-records",
+              "sensitive" : false
+            },
+            "min-bin-size" : {
+              "displayName" : "Minimum Bin Size",
+              "identifiesControllerService" : false,
+              "name" : "min-bin-size",
+              "sensitive" : false
+            },
+            "max.bin.count" : {
+              "displayName" : "Maximum Number of Bins",
+              "identifiesControllerService" : false,
+              "name" : "max.bin.count",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.MergeRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "original" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
           "identifier" : "1bf1f11d-3f9c-3fe3-b558-ba5c99186633",
           "instanceIdentifier" : "573d7095-0187-1000-ffff-ffffd77a75ce",
           "maxBackoffPeriod" : "10 mins",
           "name" : "PartitionRecord",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -144.0,
+            "x" : -152.0,
             "y" : 224.0
           },
           "properties" : {
@@ -537,13 +845,84 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "1664c77e-8e7f-381f-9292-bc6596732021",
+          "instanceIdentifier" : "5e133b53-f868-1403-a99a-34a349b4e7ec",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 88.0,
+            "y" : 608.0
+          },
+          "properties" : {
+            "/message_stub" : "replaceRegex(\n  /message,\n  '^[0-9/]* [0-9:]* [AaPp][Mm] (.*)$',\n  '$1'\n)",
+            "record-writer" : "492f8108-2009-3f65-bd84-96aa18ae9fa9",
+            "/event_ts" : "toDate(\n  replaceRegex(\n    /message,\n    '^([0-9/]* [0-9:]* [AaPp][Mm]).*',\n    '$1'\n  ),\n  'dd/MM/yyyy HH:mm:ss',\n  'Europe/London'\n)",
+            "record-reader" : "d62c8873-60ad-33aa-8efb-8b0510aa6272",
+            "replacement-value-strategy" : "record-path-value"
+          },
+          "propertyDescriptors" : {
+            "/message_stub" : {
+              "displayName" : "/message_stub",
+              "identifiesControllerService" : false,
+              "name" : "/message_stub",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "/event_ts" : {
+              "displayName" : "/event_ts",
+              "identifiesControllerService" : false,
+              "name" : "/event_ts",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "replacement-value-strategy" : {
+              "displayName" : "Replacement Value Strategy",
+              "identifiesControllerService" : false,
+              "name" : "replacement-value-strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
           "identifier" : "23ce727c-5e71-3cb8-a439-37ca29b4a021",
           "instanceIdentifier" : "5741c56b-0187-1000-0000-00002ed73bc3",
           "maxBackoffPeriod" : "10 mins",
           "name" : "RouteOnAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -144.0,
+            "x" : -152.0,
             "y" : 416.0
           },
           "properties" : {
@@ -593,7 +972,7 @@
           "name" : "GenerateFlowFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -144.0,
+            "x" : -152.0,
             "y" : 40.0
           },
           "properties" : {
@@ -656,6 +1035,77 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "add49f91-f31b-3364-a05c-8e29f331669d",
+          "identifier" : "e24d2647-0032-320a-b7ba-9b5cf82b1720",
+          "instanceIdentifier" : "5b6c2b2d-0187-1000-0000-00000fe347de",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateRecord",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -376.0,
+            "y" : 608.0
+          },
+          "properties" : {
+            "/message_stub" : "replaceRegex(\n  /message,\n  '^[0-9/]* [0-9:]* [AaPp][Mm] (.*)$',\n  '$1'\n)",
+            "record-writer" : "492f8108-2009-3f65-bd84-96aa18ae9fa9",
+            "/event_ts" : "toDate(\n  replaceRegex(\n    /message,\n    '^([0-9/]* [0-9:]* [AaPp][Mm]).*',\n    '$1'\n  ),\n  'MM/dd/yyyy HH:mm:ss a',\n  'Europe/London'\n)",
+            "record-reader" : "d62c8873-60ad-33aa-8efb-8b0510aa6272",
+            "replacement-value-strategy" : "record-path-value"
+          },
+          "propertyDescriptors" : {
+            "/message_stub" : {
+              "displayName" : "/message_stub",
+              "identifiesControllerService" : false,
+              "name" : "/message_stub",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "/event_ts" : {
+              "displayName" : "/event_ts",
+              "identifiesControllerService" : false,
+              "name" : "/event_ts",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "replacement-value-strategy" : {
+              "displayName" : "Replacement Value Strategy",
+              "identifiesControllerService" : false,
+              "name" : "replacement-value-strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateRecord",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],

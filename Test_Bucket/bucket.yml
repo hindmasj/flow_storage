@@ -24,9 +24,8 @@ flows:
   de1c1560-6ed2-4ffc-b159-0be9c73c7a8a: {ver: 7, file: Unescape_JSON.snapshot, comments: Used
       fork/merge to complete record enrichment., author: anonymous, created: 1651779409276,
     flowName: Unescape JSON, flowDesc: Trying the record path function unescapeJson}
-  824a84d6-75eb-47e2-a078-6f5175117996: {ver: 3, file: CSV_Test_Bed.snapshot, comments: Added
-      small test, author: anonymous, created: 1687875238379, flowName: CSV Test Bed,
-    flowDesc: ''}
+  824a84d6-75eb-47e2-a078-6f5175117996: {ver: 4, file: CSV_Test_Bed.snapshot, comments: Reverted
+      test, author: anonymous, created: 1687875311563, flowName: CSV Test Bed, flowDesc: ''}
   4555bfb5-cd28-49ff-a437-b711732a0662: {ver: 8, file: Yet_Another_Test_Bed.snapshot,
     comments: Added attribute conversion for syslog timestamp, author: anonymous,
     created: 1658136590766, flowName: Yet Another Test Bed, flowDesc: ''}

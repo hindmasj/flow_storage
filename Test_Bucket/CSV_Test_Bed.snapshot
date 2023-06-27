@@ -652,20 +652,7 @@
         "identifier" : "e299c31e-6ffb-3b30-8890-82ac596fe507",
         "inputPorts" : [ ],
         "instanceIdentifier" : "fd33b363-0188-1000-ffff-ffffa001e98d",
-        "labels" : [ {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "e299c31e-6ffb-3b30-8890-82ac596fe507",
-          "height" : 148.0,
-          "identifier" : "701fac5a-c508-3013-9f8b-e9a3dc40bfce",
-          "instanceIdentifier" : "fd372d8a-0188-1000-ffff-ffffc8524f65",
-          "position" : {
-            "x" : 1526.8044982698964,
-            "y" : 378.7941176470588
-          },
-          "style" : { },
-          "width" : 148.0,
-          "zIndex" : 0
-        } ],
+        "labels" : [ ],
         "name" : "CSV Test Bed",
         "outputPorts" : [ ],
         "position" : {

@@ -19,12 +19,13 @@
         "identifier" : "21e56529-2fb0-3412-a3df-4272a5443d6a",
         "inputPorts" : [ {
           "allowRemoteAccess" : false,
+          "comments" : "",
           "componentType" : "INPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "21e56529-2fb0-3412-a3df-4272a5443d6a",
           "identifier" : "a80f68a5-59dd-3409-b88e-595bfe5dc07e",
           "instanceIdentifier" : "2a33d94a-0189-1000-ffff-fffffc878535",
-          "name" : "Input",
+          "name" : "Input 2",
           "position" : {
             "x" : 533.0,
             "y" : 175.0

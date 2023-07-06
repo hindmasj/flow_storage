@@ -1,0 +1,53 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "21e56529-2fb0-3412-a3df-4272a5443d6a",
+        "inputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "INPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "21e56529-2fb0-3412-a3df-4272a5443d6a",
+          "identifier" : "a80f68a5-59dd-3409-b88e-595bfe5dc07e",
+          "instanceIdentifier" : "2a33d94a-0189-1000-ffff-fffffc878535",
+          "name" : "Input",
+          "position" : {
+            "x" : 533.0,
+            "y" : 175.0
+          },
+          "scheduledState" : "DISABLED",
+          "type" : "INPUT_PORT"
+        } ],
+        "instanceIdentifier" : "2a33a548-0189-1000-ffff-ffffee8b358b",
+        "labels" : [ ],
+        "name" : "Test Updates",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 450.0,
+          "y" : 286.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { },
+      "parameterProviders" : { }
+    }
+  }
+}

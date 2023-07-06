@@ -30,7 +30,7 @@
             "x" : 533.0,
             "y" : 175.0
           },
-          "scheduledState" : "DISABLED",
+          "scheduledState" : "ENABLED",
           "type" : "INPUT_PORT"
         } ],
         "instanceIdentifier" : "2a33a548-0189-1000-ffff-ffffee8b358b",

@@ -1,6 +1,6 @@
 flows:
-  7e469da2-57c9-4e24-82de-336ccc79b9c9: {ver: 2, file: Updates_Test.snapshot, comments: Name
-      change, author: anonymous, created: 1688630272731, flowName: Updates Test, flowDesc: ''}
+  7e469da2-57c9-4e24-82de-336ccc79b9c9: {ver: 3, file: Updates_Test.snapshot, comments: Enabled,
+    author: anonymous, created: 1688630603968, flowName: Updates Test, flowDesc: ''}
   41075583-ebaf-448e-b9f3-8faa659deb92: {ver: 7, file: Redis_Enrichment_Test_Bed.snapshot,
     comments: Simplified Replacement Text to a single processor., author: anonymous,
     created: 1651608360385, flowName: Redis Enrichment Test Bed, flowDesc: ''}

@@ -271,7 +271,7 @@
             "name" : "GenerateFlowFile",
             "type" : "PROCESSOR"
           },
-          "zIndex" : 0
+          "zIndex" : 2
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
@@ -304,7 +304,7 @@
             "name" : "LookupRecord",
             "type" : "PROCESSOR"
           },
-          "zIndex" : 0
+          "zIndex" : 1
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
@@ -689,14 +689,14 @@
               "group" : "org.apache.nifi",
               "version" : "1.23.2"
             },
-            "type" : "org.apache.nifi.ssl.RestrictedSSLContextService"
+            "type" : "org.apache.nifi.ssl.SSLContextService"
           }, {
             "bundle" : {
               "artifact" : "nifi-standard-services-api-nar",
               "group" : "org.apache.nifi",
               "version" : "1.23.2"
             },
-            "type" : "org.apache.nifi.ssl.SSLContextService"
+            "type" : "org.apache.nifi.ssl.RestrictedSSLContextService"
           } ],
           "groupIdentifier" : "4b690b3c-9a5c-3bf4-a5b3-7636213c09c2",
           "identifier" : "3bc83801-6a90-3906-a602-e0459cd548c5",
@@ -986,20 +986,20 @@
         }, {
           "componentType" : "FUNNEL",
           "groupIdentifier" : "4b690b3c-9a5c-3bf4-a5b3-7636213c09c2",
-          "identifier" : "813f0b29-ef5d-3aae-971d-1d72c3ce7620",
-          "instanceIdentifier" : "fd3d4350-018b-1000-0000-000069480a77",
-          "position" : {
-            "x" : 2040.0,
-            "y" : 544.0
-          }
-        }, {
-          "componentType" : "FUNNEL",
-          "groupIdentifier" : "4b690b3c-9a5c-3bf4-a5b3-7636213c09c2",
           "identifier" : "d834a6c3-33c7-3856-8f50-265b0e4f0739",
           "instanceIdentifier" : "fd3aa035-018b-1000-0000-000006cc05d5",
           "position" : {
             "x" : 2040.0,
             "y" : 344.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "4b690b3c-9a5c-3bf4-a5b3-7636213c09c2",
+          "identifier" : "813f0b29-ef5d-3aae-971d-1d72c3ce7620",
+          "instanceIdentifier" : "fd3d4350-018b-1000-0000-000069480a77",
+          "position" : {
+            "x" : 2040.0,
+            "y" : 544.0
           }
         } ],
         "identifier" : "4b690b3c-9a5c-3bf4-a5b3-7636213c09c2",
@@ -1040,7 +1040,7 @@
             "result-contents" : "insert-entire-record",
             "routing-strategy" : "route-to-matched-unmatched",
             "record-path-lookup-miss-result-cache-size" : "0",
-            "result-record-path" : "/limbs",
+            "result-record-path" : "/Enrichment/limbs",
             "record-writer" : "e7d75d64-8df9-3ab7-b6fc-132e5d119533",
             "record-reader" : "fb115c79-ed67-3e3a-940b-9c7f14390fc3",
             "lookup-service" : "43fff71c-3534-3f8e-828c-b37d01aa45a2",
@@ -1415,7 +1415,7 @@
             "character-set" : "UTF-8",
             "File Size" : "0B",
             "mime-type" : "application/json",
-            "generate-ff-custom-text" : "[\n {\"name\":\"bob\",\"role\":\"user\",\"hands\":\"two\"},\n {\"name\":\"bill\",\"role\":\"dog\",\"legs\":\"four\"}\n]",
+            "generate-ff-custom-text" : "[\n {\"name\":\"bob\",\"role\":\"user\",\"hands\":\"two\",\"Enrichment\":{}},\n {\"name\":\"bill\",\"role\":\"dog\",\"legs\":\"four\",\"Enrichment\":{}}\n]",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
             "Data Format" : "Text"
@@ -1500,7 +1500,7 @@
             "result-contents" : "insert-entire-record",
             "routing-strategy" : "route-to-matched-unmatched",
             "record-path-lookup-miss-result-cache-size" : "0",
-            "result-record-path" : "/limbs",
+            "result-record-path" : "/Enrichment/limbs",
             "record-writer" : "e7d75d64-8df9-3ab7-b6fc-132e5d119533",
             "record-reader" : "fb115c79-ed67-3e3a-940b-9c7f14390fc3",
             "lookup-service" : "43fff71c-3534-3f8e-828c-b37d01aa45a2",

@@ -16,6 +16,237 @@
           "destination" : {
             "comments" : "",
             "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "31df7144-1f30-3b1d-bbd2-0c2294f60e2d",
+            "instanceIdentifier" : "bd37e0f9-9f9d-3d03-9861-51c44db2d281",
+            "name" : "LookupRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "c3655836-8cc2-382b-9108-c7c569294890",
+          "instanceIdentifier" : "5f646b0e-018d-1000-ffff-ffffe68f0101",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "b228c357-676f-3e1e-a5eb-164aadbf63e5",
+            "instanceIdentifier" : "d4710e88-a752-3b23-8c34-7d085d9ccbc9",
+            "name" : "GenerateFlowFile",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "97886278-2d79-3c39-9af3-3484f1c17adb",
+            "instanceIdentifier" : "5f5c9302-018d-1000-0000-000040a3be79",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "ff229a3f-6b4c-3364-bd56-58a4e8518e8b",
+          "instanceIdentifier" : "5f630b7b-018d-1000-ffff-ffff8f0d9e7b",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "94ec1916-f3a8-3787-ac6f-2a42bd35b488",
+            "instanceIdentifier" : "5f62761c-018d-1000-ffff-ffff9e4bfe7b",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "31df7144-1f30-3b1d-bbd2-0c2294f60e2d",
+            "instanceIdentifier" : "bd37e0f9-9f9d-3d03-9861-51c44db2d281",
+            "name" : "LookupRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "84dc6484-ea65-3968-9dab-4a641b051e2d",
+          "instanceIdentifier" : "5f62f2e2-018d-1000-0000-00002382a69d",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "94ec1916-f3a8-3787-ac6f-2a42bd35b488",
+            "instanceIdentifier" : "5f62761c-018d-1000-ffff-ffff9e4bfe7b",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "465a9dff-d0ce-38e2-97c1-6eb0d3416cbf",
+            "instanceIdentifier" : "7e41c920-cad4-3b2a-ae99-620248b89c5c",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "b08b5375-bd70-3514-a5c9-ff09f42362bc",
+          "instanceIdentifier" : "efabc225-e4cb-3133-bf6f-7cd2a70579c2",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure", "retry", "errors" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "eb4f2e04-3160-3e43-8637-394e9cae566e",
+            "instanceIdentifier" : "58b4dcde-328f-3b9b-b973-45346159e832",
+            "name" : "PutElasticsearchRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "594281e5-1b92-3d60-a953-e921514e9f3a",
+            "instanceIdentifier" : "8e087af9-4822-3904-807d-922f3b317b5a",
+            "name" : "LookupRecord",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "70f78128-8c8a-38a3-a193-d10495c68c5a",
+          "instanceIdentifier" : "6a5fd374-9647-34e2-8df0-9f884f72a4fe",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "unmatched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "31df7144-1f30-3b1d-bbd2-0c2294f60e2d",
+            "instanceIdentifier" : "bd37e0f9-9f9d-3d03-9861-51c44db2d281",
+            "name" : "LookupRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "eda50d59-aaaf-3abe-b80a-0d623bdd03e9",
+            "instanceIdentifier" : "33bf34fc-5d18-3af9-9505-3f01801dfbf3",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "b623a47d-fb28-3d5d-865b-166bde6ffd18",
+          "instanceIdentifier" : "ddc70902-3b82-3c92-99bf-b9f742bdb63b",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "unmatched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "594281e5-1b92-3d60-a953-e921514e9f3a",
+            "instanceIdentifier" : "8e087af9-4822-3904-807d-922f3b317b5a",
+            "name" : "LookupRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 1
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "813f0b29-ef5d-3aae-971d-1d72c3ce7620",
+            "instanceIdentifier" : "efaae92e-f5a0-3d7e-a52c-b4524f24c379",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "403b33c1-9a07-3b00-811e-7e54e07fcd25",
+          "instanceIdentifier" : "127b00d8-a053-3265-ad8c-6b235affac40",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "matched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+            "id" : "31df7144-1f30-3b1d-bbd2-0c2294f60e2d",
+            "instanceIdentifier" : "bd37e0f9-9f9d-3d03-9861-51c44db2d281",
+            "name" : "LookupRecord",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
             "id" : "813f0b29-ef5d-3aae-971d-1d72c3ce7620",
             "instanceIdentifier" : "efaae92e-f5a0-3d7e-a52c-b4524f24c379",
             "name" : "Funnel",
@@ -71,39 +302,6 @@
             "id" : "31df7144-1f30-3b1d-bbd2-0c2294f60e2d",
             "instanceIdentifier" : "bd37e0f9-9f9d-3d03-9861-51c44db2d281",
             "name" : "LookupRecord",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "465a9dff-d0ce-38e2-97c1-6eb0d3416cbf",
-            "instanceIdentifier" : "7e41c920-cad4-3b2a-ae99-620248b89c5c",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-          "identifier" : "b08b5375-bd70-3514-a5c9-ff09f42362bc",
-          "instanceIdentifier" : "efabc225-e4cb-3133-bf6f-7cd2a70579c2",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "retry", "errors" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "eb4f2e04-3160-3e43-8637-394e9cae566e",
-            "instanceIdentifier" : "58b4dcde-328f-3b9b-b973-45346159e832",
-            "name" : "PutElasticsearchRecord",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -214,42 +412,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "594281e5-1b92-3d60-a953-e921514e9f3a",
-            "instanceIdentifier" : "8e087af9-4822-3904-807d-922f3b317b5a",
-            "name" : "LookupRecord",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-          "identifier" : "70f78128-8c8a-38a3-a193-d10495c68c5a",
-          "instanceIdentifier" : "6a5fd374-9647-34e2-8df0-9f884f72a4fe",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "unmatched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "31df7144-1f30-3b1d-bbd2-0c2294f60e2d",
-            "instanceIdentifier" : "bd37e0f9-9f9d-3d03-9861-51c44db2d281",
-            "name" : "LookupRecord",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "31df7144-1f30-3b1d-bbd2-0c2294f60e2d",
-            "instanceIdentifier" : "bd37e0f9-9f9d-3d03-9861-51c44db2d281",
-            "name" : "LookupRecord",
+            "id" : "94ec1916-f3a8-3787-ac6f-2a42bd35b488",
+            "instanceIdentifier" : "5f62761c-018d-1000-ffff-ffff9e4bfe7b",
+            "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -272,72 +437,6 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 2
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "eda50d59-aaaf-3abe-b80a-0d623bdd03e9",
-            "instanceIdentifier" : "33bf34fc-5d18-3af9-9505-3f01801dfbf3",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-          "identifier" : "b623a47d-fb28-3d5d-865b-166bde6ffd18",
-          "instanceIdentifier" : "ddc70902-3b82-3c92-99bf-b9f742bdb63b",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "unmatched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "594281e5-1b92-3d60-a953-e921514e9f3a",
-            "instanceIdentifier" : "8e087af9-4822-3904-807d-922f3b317b5a",
-            "name" : "LookupRecord",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 1
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "813f0b29-ef5d-3aae-971d-1d72c3ce7620",
-            "instanceIdentifier" : "efaae92e-f5a0-3d7e-a52c-b4524f24c379",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-          "identifier" : "403b33c1-9a07-3b00-811e-7e54e07fcd25",
-          "instanceIdentifier" : "127b00d8-a053-3265-ad8c-6b235affac40",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "matched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
-            "id" : "31df7144-1f30-3b1d-bbd2-0c2294f60e2d",
-            "instanceIdentifier" : "bd37e0f9-9f9d-3d03-9861-51c44db2d281",
-            "name" : "LookupRecord",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
         } ],
         "controllerServices" : [ {
           "bulletinLevel" : "WARN",
@@ -984,6 +1083,15 @@
         }, {
           "componentType" : "FUNNEL",
           "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "97886278-2d79-3c39-9af3-3484f1c17adb",
+          "instanceIdentifier" : "5f5c9302-018d-1000-0000-000040a3be79",
+          "position" : {
+            "x" : 2104.0,
+            "y" : 320.0
+          }
+        }, {
+          "componentType" : "FUNNEL",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
           "identifier" : "c2edfde7-76f6-3881-aaea-cc7a4116d041",
           "instanceIdentifier" : "dbd8699a-0bcc-3690-ad21-207ac3de7668",
           "position" : {
@@ -1246,6 +1354,97 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.24.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "cc249b35-7664-360f-85b5-29d5e9d10c2b",
+          "identifier" : "94ec1916-f3a8-3787-ac6f-2a42bd35b488",
+          "instanceIdentifier" : "5f62761c-018d-1000-ffff-ffff9e4bfe7b",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "JoltTransformJSON",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1952.0,
+            "y" : 88.0
+          },
+          "properties" : {
+            "jolt-spec" : "[\n  {\n    \"operation\": \"modify-default-beta\",\n    \"spec\": {\n      \"*\": {\n        \"Enrichment\": {\n          \"limbs\": {}\n        }\n      }\n    }\n  }\n]",
+            "jolt-transform" : "jolt-transform-chain",
+            "Max String Length" : "20 MB",
+            "pretty_print" : "false",
+            "Transform Cache Size" : "1"
+          },
+          "propertyDescriptors" : {
+            "jolt-spec" : {
+              "displayName" : "Jolt Specification",
+              "identifiesControllerService" : false,
+              "name" : "jolt-spec",
+              "resourceDefinition" : {
+                "cardinality" : "SINGLE",
+                "resourceTypes" : [ "FILE", "TEXT" ]
+              },
+              "sensitive" : false
+            },
+            "jolt-transform" : {
+              "displayName" : "Jolt Transformation DSL",
+              "identifiesControllerService" : false,
+              "name" : "jolt-transform",
+              "sensitive" : false
+            },
+            "jolt-custom-class" : {
+              "displayName" : "Custom Transformation Class Name",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-class",
+              "sensitive" : false
+            },
+            "jolt-custom-modules" : {
+              "displayName" : "Custom Module Directory",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-modules",
+              "resourceDefinition" : {
+                "cardinality" : "MULTIPLE",
+                "resourceTypes" : [ "DIRECTORY", "FILE" ]
+              },
+              "sensitive" : false
+            },
+            "Max String Length" : {
+              "displayName" : "Max String Length",
+              "identifiesControllerService" : false,
+              "name" : "Max String Length",
+              "sensitive" : false
+            },
+            "pretty_print" : {
+              "displayName" : "Pretty Print",
+              "identifiesControllerService" : false,
+              "name" : "pretty_print",
+              "sensitive" : false
+            },
+            "Transform Cache Size" : {
+              "displayName" : "Transform Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "Transform Cache Size",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.JoltTransformJSON",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],

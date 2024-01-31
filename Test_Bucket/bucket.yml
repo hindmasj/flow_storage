@@ -34,6 +34,9 @@ flows:
   229dea12-86d0-45f2-8e63-6864a36810c5: {ver: 3, file: ErrorHandling.snapshot, comments: Changed
       logging parameters, author: anonymous, created: 1656427741921, flowName: ErrorHandling,
     flowDesc: ''}
+  43e4e55f-34e4-428a-b8b6-725c342ce4a7: {ver: 1, file: Create_Original_Field_NIFI-12704.snapshot,
+    comments: '', author: anonymous, created: 1706704922411, flowName: Create Original
+      Field NIFI-12704, flowDesc: 'Test flow for demonstrating https://issues.apache.org/jira/browse/NIFI-12704'}
   4e4acb26-7448-4c74-88ce-589a807dfc89: {ver: 1, file: Rewrite_Redis_Key_Set.snapshot,
     comments: '', author: anonymous, created: 1656437430874, flowName: Rewrite Redis
       Key Set, flowDesc: 'Demonstration of how to extract a redis key set, then write

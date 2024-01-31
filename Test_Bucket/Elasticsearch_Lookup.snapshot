@@ -1005,8 +1005,8 @@
           "identifier" : "d834a6c3-33c7-3856-8f50-265b0e4f0739",
           "instanceIdentifier" : "be93c391-0ac9-3773-8d16-5e3c8d675e5d",
           "position" : {
-            "x" : 2040.0,
-            "y" : 344.0
+            "x" : 1016.0,
+            "y" : 536.0
           }
         }, {
           "componentType" : "FUNNEL",
@@ -1641,14 +1641,32 @@
           "name" : "Elasticsearch Lookup",
           "parameters" : [ {
             "description" : "",
+            "name" : "ElasticsearchUsername",
+            "provided" : false,
+            "sensitive" : false,
+            "value" : "elastic"
+          }, {
+            "description" : "",
             "name" : "ElasticsearchPassword",
             "provided" : false,
             "sensitive" : true
           }, {
             "description" : "",
+            "name" : "ElasticsearchURL",
+            "provided" : false,
+            "sensitive" : false,
+            "value" : "https://host.docker.internal:9200/"
+          }, {
+            "description" : "",
             "name" : "TruststorePassword",
             "provided" : false,
             "sensitive" : true
+          }, {
+            "description" : "",
+            "name" : "TruststoreFilename",
+            "provided" : false,
+            "sensitive" : false,
+            "value" : "conf/es_ca.jks"
           } ]
         }
       },
